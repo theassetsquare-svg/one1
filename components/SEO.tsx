@@ -15,6 +15,7 @@ export default function SEO({ title, description, path, ogImage = '/og/og-thumb.
   const isThumb = ogImage === '/og/og-thumb.png';
   return (
     <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
@@ -34,8 +35,13 @@ export default function SEO({ title, description, path, ogImage = '/og/og-thumb.
       <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
       <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
       <link
+        rel="preload"
+        as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+      />
+      <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
       />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="대전원나이트" />

@@ -1,0 +1,39 @@
+name: PageSpeed Insights API
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+jobs:
+  psi:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        strategy: [mobile, desktop]
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Query PSI for each page
+        run: |
+          set -e
+          mkdir -p psi
+          for p in / /info /hours /ladies /faq /contact; do
+            slug=$(echo "$p" | tr '/' '_')
+            URL="https://one1-3md.pages.dev${p}"
+            ENCODED=$(node -e "process.stdout.write(encodeURIComponent('${URL}'))")
+            curl -sS "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED}&strategy=${{ matrix.strategy }}&category=performance&category=accessibility&category=seo&category=best-practices" \
+              -o "psi/${{ matrix.strategy }}${slug}.json"
+            node -e "
+              const d=JSON.parse(require('fs').readFileSync('psi/${{ matrix.strategy }}${slug}.json','utf8'));
+              if(!d.lighthouseResult){console.error('No result for ${URL}', JSON.stringify(d).slice(0,400));process.exit(1)}
+              const c=d.lighthouseResult.categories;
+              const score=k=>c[k]?Math.round(c[k].score*100):'--';
+              console.log('${{ matrix.strategy }} ${p}', 'perf',score('performance'),'a11y',score('accessibility'),'bp',score('best-practices'),'seo',score('seo'));
+            "
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: psi-${{ matrix.strategy }}
+          path: psi/*.json

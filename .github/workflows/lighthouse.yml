@@ -5,54 +5,39 @@ on:
   workflow_dispatch:
 
 jobs:
-  mobile:
+  audit:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        form: [mobile, desktop]
+      fail-fast: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Run Lighthouse (mobile)
-        run: |
-          set +e
-          mkdir -p reports
-          for p in / /info /hours /ladies /faq /contact; do
-            slug=$(echo "$p" | tr '/' '_')
-            npx --yes lighthouse "https://one1-3md.pages.dev${p}" \
-              --preset=mobile \
-              --only-categories=performance,seo,accessibility,best-practices \
-              --output=json \
-              --output-path="reports/m${slug}.json" \
-              --chrome-flags="--headless=new --no-sandbox" \
-              --quiet
-          done
-      - uses: actions/upload-artifact@v4
-        with:
-          name: lighthouse-mobile
-          path: reports/m_*.json
 
-  desktop:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Run Lighthouse (desktop)
+      - name: Run Lighthouse (${{ matrix.form }})
         run: |
           set +e
           mkdir -p reports
+          PREFIX=$([ "${{ matrix.form }}" = "mobile" ] && echo m || echo d)
           for p in / /info /hours /ladies /faq /contact; do
             slug=$(echo "$p" | tr '/' '_')
             npx --yes lighthouse "https://one1-3md.pages.dev${p}" \
-              --preset=desktop \
+              --preset=${{ matrix.form }} \
               --only-categories=performance,seo,accessibility,best-practices \
               --output=json \
-              --output-path="reports/d${slug}.json" \
+              --output-path="reports/${PREFIX}${slug}.json" \
               --chrome-flags="--headless=new --no-sandbox" \
               --quiet
           done
+
+      - name: Check thresholds
+        run: node scripts/lighthouse-check.js reports
+
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: lighthouse-desktop
-          path: reports/d_*.json
+          name: lighthouse-${{ matrix.form }}
+          path: reports/*.json
