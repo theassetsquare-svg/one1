@@ -1,0 +1,24 @@
+name: Sitemap lastmod daily
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update lastmod to today
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          sed -i "s|<lastmod>[^<]*</lastmod>|<lastmod>${TODAY}</lastmod>|g" public/sitemap.xml
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/sitemap.xml
+          git diff --cached --quiet || git commit -m "chore: bump sitemap lastmod $(date +%Y-%m-%d)"
+          git push

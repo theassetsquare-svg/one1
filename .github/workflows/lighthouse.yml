@@ -1,0 +1,58 @@
+name: Lighthouse Mobile + Desktop
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  mobile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run Lighthouse (mobile)
+        run: |
+          set +e
+          mkdir -p reports
+          for p in / /info /hours /ladies /faq /contact; do
+            slug=$(echo "$p" | tr '/' '_')
+            npx --yes lighthouse "https://one1-3md.pages.dev${p}" \
+              --preset=mobile \
+              --only-categories=performance,seo,accessibility,best-practices \
+              --output=json \
+              --output-path="reports/m${slug}.json" \
+              --chrome-flags="--headless=new --no-sandbox" \
+              --quiet
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-mobile
+          path: reports/m_*.json
+
+  desktop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run Lighthouse (desktop)
+        run: |
+          set +e
+          mkdir -p reports
+          for p in / /info /hours /ladies /faq /contact; do
+            slug=$(echo "$p" | tr '/' '_')
+            npx --yes lighthouse "https://one1-3md.pages.dev${p}" \
+              --preset=desktop \
+              --only-categories=performance,seo,accessibility,best-practices \
+              --output=json \
+              --output-path="reports/d${slug}.json" \
+              --chrome-flags="--headless=new --no-sandbox" \
+              --quiet
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-desktop
+          path: reports/d_*.json

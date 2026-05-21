@@ -1,0 +1,42 @@
+name: Schema + Content Validate
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Cloudflare Pages deploy
+        if: github.event_name == 'push'
+        run: sleep 180
+
+      - name: Required content present on home
+        run: |
+          set -e
+          H=$(curl -sL https://one1-3md.pages.dev/)
+          echo "$H" | grep -q "38세 이상" || { echo "MISSING 38세 이상"; exit 1; }
+          echo "$H" | grep -q "010-8677-1258\|01086771258" || { echo "MISSING phone"; exit 1; }
+          echo "$H" | grep -q "교통비" || { echo "MISSING 교통비"; exit 1; }
+          echo "$H" | grep -q "맥주" || { echo "MISSING 맥주"; exit 1; }
+          echo "OK content"
+
+      - name: Schema.org types present
+        run: |
+          set -e
+          H=$(curl -sL https://one1-3md.pages.dev/)
+          for t in WebSite NightClub LocalBusiness BreadcrumbList FAQPage HowTo GeoCoordinates OpeningHoursSpecification; do
+            echo "$H" | grep -q "\"$t\"" || { echo "MISSING schema $t"; exit 1; }
+            echo "OK schema $t"
+          done
+
+      - name: No fake AggregateRating
+        run: |
+          if curl -sL https://one1-3md.pages.dev/ | grep -q "AggregateRating"; then
+            echo "FAIL: fake AggregateRating detected"
+            exit 1
+          fi
+          echo "OK no fake ratings"

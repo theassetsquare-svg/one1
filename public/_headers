@@ -1,0 +1,24 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+/
+  Link: </og/og-thumb.png>; rel=preload; as=image; fetchpriority=high
+  Cache-Control: public, max-age=60, s-maxage=300
+
+/og/*
+  Cache-Control: public, max-age=2592000
+
+/icons/*
+  Cache-Control: public, max-age=2592000
+
+/favicon-32x32.png
+  Cache-Control: public, max-age=2592000
+
+/favicon-16x16.png
+  Cache-Control: public, max-age=2592000
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
