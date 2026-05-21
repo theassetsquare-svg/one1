@@ -16,6 +16,7 @@ export default function SEO({ title, description, path, ogImage = '/og/og-thumb.
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      <meta name="google-site-verification" content="HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88" />
       <meta name="naver-site-verification" content="ed4ae3e824d8359765cae162fe59db8d95808956" />
       <title>{title}</title>
       <meta name="description" content={description} />
