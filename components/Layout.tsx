@@ -47,16 +47,16 @@ export default function Layout({ children }: { children: ReactNode }) {
           <p>대전원나이트 공식 안내 사이트</p>
           <p>평일 20:00 - 02:30 / 주말 20:00 - 03:30 · 38세 이상 입장</p>
           <p>
-            예약 · 문의 <a href="tel:01086771258">010-8677-1258</a>
+            막내 직통 <a href="tel:01086771258">010-8677-1258</a>
           </p>
           <p className="footer-copy">© 2026 대전원나이트 · 본 사이트는 업소의 공식 안내 페이지입니다</p>
         </div>
       </footer>
-      <a href="tel:01086771258" className="float-call" aria-label="예약 및 문의 전화">
+      <a href="tel:01086771258" className="float-call" aria-label="막내 직통 전화 010-8677-1258">
         <span className="float-call-icon" aria-hidden="true">
           📞
         </span>
-        <span className="float-call-text">예약·문의 010-8677-1258</span>
+        <span className="float-call-text">막내 직통 010-8677-1258</span>
       </a>
     </>
   );

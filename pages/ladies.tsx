@@ -7,8 +7,8 @@ export default function Ladies() {
   return (
     <>
       <SEO
-        title="여성 손님 안내 - 대전원나이트 (22시 이전 입장 · 교통비 + 맥주)"
-        description="대전원나이트 여성 손님 안내. 22시 이전 입장 시 교통비 3만원 지원과 맥주 1병 제공. 38세 이상 입장. 신분증 확인 후 적용됩니다."
+        title="22시 전 입장 = 교통비 3만원 + 맥주 - 대전원나이트"
+        description="대전원나이트 여성 손님 안내. 22시 이전 입장 시 교통비 3만원 지원과 맥주 1병 기본 제공. 38세 이상 신분증 확인 후 적용. 막내 직통 010-8677-1258로 안내드립니다."
         path="/ladies"
         ogImage="/og/ladies.png"
       />
@@ -83,7 +83,7 @@ export default function Ladies() {
               </div>
             </div>
             <p style={{ marginTop: 24 }}>
-              자세한 안내는 직통 <a href="tel:01086771258" style={{ color: '#00e5ff', fontWeight: 700 }}>010-8677-1258</a>로 문의해 주세요.
+              자세한 안내는 막내 직통 <a href="tel:01086771258" style={{ color: '#00e5ff', fontWeight: 700 }}>010-8677-1258</a>로 문의해 주세요. 막내가 직접 응대합니다.
             </p>
           </section>
         </div>

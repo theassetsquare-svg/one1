@@ -22,7 +22,7 @@ export default function PolicyBanner() {
         </div>
       </div>
       <a href="tel:01086771258" className="policy-cta">
-        예약·문의 010-8677-1258
+        막내 직통 010-8677-1258
       </a>
     </section>
   );
