@@ -14,15 +14,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Skip if no PSI_API_KEY
+        id: gate
+        run: |
+          if [ -z "${{ secrets.PSI_API_KEY }}" ]; then
+            echo "PSI_API_KEY not configured - skipping (Lighthouse workflow remains primary)"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Query PSI for each page
+        if: steps.gate.outputs.skip != 'true'
         run: |
           set -e
           mkdir -p psi
+          KEY="${{ secrets.PSI_API_KEY }}"
           for p in / /info /hours /ladies /faq /contact; do
             slug=$(echo "$p" | tr '/' '_')
             URL="https://one1-3md.pages.dev${p}"
             ENCODED=$(node -e "process.stdout.write(encodeURIComponent('${URL}'))")
-            curl -sS "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED}&strategy=${{ matrix.strategy }}&category=performance&category=accessibility&category=seo&category=best-practices" \
+            curl -sS "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED}&strategy=${{ matrix.strategy }}&category=performance&category=accessibility&category=seo&category=best-practices&key=${KEY}" \
               -o "psi/${{ matrix.strategy }}${slug}.json"
             node -e "
               const d=JSON.parse(require('fs').readFileSync('psi/${{ matrix.strategy }}${slug}.json','utf8'));
@@ -34,6 +44,7 @@ jobs:
           done
 
       - uses: actions/upload-artifact@v4
+        if: steps.gate.outputs.skip != 'true'
         with:
           name: psi-${{ matrix.strategy }}
           path: psi/*.json
