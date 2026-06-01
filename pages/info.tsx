@@ -8,7 +8,7 @@ export default function Info() {
     <>
       <SEO
         title="38세부터 들어가는 법 - 대전원나이트 입장 가이드"
-        description="대전원나이트 첫 방문이 처음이라면. 신분증·드레스코드·시간대·결제·주차까지 막내가 직접 알려주는 입장 가이드. 직통 로 한 번에 확인하세요."
+        description="대전원나이트 첫 방문이 처음이라면. 신분증·드레스코드·시간대·결제·주차까지 막내가 직접 알려주는 입장 가이드. 직통 010-8677-1258로 한 번에 확인하세요."
         path="/info"
         ogImage="/og/info.png"
       />
@@ -48,7 +48,7 @@ export default function Info() {
               <div className="bento-card">
                 <div className="bento-kicker">04</div>
                 <h3>막내에게 예약 전화</h3>
-                <p>좌석·룸 예약은 막내 직통 로 진행합니다. 막내가 직접 응대합니다.</p>
+                <p>좌석·룸 예약은 막내 직통 010-8677-1258로 진행합니다. 막내가 직접 응대합니다.</p>
               </div>
               <div className="bento-card">
                 <div className="bento-kicker">05</div>
@@ -84,7 +84,7 @@ export default function Info() {
                 </tr>
                 <tr>
                   <th>예약</th>
-                  <td>막내 직통 </td>
+                  <td>막내 직통 010-8677-1258</td>
                 </tr>
                 <tr>
                   <th>결제</th>

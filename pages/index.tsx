@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <SEO
         title="대전원나이트 - 막내가 직접 받는 예약, 38세 이상 입장 안내"
-        description="대전원나이트 막내 직통. 38세 이상 입장, 22시 이전 입장 여성 손님 교통비 3만원과 맥주 1병 기본 제공. 평일 새벽 2시반 / 주말 새벽 3시반까지. 예약 ."
+        description="대전원나이트 막내 직통. 38세 이상 입장, 22시 이전 입장 여성 손님 교통비 3만원과 맥주 1병 기본 제공. 평일 새벽 2시반 / 주말 새벽 3시반까지. 예약 010-8677-1258."
         path="/"
         ogImage="/og/home.png"
       />
@@ -22,8 +22,8 @@ export default function Home() {
           </h1>
           <p>38세 이상 입장 · 매일 20:00 영업 시작 · 예약은 직통 전화로 안내드립니다.</p>
           <div className="cta-row">
-            <a href="https://theassetsquare.com/" className="cta-primary">
-              막내 직통 
+            <a href="tel:01086771258" className="cta-primary">
+              막내 직통 010-8677-1258
             </a>
             <Link href="/info" className="cta-secondary">
               입장 안내 보기
@@ -56,8 +56,8 @@ export default function Home() {
                   <th>예약·문의</th>
                   <td>
                     막내 직통{' '}
-                    <a href="https://theassetsquare.com/" style={{ color: '#00e5ff', fontWeight: 700 }}>
-                      
+                    <a href="tel:01086771258" style={{ color: '#00e5ff', fontWeight: 700 }}>
+                      010-8677-1258
                     </a>
                   </td>
                 </tr>
@@ -102,7 +102,7 @@ export default function Home() {
               <Link href="/contact" className="bento-card">
                 <div className="bento-kicker">CONTACT</div>
                 <h3>막내 직통 문의</h3>
-                <p>막내  - 룸·단체 예약 및 일반 안내 한 번에.</p>
+                <p>막내 010-8677-1258 - 룸·단체 예약 및 일반 안내 한 번에.</p>
               </Link>
             </div>
           </section>
@@ -130,11 +130,11 @@ export default function Home() {
               </details>
               <details className="faq">
                 <summary>예약은 어떻게 하나요?</summary>
-                <p>막내 직통  전화로 예약을 권장합니다. 막내가 직접 응대합니다.</p>
+                <p>막내 직통 010-8677-1258 전화로 예약을 권장합니다. 막내가 직접 응대합니다.</p>
               </details>
               <details className="faq">
                 <summary>위치는 어디인가요?</summary>
-                <p>대전광역시 시내에 위치합니다. 정확한 위치는 막내 직통 로 안내드립니다.</p>
+                <p>대전광역시 시내에 위치합니다. 정확한 위치는 막내 직통 010-8677-1258로 안내드립니다.</p>
               </details>
             </div>
           </section>

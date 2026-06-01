@@ -21,8 +21,8 @@ export default function PolicyBanner() {
           <div className="policy-fine">신분증 확인 후 적용 · 운영 정책에 따라 변경될 수 있습니다</div>
         </div>
       </div>
-      <a href="https://theassetsquare.com/" className="policy-cta">
-        막내 직통 
+      <a href="tel:01086771258" className="policy-cta">
+        막내 직통 010-8677-1258
       </a>
     </section>
   );

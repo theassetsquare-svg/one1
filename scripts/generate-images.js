@@ -54,7 +54,7 @@ ${defs}
 <text x="540" y="762" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#FFFFFF" text-anchor="middle">평일 20:00 - 02:30 · 주말 20:00 - 03:30</text>
 <rect x="60" y="820" width="960" height="180" rx="12" fill="#FFFFFF"/>
 <text x="540" y="870" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#0A0E27" text-anchor="middle" letter-spacing="2">예약 · 안내 전화</text>
-<text x="540" y="955" font-family="Noto Sans KR" font-size="72" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-2"></text>
+<text x="540" y="955" font-family="Noto Sans KR" font-size="72" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-2">010-8677-1258</text>
 </svg>`;
 
 render(thumb, 'public/og/og-thumb.png', 1080, 1080);
@@ -72,7 +72,7 @@ ${defs}
 <text x="600" y="418" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#B388FF" text-anchor="middle" letter-spacing="3">38세 이상 입장 · 평일 새벽 2시반 · 주말 새벽 3시반</text>
 <rect x="280" y="460" width="640" height="118" rx="10" fill="rgba(0,229,255,0.10)" stroke="#00E5FF" stroke-width="2"/>
 <text x="600" y="503" font-family="Noto Sans KR" font-size="22" font-weight="500" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">예약 · 안내</text>
-<text x="600" y="555" font-family="Noto Sans KR" font-size="44" font-weight="900" fill="#00E5FF" text-anchor="middle" letter-spacing="-1"></text>
+<text x="600" y="555" font-family="Noto Sans KR" font-size="44" font-weight="900" fill="#00E5FF" text-anchor="middle" letter-spacing="-1">010-8677-1258</text>
 </svg>`;
 
 render(home, 'public/og/home.png', 1200, 630);
@@ -101,7 +101,7 @@ const pages = [
   { name: 'hours', kicker: 'HOURS', title: '평일 새벽 2시반까지', sub: '주말은 새벽 3시반 · 막내 직통 응대' },
   { name: 'ladies', kicker: 'LADIES', title: '22시 전 입장 = 3만원 + 맥주', sub: '교통비 3만원 + 맥주 1병 · 막내 안내' },
   { name: 'faq', kicker: 'FAQ', title: '막내가 직접 답한 13가지', sub: '입장·예약·위치·결제 한 페이지에' },
-  { name: 'contact', kicker: 'CONTACT', title: '막내 직통 ', sub: '예약·룸·단체 모두 막내가 응대' },
+  { name: 'contact', kicker: 'CONTACT', title: '막내 직통 010-8677-1258', sub: '예약·룸·단체 모두 막내가 응대' },
 ];
 
 pages.forEach((p) => {
@@ -114,7 +114,7 @@ ${defs}
 <text x="600" y="345" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#B388FF" text-anchor="middle">${p.sub}</text>
 <rect x="280" y="440" width="640" height="110" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="2"/>
 <text x="600" y="485" font-family="Noto Sans KR" font-size="24" font-weight="500" fill="#FFFFFF" text-anchor="middle">예약 · 안내</text>
-<text x="600" y="525" font-family="Noto Sans KR" font-size="34" font-weight="900" fill="#00E5FF" text-anchor="middle">막내 직통 </text>
+<text x="600" y="525" font-family="Noto Sans KR" font-size="34" font-weight="900" fill="#00E5FF" text-anchor="middle">막내 직통 010-8677-1258</text>
 </svg>`;
   render(svg, `public/og/${p.name}.png`, 1200, 630);
 });
