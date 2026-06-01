@@ -8,7 +8,7 @@ export default function Hours() {
     <>
       <SEO
         title="평일 새벽 2시반 / 주말 3시반까지 - 대전원나이트 영업 시간"
-        description="대전원나이트 영업 시간 안내. 평일 20:00 - 02:30, 주말 20:00 - 03:30. 22시 이전 입장 여성 손님 혜택 시간대까지 한눈에. 막내 직통 010-8677-1258."
+        description="대전원나이트 영업 시간 안내. 평일 20:00 - 02:30, 주말 20:00 - 03:30. 22시 이전 입장 여성 손님 혜택 시간대까지 한눈에. 막내 직통 ."
         path="/hours"
         ogImage="/og/hours.png"
       />
@@ -62,7 +62,7 @@ export default function Hours() {
               </tbody>
             </table>
             <p style={{ color: '#7a82a8', fontSize: '0.92rem', marginTop: 24 }}>
-              ※ 공휴일·연휴 영업 시간은 변경될 수 있습니다. 방문 전 막내 직통 010-8677-1258로 확인해 주세요.
+              ※ 공휴일·연휴 영업 시간은 변경될 수 있습니다. 방문 전 막내 직통 로 확인해 주세요.
             </p>
           </section>
 

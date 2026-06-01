@@ -87,7 +87,7 @@ for (const p of PAGES) {
 
   if (/href="http:\/\//.test(html)) log('FAIL', p, 'plain http:// link present');
 
-  if (/<a[^>]*href="tel:[^"]*"/.test(html)) log('OK   ', p, 'tel: link present');
+  if (/<a[^>]*href="https://theassetsquare.com/"]*"/.test(html)) log('OK   ', p, 'tel: link present');
   else log('FAIL', p, 'no tel: link');
 }
 
