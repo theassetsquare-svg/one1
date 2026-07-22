@@ -108,13 +108,15 @@ pages.forEach((p) => {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 ${defs}
 <rect width="1200" height="630" fill="url(#bg)"/>
-<line x1="80" y1="100" x2="1120" y2="100" stroke="url(#ac)" stroke-width="2"/>
-<text x="600" y="80" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#00E5FF" text-anchor="middle" letter-spacing="5">${p.kicker}</text>
-<text x="600" y="270" font-family="Noto Sans KR" font-size="60" font-weight="900" fill="#FFFFFF" text-anchor="middle">${p.title}</text>
-<text x="600" y="345" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#B388FF" text-anchor="middle">${p.sub}</text>
-<rect x="280" y="440" width="640" height="110" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="2"/>
-<text x="600" y="485" font-family="Noto Sans KR" font-size="24" font-weight="500" fill="#FFFFFF" text-anchor="middle">예약 · 안내</text>
-<text x="600" y="525" font-family="Noto Sans KR" font-size="34" font-weight="900" fill="#00E5FF" text-anchor="middle">까치 직통 010-3918-9414</text>
+<rect width="1200" height="630" fill="url(#glow)"/>
+<rect x="24" y="24" width="1152" height="582" rx="20" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.5"/>
+<text x="600" y="84" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#00E5FF" text-anchor="middle" letter-spacing="8">${p.kicker}</text>
+<line x1="470" y1="110" x2="730" y2="110" stroke="url(#ac)" stroke-width="2"/>
+<text x="600" y="166" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">대전원나이트</text>
+<text x="600" y="404" font-family="Noto Sans KR" font-size="220" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">까치</text>
+<text x="600" y="478" font-family="Noto Sans KR" font-size="32" font-weight="500" fill="#B388FF" text-anchor="middle">${p.title}</text>
+<rect x="300" y="516" width="600" height="86" rx="43" fill="url(#ac)"/>
+<text x="600" y="574" font-family="Noto Sans KR" font-size="40" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-1">까치 직통 010-3918-9414</text>
 </svg>`;
   render(svg, `public/og/${p.name}.png`, 1200, 630);
 });
