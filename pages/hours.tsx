@@ -7,7 +7,7 @@ export default function Hours() {
   return (
     <>
       <SEO
-        title="평일 새벽 2시반 / 주말 3시반까지 - 대전원나이트 영업 시간"
+        title="대전원나이트 영업 시간 - 평일 새벽 2시반 / 주말 3시반까지"
         description="대전원나이트 영업 시간 안내. 평일 20:00 - 02:30, 주말 20:00 - 03:30. 22시 이전 입장 여성 손님 혜택 시간대까지 한눈에. 까치 직통 010-3918-9414."
         path="/hours"
         ogImage="/og/hours.png"

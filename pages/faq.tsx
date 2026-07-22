@@ -7,7 +7,7 @@ export default function Faq() {
   return (
     <>
       <SEO
-        title="까치가 직접 답한 13가지 - 대전원나이트 FAQ"
+        title="대전원나이트 FAQ - 까치가 직접 답한 13가지"
         description="대전원나이트 자주 묻는 질문 13가지. 입장 연령, 22시 전 여성 손님 안내, 영업 시간, 위치, 결제, 드레스코드까지 한 페이지에. 까치 직통 010-3918-9414."
         path="/faq"
         ogImage="/og/faq.png"

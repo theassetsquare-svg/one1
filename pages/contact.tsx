@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="까치 직통 010-3918-9414 - 대전원나이트 예약·문의"
+        title="대전원나이트 예약·문의 - 까치 직통 010-3918-9414"
         description="대전원나이트 예약·룸·단체·VIP·일반 안내 모두 까치 직통 010-3918-9414. 영업 시간 내 까치가 직접 응대합니다. 한 번에 안내해 드립니다."
         path="/contact"
         ogImage="/og/contact.png"
