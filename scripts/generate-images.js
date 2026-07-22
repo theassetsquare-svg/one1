@@ -121,4 +121,38 @@ ${defs}
   render(svg, `public/og/${p.name}.png`, 1200, 630);
 });
 
+// 네이버 플레이스 대표 이미지 (1:1) — 프로필로 크게 볼 때 정보까지, 목록에선 까치 대형
+const place = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+${defs}
+<rect width="1080" height="1080" fill="url(#bg)"/>
+<rect width="1080" height="1080" fill="url(#glow)"/>
+<rect x="36" y="36" width="1008" height="1008" rx="28" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.55"/>
+<text x="540" y="150" font-family="Noto Sans KR" font-size="34" font-weight="500" fill="#00E5FF" text-anchor="middle" letter-spacing="12">DAEJEON ONE NIGHT</text>
+<line x1="380" y1="188" x2="700" y2="188" stroke="url(#ac)" stroke-width="2"/>
+<text x="540" y="278" font-family="Noto Sans KR" font-size="84" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">대전원나이트</text>
+<text x="540" y="640" font-family="Noto Sans KR" font-size="300" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="10">까치</text>
+<rect x="240" y="720" width="600" height="98" rx="49" fill="url(#ac)"/>
+<text x="540" y="787" font-family="Noto Sans KR" font-size="44" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="1">예약 · 안내 직통</text>
+<text x="540" y="910" font-family="Noto Sans KR" font-size="82" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">010-3918-9414</text>
+<text x="540" y="972" font-family="Noto Sans KR" font-size="30" font-weight="400" fill="#B388FF" text-anchor="middle">평일 20:00 - 02:30 · 주말 20:00 - 03:30</text>
+</svg>`;
+
+render(place, 'public/og/place.png', 1080, 1080);
+
+// 네이버 블로그 대표 이미지 (1:1) — VIEW/블로그 탭 작은 썸네일에서 까치만 확실히 읽히게 최소 구성
+const blog = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+${defs}
+<rect width="1080" height="1080" fill="url(#bg)"/>
+<rect width="1080" height="1080" fill="url(#glow)"/>
+<rect x="36" y="36" width="1008" height="1008" rx="28" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.55"/>
+<text x="540" y="200" font-family="Noto Sans KR" font-size="96" font-weight="900" fill="#00E5FF" text-anchor="middle" letter-spacing="2">대전원나이트</text>
+<line x1="330" y1="250" x2="750" y2="250" stroke="url(#ac)" stroke-width="3"/>
+<text x="540" y="700" font-family="Noto Sans KR" font-size="400" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="12">까치</text>
+<rect x="250" y="800" width="580" height="118" rx="59" fill="url(#ac)"/>
+<text x="540" y="880" font-family="Noto Sans KR" font-size="64" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-1">010-3918-9414</text>
+<text x="540" y="992" font-family="Noto Sans KR" font-size="36" font-weight="500" fill="#B388FF" text-anchor="middle" letter-spacing="4">38세 이상 · 까치 직통 응대</text>
+</svg>`;
+
+render(blog, 'public/og/blog.png', 1080, 1080);
+
 console.log('done');
