@@ -145,12 +145,13 @@ ${defs}
 <rect width="1080" height="1080" fill="url(#bg)"/>
 <rect width="1080" height="1080" fill="url(#glow)"/>
 <rect x="36" y="36" width="1008" height="1008" rx="28" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.55"/>
-<text x="540" y="200" font-family="Noto Sans KR" font-size="96" font-weight="900" fill="#00E5FF" text-anchor="middle" letter-spacing="2">대전원나이트</text>
-<line x1="330" y1="250" x2="750" y2="250" stroke="url(#ac)" stroke-width="3"/>
-<text x="540" y="700" font-family="Noto Sans KR" font-size="400" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="12">까치</text>
-<rect x="250" y="800" width="580" height="118" rx="59" fill="url(#ac)"/>
-<text x="540" y="880" font-family="Noto Sans KR" font-size="64" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-1">010-3918-9414</text>
-<text x="540" y="992" font-family="Noto Sans KR" font-size="36" font-weight="500" fill="#B388FF" text-anchor="middle" letter-spacing="4">38세 이상 · 까치 직통 응대</text>
+<rect x="316" y="112" width="448" height="78" rx="39" fill="url(#ac)"/>
+<text x="540" y="167" font-family="Noto Sans KR" font-size="42" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="2">대전 밤문화 1번지</text>
+<text x="540" y="300" font-family="Noto Sans KR" font-size="90" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">대전원나이트</text>
+<text x="540" y="702" font-family="Noto Sans KR" font-size="380" font-weight="900" fill="url(#ac)" text-anchor="middle" letter-spacing="12">까치</text>
+<rect x="206" y="798" width="668" height="126" rx="63" fill="#FFFFFF"/>
+<text x="540" y="884" font-family="Noto Sans KR" font-size="66" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-1">010-3918-9414</text>
+<text x="540" y="1002" font-family="Noto Sans KR" font-size="42" font-weight="700" fill="#00E5FF" text-anchor="middle" letter-spacing="3">새벽까지 논스톱 · 까치 직통 콜</text>
 </svg>`;
 
 render(blog, 'public/og/blog.png', 1080, 1080);
