@@ -145,8 +145,8 @@ ${defs}
 <rect width="1080" height="1080" fill="url(#bg)"/>
 <rect width="1080" height="1080" fill="url(#glow)"/>
 <rect x="36" y="36" width="1008" height="1008" rx="28" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.55"/>
-<rect x="316" y="112" width="448" height="78" rx="39" fill="url(#ac)"/>
-<text x="540" y="167" font-family="Noto Sans KR" font-size="42" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="2">대전 밤문화 1번지</text>
+<rect x="346" y="112" width="388" height="78" rx="39" fill="url(#ac)"/>
+<text x="540" y="167" font-family="Noto Sans KR" font-size="44" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="3">대전 최대 규모</text>
 <text x="540" y="300" font-family="Noto Sans KR" font-size="90" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">대전원나이트</text>
 <text x="540" y="702" font-family="Noto Sans KR" font-size="380" font-weight="900" fill="url(#ac)" text-anchor="middle" letter-spacing="12">까치</text>
 <rect x="206" y="798" width="668" height="126" rx="63" fill="#FFFFFF"/>
