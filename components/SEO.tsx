@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const SITE = 'https://one1-3md.pages.dev';
+const SITE = 'https://oneb-7z7.pages.dev';
 
 type Props = {
   title: string;
@@ -17,7 +17,7 @@ export default function SEO({ title, description, path, ogImage = '/og/og-thumb.
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       <meta name="google-site-verification" content="HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88" />
-      <meta name="naver-site-verification" content="ed4ae3e824d8359765cae162fe59db8d95808956" />
+      <meta name="naver-site-verification" content="640ba0cfbfb8328f279f76e9cade5342aba13ece" />
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
@@ -31,6 +31,7 @@ export default function SEO({ title, description, path, ogImage = '/og/og-thumb.
       <link rel="alternate" hrefLang="ko-KR" href={url} />
       <link rel="alternate" hrefLang="x-default" href={url} />
       <link rel="manifest" href="/site.webmanifest" />
+      <link rel="alternate" type="application/rss+xml" title="대전원나이트 공식 안내" href={`${SITE}/rss.xml`} />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />

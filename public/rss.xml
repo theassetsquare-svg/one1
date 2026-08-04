@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>대전원나이트 공식 안내</title>
+    <link>https://oneb-7z7.pages.dev/</link>
+    <description>대전원나이트 공식 안내 - 38세 이상 입장, 영업 시간, 여성 손님 안내, 예약·문의</description>
+    <language>ko-KR</language>
+    <item>
+      <title>대전원나이트 공식 안내 (홈)</title>
+      <link>https://oneb-7z7.pages.dev/</link>
+      <guid>https://oneb-7z7.pages.dev/</guid>
+      <description>38세 이상 입장 · 평일 20:00-02:30 / 주말 20:00-03:30. 22시 이전 입장 여성 손님 교통비 3만원 + 맥주 1병 제공.</description>
+    </item>
+    <item>
+      <title>입장 안내</title>
+      <link>https://oneb-7z7.pages.dev/info</link>
+      <guid>https://oneb-7z7.pages.dev/info</guid>
+      <description>신분증·드레스코드·시간대·결제·주차까지 첫 방문 입장 가이드.</description>
+    </item>
+    <item>
+      <title>영업 시간</title>
+      <link>https://oneb-7z7.pages.dev/hours</link>
+      <guid>https://oneb-7z7.pages.dev/hours</guid>
+      <description>평일 20:00 - 02:30 / 주말 20:00 - 03:30. 요일별·시간대별 안내.</description>
+    </item>
+    <item>
+      <title>여성 손님 안내</title>
+      <link>https://oneb-7z7.pages.dev/ladies</link>
+      <guid>https://oneb-7z7.pages.dev/ladies</guid>
+      <description>22시 이전 입장 시 교통비 3만원 지원과 맥주 1병 기본 제공.</description>
+    </item>
+    <item>
+      <title>자주 묻는 질문 (FAQ)</title>
+      <link>https://oneb-7z7.pages.dev/faq</link>
+      <guid>https://oneb-7z7.pages.dev/faq</guid>
+      <description>입장 연령·여성 손님 안내·영업 시간·위치·결제·드레스코드 13가지 답변.</description>
+    </item>
+    <item>
+      <title>예약·문의 안내</title>
+      <link>https://oneb-7z7.pages.dev/contact</link>
+      <guid>https://oneb-7z7.pages.dev/contact</guid>
+      <description>예약·룸·단체·일반 안내. 예약·문의는 페이지 하단 예약문의 전화로 접수됩니다.</description>
+    </item>
+  </channel>
+</rss>

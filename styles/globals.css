@@ -19,7 +19,7 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
   min-height: 100vh;
-  padding-bottom: calc(100px + env(safe-area-inset-bottom));
+  padding-bottom: calc(72px + env(safe-area-inset-bottom));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -447,44 +447,42 @@ section.section p {
   line-height: 1.7;
 }
 
-.float-call {
+.call-bar {
   position: fixed;
-  bottom: calc(20px + env(safe-area-inset-bottom));
-  right: 20px;
-  left: 20px;
-  max-width: 360px;
-  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: calc(56px + env(safe-area-inset-bottom));
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
   background: linear-gradient(90deg, #00e5ff 0%, #b388ff 100%);
   color: #0a0e27;
-  padding: 16px 24px;
-  min-height: 52px;
-  border-radius: 50px;
   font-weight: 900;
-  font-size: 1rem;
-  box-shadow: 0 12px 36px rgba(0, 229, 255, 0.4);
-  z-index: 9999;
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   text-align: center;
-  transition: transform 0.2s;
   text-decoration: none;
 }
-.float-call:hover {
-  transform: translateY(-2px);
+.call-bar:hover {
+  filter: brightness(1.04);
 }
-.float-call-icon {
-  font-size: 1.2rem;
+.call-bar:focus-visible {
+  outline: 3px solid #0a0e27;
+  outline-offset: -4px;
+}
+.call-bar-icon {
+  font-size: 1.15rem;
 }
 @media (min-width: 769px) {
-  .float-call {
-    left: auto;
-    right: 24px;
-    bottom: 24px;
-    max-width: none;
-    padding: 18px 28px;
-    font-size: 1.1rem;
+  .call-bar {
+    font-size: 18px;
   }
 }
 
@@ -493,7 +491,6 @@ section.section p {
   text-align: center;
   background: #070a1f;
   border-top: 1px solid rgba(0, 229, 255, 0.15);
-  margin-bottom: 80px;
 }
 .footer-inner {
   max-width: 1200px;

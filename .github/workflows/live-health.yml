@@ -12,7 +12,7 @@ jobs:
         run: |
           set -e
           for p in / /info /hours /ladies /faq /contact; do
-            S=$(curl -sI -o /dev/null -w '%{http_code}' "https://one1-3md.pages.dev${p}")
+            S=$(curl -sI -o /dev/null -w '%{http_code}' "https://oneb-7z7.pages.dev${p}")
             [ "$S" = "200" ] || { echo "FAIL $p $S"; exit 1; }
             echo "OK $p $S"
           done
@@ -20,7 +20,7 @@ jobs:
         run: |
           set -e
           for f in /sitemap.xml /robots.txt /llms.txt /site.webmanifest /sw.js /og/og-thumb.png /icons/icon-192.png /icons/icon-512.png; do
-            S=$(curl -sI -o /dev/null -w '%{http_code}' "https://one1-3md.pages.dev${f}")
+            S=$(curl -sI -o /dev/null -w '%{http_code}' "https://oneb-7z7.pages.dev${f}")
             [ "$S" = "200" ] || { echo "FAIL $f $S"; exit 1; }
             echo "OK $f $S"
           done

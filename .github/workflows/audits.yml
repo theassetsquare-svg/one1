@@ -34,7 +34,7 @@ jobs:
           set -e
           for f in out/index.html out/info.html out/hours.html out/ladies.html out/faq.html out/contact.html; do
             grep -q "38세 이상" "$f" || { echo "FAIL $f missing 38세 이상"; exit 1; }
-            grep -q "010-8677-1258\|01086771258" "$f" || { echo "FAIL $f missing phone"; exit 1; }
+            grep -q "010 9048 0767\|01090480767" "$f" || { echo "FAIL $f missing phone"; exit 1; }
           done
           echo "OK content"
 

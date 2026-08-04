@@ -25,4 +25,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://one1-3md.pages.dev/sitemap.xml
+Sitemap: https://oneb-7z7.pages.dev/sitemap.xml

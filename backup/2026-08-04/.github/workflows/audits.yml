@@ -1,0 +1,55 @@
+name: Build + Audit (keywords, html, schema)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Keyword stuffing audit
+        run: node scripts/audit-keywords.js out
+
+      - name: HTML quality audit
+        run: node scripts/audit-html.js out
+
+      - name: Required content present in build
+        run: |
+          set -e
+          for f in out/index.html out/info.html out/hours.html out/ladies.html out/faq.html out/contact.html; do
+            grep -q "38세 이상" "$f" || { echo "FAIL $f missing 38세 이상"; exit 1; }
+            grep -q "010-8677-1258\|01086771258" "$f" || { echo "FAIL $f missing phone"; exit 1; }
+          done
+          echo "OK content"
+
+      - name: Schema types present in build
+        run: |
+          set -e
+          for t in WebSite NightClub LocalBusiness BreadcrumbList FAQPage HowTo GeoCoordinates OpeningHoursSpecification; do
+            grep -q "\"$t\"" out/index.html || { echo "FAIL schema $t"; exit 1; }
+          done
+          echo "OK schema"
+
+      - name: No fake AggregateRating
+        run: |
+          if grep -l "AggregateRating" out/*.html >/dev/null 2>&1; then
+            echo "FAIL: AggregateRating present"
+            exit 1
+          fi
+          echo "OK no fake ratings"

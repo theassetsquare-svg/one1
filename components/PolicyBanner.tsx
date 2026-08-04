@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function PolicyBanner() {
   return (
     <section className="policy">
@@ -21,9 +23,9 @@ export default function PolicyBanner() {
           <div className="policy-fine">신분증 확인 후 적용 · 운영 정책에 따라 변경될 수 있습니다</div>
         </div>
       </div>
-      <a href="tel:01039189414" className="policy-cta">
-        까치 직통 010-3918-9414
-      </a>
+      <Link href="/contact" className="policy-cta">
+        예약 · 문의 안내
+      </Link>
     </section>
   );
 }

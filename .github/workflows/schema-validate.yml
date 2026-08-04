@@ -17,9 +17,9 @@ jobs:
       - name: Required content present on home
         run: |
           set -e
-          H=$(curl -sL https://one1-3md.pages.dev/)
+          H=$(curl -sL https://oneb-7z7.pages.dev/)
           echo "$H" | grep -q "38세 이상" || { echo "MISSING 38세 이상"; exit 1; }
-          echo "$H" | grep -q "010-8677-1258\|01086771258" || { echo "MISSING phone"; exit 1; }
+          echo "$H" | grep -q "010 9048 0767\|01090480767" || { echo "MISSING phone"; exit 1; }
           echo "$H" | grep -q "교통비" || { echo "MISSING 교통비"; exit 1; }
           echo "$H" | grep -q "맥주" || { echo "MISSING 맥주"; exit 1; }
           echo "OK content"
@@ -27,7 +27,7 @@ jobs:
       - name: Schema.org types present
         run: |
           set -e
-          H=$(curl -sL https://one1-3md.pages.dev/)
+          H=$(curl -sL https://oneb-7z7.pages.dev/)
           for t in WebSite NightClub LocalBusiness BreadcrumbList FAQPage HowTo GeoCoordinates OpeningHoursSpecification; do
             echo "$H" | grep -q "\"$t\"" || { echo "MISSING schema $t"; exit 1; }
             echo "OK schema $t"
@@ -35,7 +35,7 @@ jobs:
 
       - name: No fake AggregateRating
         run: |
-          if curl -sL https://one1-3md.pages.dev/ | grep -q "AggregateRating"; then
+          if curl -sL https://oneb-7z7.pages.dev/ | grep -q "AggregateRating"; then
             echo "FAIL: fake AggregateRating detected"
             exit 1
           fi
