@@ -8,7 +8,7 @@ export default function Contact() {
     <>
       <SEO
         title="대전원나이트 예약·문의 안내"
-        description="대전원나이트 예약·룸·단체·VIP·일반 안내. 영업 시간 내 직접 응대합니다. 예약·문의는 페이지 하단 예약문의 전화로 한 번에 안내해 드립니다."
+        description="대전원나이트 예약·룸·단체·VIP·일반 안내. 영업 시간 내 직접 응대합니다. 문의는 페이지 하단 광고문의 카톡 besta12로 한 번에 안내해 드립니다."
         path="/contact"
         ogImage="/og/contact.png"
       />
@@ -19,7 +19,7 @@ export default function Contact() {
           <h1>
             예약 · <span className="accent">문의</span>
           </h1>
-          <p>예약 및 일반 문의는 페이지 하단 예약문의 전화로 안내드립니다.</p>
+          <p>예약 및 일반 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다.</p>
         </div>
         <div className="container">
           <PolicyBanner />
@@ -31,10 +31,10 @@ export default function Contact() {
             </h2>
             <div className="bento">
               <div className="bento-card">
-                <div className="bento-kicker">PHONE</div>
-                <h3>예약·문의 전화</h3>
+                <div className="bento-kicker">KAKAO</div>
+                <h3>광고문의 카톡</h3>
                 <p>
-                  예약·룸 안내·단체 모임 등 모든 문의는 페이지 하단 예약문의 전화로 접수되며 직접 응대해 드립니다.
+                  예약·룸 안내·단체 모임 등 모든 문의는 페이지 하단 광고문의 카톡 besta12로 접수되며 직접 응대해 드립니다.
                 </p>
               </div>
               <div className="bento-card">
@@ -50,7 +50,7 @@ export default function Contact() {
               <div className="bento-card">
                 <div className="bento-kicker">LOCATION</div>
                 <h3>위치 안내</h3>
-                <p>대전광역시 시내에 위치합니다. 정확한 위치는 예약 시 직통 전화로 안내드립니다.</p>
+                <p>대전광역시 시내에 위치합니다. 정확한 위치는 예약 시 카톡 besta12로 안내드립니다.</p>
               </div>
             </div>
           </section>

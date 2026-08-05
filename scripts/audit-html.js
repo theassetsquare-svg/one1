@@ -87,8 +87,8 @@ for (const p of PAGES) {
 
   if (/href="http:\/\//.test(html)) log('FAIL', p, 'plain http:// link present');
 
-  if (/<a[^>]*href="tel:[^"]*"/.test(html)) log('OK   ', p, 'tel: link present');
-  else log('FAIL', p, 'no tel: link');
+  if (/광고문의 카톡 besta12/.test(html)) log('OK   ', p, 'kakao contact present');
+  else log('FAIL', p, 'no kakao contact (광고문의 카톡 besta12)');
 }
 
 if (fails) {

@@ -8,7 +8,7 @@ export default function Info() {
     <>
       <SEO
         title="38세부터 들어가는 법 - 대전원나이트 입장 가이드"
-        description="대전원나이트 첫 방문이 처음이라면. 신분증·드레스코드·시간대·결제·주차까지 한 번에 알려주는 입장 가이드. 예약·문의는 페이지 하단 예약문의 전화로 확인하세요."
+        description="대전원나이트 첫 방문이 처음이라면. 신분증·드레스코드·시간대·결제·주차까지 한 번에 알려주는 입장 가이드. 문의는 페이지 하단 광고문의 카톡 besta12로 확인하세요."
         path="/info"
         ogImage="/og/info.png"
       />
@@ -47,8 +47,8 @@ export default function Info() {
               </div>
               <div className="bento-card">
                 <div className="bento-kicker">04</div>
-                <h3>예약 전화</h3>
-                <p>좌석·룸 예약은 페이지 하단 예약문의 전화로 진행하며, 직접 응대해 드립니다.</p>
+                <h3>예약 문의</h3>
+                <p>좌석·룸 예약은 페이지 하단 광고문의 카톡 besta12로 진행하며, 직접 응대해 드립니다.</p>
               </div>
               <div className="bento-card">
                 <div className="bento-kicker">05</div>
@@ -84,7 +84,7 @@ export default function Info() {
                 </tr>
                 <tr>
                   <th>예약</th>
-                  <td>페이지 하단 예약문의 전화</td>
+                  <td>페이지 하단 광고문의 카톡 besta12</td>
                 </tr>
                 <tr>
                   <th>결제</th>

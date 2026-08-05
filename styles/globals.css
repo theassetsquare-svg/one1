@@ -469,6 +469,10 @@ section.section p {
   gap: 10px;
   text-align: center;
   text-decoration: none;
+  border: 0;
+  appearance: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 .call-bar:hover {
   filter: brightness(1.04);

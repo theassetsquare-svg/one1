@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import type { ReactNode } from 'react';
+
+const KAKAO_ID = 'besta12';
 
 const NAV = [
   { href: '/', label: '홈' },
@@ -13,8 +16,18 @@ const NAV = [
 
 export default function Layout({ children }: { children: ReactNode }) {
   const router = useRouter();
+  const [copied, setCopied] = useState(false);
   const isActive = (p: string) =>
     p === '/' ? router.pathname === '/' : router.pathname.startsWith(p);
+  const copyKakaoId = async () => {
+    try {
+      await navigator.clipboard.writeText(KAKAO_ID);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // 클립보드 권한이 없으면 아이디는 화면에 그대로 노출되므로 별도 처리 없음
+    }
+  };
   return (
     <>
       <a href="#main" className="skip-link">
@@ -49,12 +62,19 @@ export default function Layout({ children }: { children: ReactNode }) {
           <p className="footer-copy">© 2026 대전원나이트 · 본 사이트는 업소의 공식 안내 페이지입니다</p>
         </div>
       </footer>
-      <a href="tel:01090480767" className="call-bar" aria-label="예약문의 010 9048 0767 전화 걸기">
+      <button
+        type="button"
+        className="call-bar"
+        onClick={copyKakaoId}
+        aria-label={`광고문의 카톡 ${KAKAO_ID} 아이디 복사`}
+      >
         <span className="call-bar-icon" aria-hidden="true">
-          📞
+          💬
         </span>
-        <span className="call-bar-text">예약문의 010 9048 0767</span>
-      </a>
+        <span className="call-bar-text">
+          {copied ? `카톡 아이디 ${KAKAO_ID} 복사됨` : `광고문의 카톡 ${KAKAO_ID}`}
+        </span>
+      </button>
     </>
   );
 }

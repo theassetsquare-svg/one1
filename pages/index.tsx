@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <SEO
         title="대전원나이트 - 38세 이상 입장·예약 안내"
-        description="대전원나이트 공식 안내. 38세 이상 입장, 22시 이전 입장 여성 손님 교통비 3만원과 맥주 1병 기본 제공. 평일 새벽 2시반 / 주말 새벽 3시반까지. 예약·문의는 페이지 하단 예약문의 전화로 안내드립니다."
+        description="대전원나이트 공식 안내. 38세 이상 입장, 22시 이전 입장 여성 손님 교통비 3만원과 맥주 1병 기본 제공. 평일 새벽 2시반 / 주말 새벽 3시반까지. 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다."
         path="/"
         ogImage="/og/home.png"
       />
@@ -20,7 +20,7 @@ export default function Home() {
           <h1>
             대전원나이트 <span className="accent">공식 안내</span>
           </h1>
-          <p>38세 이상 입장 · 매일 20:00 영업 시작 · 예약은 직통 전화로 안내드립니다.</p>
+          <p>38세 이상 입장 · 매일 20:00 영업 시작 · 문의는 카톡 besta12로 안내드립니다.</p>
           <div className="cta-row">
             <Link href="/contact" className="cta-primary">
               예약 · 문의 안내
@@ -50,11 +50,11 @@ export default function Home() {
                 </tr>
                 <tr>
                   <th>위치</th>
-                  <td>대전광역시 (정확한 위치는 직통 전화로 안내)</td>
+                  <td>대전광역시 (정확한 위치는 카톡 besta12로 안내)</td>
                 </tr>
                 <tr>
                   <th>예약·문의</th>
-                  <td>페이지 하단 예약문의 전화로 안내</td>
+                  <td>페이지 하단 광고문의 카톡 besta12로 안내</td>
                 </tr>
                 <tr>
                   <th>결제</th>
@@ -125,11 +125,11 @@ export default function Home() {
               </details>
               <details className="faq">
                 <summary>예약은 어떻게 하나요?</summary>
-                <p>전화 예약을 권장합니다. 예약·문의는 페이지 하단 예약문의 전화로 안내드립니다.</p>
+                <p>카카오톡 문의를 권장합니다. 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다.</p>
               </details>
               <details className="faq">
                 <summary>위치는 어디인가요?</summary>
-                <p>대전광역시 시내에 위치합니다. 정확한 위치는 예약 시 전화로 안내드립니다.</p>
+                <p>대전광역시 시내에 위치합니다. 정확한 위치는 예약 시 카톡 besta12로 안내드립니다.</p>
               </details>
             </div>
           </section>
