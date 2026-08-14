@@ -99,6 +99,11 @@ export default function Home() {
                 <h3>예약·문의</h3>
                 <p>룸·단체 예약 및 일반 안내를 한 번에.</p>
               </Link>
+              <Link href="/bulgwangdong-hobak" className="bento-card">
+                <div className="bento-kicker">SEOUL</div>
+                <h3>불광동호박나이트</h3>
+                <p>서울 은평구 불광동 호박나이트 부킹·룸·단체 예약문의 안내 페이지.</p>
+              </Link>
             </div>
           </section>
 

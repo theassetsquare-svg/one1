@@ -11,7 +11,7 @@ jobs:
       - name: Routes return 200
         run: |
           set -e
-          for p in / /info /hours /ladies /faq /contact; do
+          for p in / /info /hours /ladies /faq /contact /bulgwangdong-hobak; do
             S=$(curl -sI -o /dev/null -w '%{http_code}' "https://oneb-7z7.pages.dev${p}")
             [ "$S" = "200" ] || { echo "FAIL $p $S"; exit 1; }
             echo "OK $p $S"
@@ -19,7 +19,7 @@ jobs:
       - name: Static assets return 200
         run: |
           set -e
-          for f in /sitemap.xml /robots.txt /llms.txt /site.webmanifest /sw.js /og/og-thumb.png /icons/icon-192.png /icons/icon-512.png; do
+          for f in /sitemap.xml /robots.txt /llms.txt /site.webmanifest /sw.js /og/og-thumb.png /og/hobak.png /icons/icon-192.png /icons/icon-512.png; do
             S=$(curl -sI -o /dev/null -w '%{http_code}' "https://oneb-7z7.pages.dev${f}")
             [ "$S" = "200" ] || { echo "FAIL $f $S"; exit 1; }
             echo "OK $f $S"

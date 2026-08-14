@@ -7,7 +7,7 @@ export default function Ladies() {
   return (
     <>
       <SEO
-        title="22시 전 입장 = 교통비 3만원 + 맥주 - 대전원나이트"
+        title="대전원나이트 여성 손님 - 22시 전 입장 교통비 3만원 + 맥주"
         description="대전원나이트 여성 손님 안내. 22시 이전 입장 시 교통비 3만원 지원과 맥주 1병 기본 제공. 38세 이상 신분증 확인 후 적용. 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다."
         path="/ladies"
         ogImage="/og/ladies.png"

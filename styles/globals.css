@@ -484,6 +484,17 @@ section.section p {
 .call-bar-icon {
   font-size: 1.15rem;
 }
+/* 불광동호박나이트 예약문의 전화바 — 모바일/PC 모두 화면 하단 고정, 스크롤에도 움직이지 않음 */
+.call-bar-phone {
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(90deg, #ffb300 0%, #ff7043 100%);
+  color: #1a0e00;
+  letter-spacing: 0.2px;
+}
+.call-bar-phone:focus-visible {
+  outline: 3px solid #1a0e00;
+}
 @media (min-width: 769px) {
   .call-bar {
     font-size: 18px;

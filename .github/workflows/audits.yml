@@ -38,6 +38,16 @@ jobs:
           done
           echo "OK content"
 
+      - name: 불광동호박나이트 page content present
+        run: |
+          set -e
+          F=out/bulgwangdong-hobak.html
+          grep -q "불광동호박나이트" "$F" || { echo "FAIL $F missing 불광동호박나이트"; exit 1; }
+          grep -q "010 2221 1937" "$F" || { echo "FAIL $F missing 예약문의 전화"; exit 1; }
+          grep -q "\"FAQPage\"" "$F" || { echo "FAIL $F missing FAQPage schema"; exit 1; }
+          grep -q "\"NightClub\"" "$F" || { echo "FAIL $F missing NightClub schema"; exit 1; }
+          echo "OK 불광동호박나이트"
+
       - name: Schema types present in build
         run: |
           set -e

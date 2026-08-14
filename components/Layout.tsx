@@ -4,6 +4,9 @@ import { useState } from 'react';
 import type { ReactNode } from 'react';
 
 const KAKAO_ID = 'besta12';
+const HOBAK_TEL = '010 2221 1937';
+const HOBAK_TEL_HREF = 'tel:+821022211937';
+const HOBAK_MANAGER = '손흥민';
 
 const NAV = [
   { href: '/', label: '홈' },
@@ -14,7 +17,13 @@ const NAV = [
   { href: '/contact', label: '문의' },
 ];
 
-export default function Layout({ children }: { children: ReactNode }) {
+type LayoutProps = {
+  children: ReactNode;
+  /** 하단 고정 바 종류. 기본은 대전원나이트 광고문의 카톡, 'phone'은 불광동호박나이트 예약문의 전화 */
+  callBar?: 'kakao' | 'phone';
+};
+
+export default function Layout({ children, callBar = 'kakao' }: LayoutProps) {
   const router = useRouter();
   const [copied, setCopied] = useState(false);
   const isActive = (p: string) =>
@@ -59,22 +68,40 @@ export default function Layout({ children }: { children: ReactNode }) {
           <p className="footer-k">DAEJEON ONE NIGHT</p>
           <p>대전원나이트 공식 안내 사이트</p>
           <p>평일 20:00 - 02:30 / 주말 20:00 - 03:30 · 38세 이상 입장</p>
+          <p>
+            <Link href="/bulgwangdong-hobak">불광동호박나이트 안내</Link>
+          </p>
           <p className="footer-copy">© 2026 대전원나이트 · 본 사이트는 업소의 공식 안내 페이지입니다</p>
         </div>
       </footer>
-      <button
-        type="button"
-        className="call-bar"
-        onClick={copyKakaoId}
-        aria-label={`광고문의 카톡 ${KAKAO_ID} 아이디 복사`}
-      >
-        <span className="call-bar-icon" aria-hidden="true">
-          💬
-        </span>
-        <span className="call-bar-text">
-          {copied ? `카톡 아이디 ${KAKAO_ID} 복사됨` : `광고문의 카톡 ${KAKAO_ID}`}
-        </span>
-      </button>
+      {callBar === 'phone' ? (
+        <a
+          className="call-bar call-bar-phone"
+          href={HOBAK_TEL_HREF}
+          aria-label={`불광동호박나이트 예약문의 ${HOBAK_MANAGER} ${HOBAK_TEL} 전화 걸기`}
+        >
+          <span className="call-bar-icon" aria-hidden="true">
+            📞
+          </span>
+          <span className="call-bar-text">
+            예약문의 {HOBAK_MANAGER} {HOBAK_TEL}
+          </span>
+        </a>
+      ) : (
+        <button
+          type="button"
+          className="call-bar"
+          onClick={copyKakaoId}
+          aria-label={`광고문의 카톡 ${KAKAO_ID} 아이디 복사`}
+        >
+          <span className="call-bar-icon" aria-hidden="true">
+            💬
+          </span>
+          <span className="call-bar-text">
+            {copied ? `카톡 아이디 ${KAKAO_ID} 복사됨` : `광고문의 카톡 ${KAKAO_ID}`}
+          </span>
+        </button>
+      )}
     </>
   );
 }

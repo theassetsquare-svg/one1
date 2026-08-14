@@ -7,9 +7,23 @@ type Props = {
   description: string;
   path: string;
   ogImage?: string;
+  /** 지역 페이지가 다른 행정구역을 다룰 때만 지정 (기본값은 대전) */
+  geoRegion?: string;
+  geoPlacename?: string;
+  icbm?: string;
+  siteName?: string;
 };
 
-export default function SEO({ title, description, path, ogImage = '/og/og-thumb.png' }: Props) {
+export default function SEO({
+  title,
+  description,
+  path,
+  ogImage = '/og/og-thumb.png',
+  geoRegion = 'KR-30',
+  geoPlacename = '대전광역시',
+  icbm = '36.3504,127.3845',
+  siteName = '대전원나이트',
+}: Props) {
   const url = `${SITE}${path}`;
   const fullOg = `${SITE}${ogImage}`;
   const isThumb = ogImage === '/og/og-thumb.png';
@@ -24,9 +38,9 @@ export default function SEO({ title, description, path, ogImage = '/og/og-thumb.
       <meta name="theme-color" content="#0A0E27" />
       <meta name="color-scheme" content="dark" />
       <meta name="format-detection" content="telephone=no" />
-      <meta name="geo.region" content="KR-30" />
-      <meta name="geo.placename" content="대전광역시" />
-      <meta name="ICBM" content="36.3504,127.3845" />
+      <meta name="geo.region" content={geoRegion} />
+      <meta name="geo.placename" content={geoPlacename} />
+      <meta name="ICBM" content={icbm} />
       <link rel="canonical" href={url} />
       <link rel="alternate" hrefLang="ko-KR" href={url} />
       <link rel="alternate" hrefLang="x-default" href={url} />
@@ -47,7 +61,7 @@ export default function SEO({ title, description, path, ogImage = '/og/og-thumb.
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
       />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="대전원나이트" />
+      <meta property="og:site_name" content={siteName} />
       <meta property="og:locale" content="ko_KR" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

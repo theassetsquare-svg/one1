@@ -16,8 +16,21 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = process.argv[2] || 'out';
-const PAGES = ['index', 'info', 'hours', 'ladies', 'faq', 'contact'];
-const ROUTES = new Set(['/', '/info', '/hours', '/ladies', '/faq', '/contact']);
+const PAGES = ['index', 'info', 'hours', 'ladies', 'faq', 'contact', 'bulgwangdong-hobak'];
+const ROUTES = new Set([
+  '/',
+  '/info',
+  '/hours',
+  '/ladies',
+  '/faq',
+  '/contact',
+  '/bulgwangdong-hobak',
+]);
+// 페이지별 필수 연락처 문구 (불광동호박나이트는 전화, 그 외 대전원나이트는 카톡)
+const CONTACT = {
+  'bulgwangdong-hobak': { label: 'phone contact', re: /010 2221 1937/ },
+  default: { label: 'kakao contact', re: /광고문의 카톡 besta12/ },
+};
 
 let fails = 0;
 const log = (level, page, msg) => {
@@ -87,8 +100,9 @@ for (const p of PAGES) {
 
   if (/href="http:\/\//.test(html)) log('FAIL', p, 'plain http:// link present');
 
-  if (/광고문의 카톡 besta12/.test(html)) log('OK   ', p, 'kakao contact present');
-  else log('FAIL', p, 'no kakao contact (광고문의 카톡 besta12)');
+  const contact = CONTACT[p] || CONTACT.default;
+  if (contact.re.test(html)) log('OK   ', p, `${contact.label} present`);
+  else log('FAIL', p, `no ${contact.label} (${contact.re.source})`);
 }
 
 if (fails) {

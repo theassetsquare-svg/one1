@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <SEO
-        title="페이지를 찾을 수 없습니다 - 대전원나이트"
+        title="대전원나이트 - 페이지를 찾을 수 없습니다"
         description="요청하신 페이지를 찾을 수 없습니다. 대전원나이트 공식 안내 홈으로 이동해 주세요."
         path="/404"
       />

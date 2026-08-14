@@ -13,8 +13,15 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = process.argv[2] || 'out';
-const PAGES = ['index', 'info', 'hours', 'ladies', 'faq', 'contact'];
-const KEYWORDS = ['대전원나이트', '대전 원나이트', '대전나이트', '대전 나이트'];
+const PAGES = ['index', 'info', 'hours', 'ladies', 'faq', 'contact', 'bulgwangdong-hobak'];
+const KEYWORDS = [
+  '대전원나이트',
+  '대전 원나이트',
+  '대전나이트',
+  '대전 나이트',
+  '불광동호박나이트',
+  '호박나이트',
+];
 const DENSITY_MAX = 3.0;
 const TRIPLE_MAX = 0;
 

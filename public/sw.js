@@ -1,4 +1,4 @@
-const CACHE = 'oneb-7z7-v1';
+const CACHE = 'oneb-7z7-v2';
 const ASSETS = [
   '/',
   '/info',
@@ -6,8 +6,10 @@ const ASSETS = [
   '/ladies',
   '/faq',
   '/contact',
+  '/bulgwangdong-hobak',
   '/site.webmanifest',
   '/og/og-thumb.png',
+  '/og/hobak.png',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
 ];

@@ -121,6 +121,38 @@ ${defs}
   render(svg, `public/og/${p.name}.png`, 1200, 630);
 });
 
+// 불광동호박나이트 페이지 OG (1200x630) — 대전 브랜드 컬러와 구분되는 호박(앰버) 계열
+const hobak = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+<linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#1A0E00"/>
+<stop offset="55%" stop-color="#3D1F00"/>
+<stop offset="100%" stop-color="#1A0E00"/>
+</linearGradient>
+<linearGradient id="hac" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#FFB300"/>
+<stop offset="100%" stop-color="#FF7043"/>
+</linearGradient>
+<radialGradient id="hglow" cx="50%" cy="40%" r="55%">
+<stop offset="0%" stop-color="#FFB300" stop-opacity="0.20"/>
+<stop offset="100%" stop-color="#FFB300" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#hbg)"/>
+<rect width="1200" height="630" fill="url(#hglow)"/>
+<rect x="24" y="24" width="1152" height="582" rx="20" fill="none" stroke="url(#hac)" stroke-width="2" opacity="0.55"/>
+<text x="600" y="92" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#FFB300" text-anchor="middle" letter-spacing="8">SEOUL EUNPYEONG</text>
+<line x1="450" y1="118" x2="750" y2="118" stroke="url(#hac)" stroke-width="2"/>
+<text x="600" y="252" font-family="Noto Sans KR" font-size="96" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">불광동호박나이트</text>
+<text x="600" y="316" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#FFCC80" text-anchor="middle" letter-spacing="2">서울 은평구 불광동 · 불광역 인근 · 부킹 · 룸 · 단체</text>
+<rect x="230" y="366" width="740" height="96" rx="48" fill="url(#hac)"/>
+<text x="600" y="430" font-family="Noto Sans KR" font-size="46" font-weight="900" fill="#1A0E00" text-anchor="middle" letter-spacing="-1">예약문의 손흥민 010 2221 1937</text>
+<rect x="300" y="492" width="600" height="86" rx="10" fill="rgba(255,179,0,0.10)" stroke="#FFB300" stroke-width="2"/>
+<text x="600" y="545" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#FFFFFF" text-anchor="middle">신분증 지참 · 현금/카드 결제 · 사전 예약 권장</text>
+</svg>`;
+
+render(hobak, 'public/og/hobak.png', 1200, 630);
+
 // 네이버 플레이스 대표 이미지 (1:1) — 프로필로 크게 볼 때 정보까지, 목록에선 대전 대형
 const place = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
 ${defs}

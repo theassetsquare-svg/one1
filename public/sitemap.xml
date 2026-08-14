@@ -41,4 +41,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://oneb-7z7.pages.dev/bulgwangdong-hobak</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://oneb-7z7.pages.dev/og/hobak.png</image:loc>
+      <image:caption>불광동호박나이트 예약문의 안내</image:caption>
+    </image:image>
+  </url>
 </urlset>

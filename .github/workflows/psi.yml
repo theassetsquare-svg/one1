@@ -28,7 +28,7 @@ jobs:
           set -e
           mkdir -p psi
           KEY="${{ secrets.PSI_API_KEY }}"
-          for p in / /info /hours /ladies /faq /contact; do
+          for p in / /info /hours /ladies /faq /contact /bulgwangdong-hobak; do
             slug=$(echo "$p" | tr '/' '_')
             URL="https://oneb-7z7.pages.dev${p}"
             ENCODED=$(node -e "process.stdout.write(encodeURIComponent('${URL}'))")
