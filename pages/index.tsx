@@ -138,6 +138,36 @@ export default function Home() {
               </details>
             </div>
           </section>
+
+          <section className="section">
+            <div className="section-kicker">NIGHT GUIDE</div>
+            <h2 className="section-heading">
+              지역별 <span className="accent">나이트 안내</span>
+            </h2>
+            <div className="bento">
+              {[
+                ['/night/bulgwang-hobak-night/', '불광동호박나이트', '서울 은평구 불광동'],
+                ['/night/changwon-lululala-night/', '창원룰루랄라나이트', '경남 창원시 성산구 상남동'],
+                ['/night/ulsan-champion-night/', '울산챔피언나이트', '울산 남구 삼산동'],
+                ['/night/cheongdam-night/', '청담나이트', '서울 강남구 청담동'],
+                ['/night/daejeon-one-night/', '대전원나이트', '대전 중구'],
+                ['/night/sillim-grandprix-night/', '신림그랑프리나이트', '서울 관악구 신림동'],
+                ['/night/sangbong-hangukgwan-night/', '상봉동한국관나이트', '서울 중랑구 상봉동'],
+                ['/night/suyu-shampoo-night/', '수유샴푸나이트', '서울 강북구 수유동'],
+                ['/night/busan-asiad-night/', '부산아시아드나이트', '부산 동래구 온천동'],
+                ['/night/suwon-chance-dome-night/', '수원찬스돔나이트', '경기 수원시 권선구'],
+                ['/night/ansan-hit-night/', '안산히트나이트', '경기 안산시 상록구 본오동'],
+                ['/night/daejeon-seven-night/', '대전세븐나이트', '대전 중구 유천동'],
+                ['/night/ilsan-shampoo-night/', '일산샴푸나이트', '경기 고양시 일산동구 마두동'],
+              ].map(([href, name, area]) => (
+                <a key={href} href={href} className="bento-card">
+                  <div className="bento-kicker">NIGHT</div>
+                  <h3>{name}</h3>
+                  <p>{area} 나이트클럽 좌석·시간대·부킹 안내 페이지.</p>
+                </a>
+              ))}
+            </div>
+          </section>
         </div>
       </Layout>
     </>
