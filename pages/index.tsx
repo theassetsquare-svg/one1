@@ -17,7 +17,7 @@ const TERMS: [string, string][] = [
 const PICKS: [string, string, string][] = [
   ['/start/sillim-grandprix/', '신림그랑프리나이트', '서울 관악구 신림동'],
   ['/start/gangseo-hobak/', '강서호박나이트', '서울 강서구 화곡동'],
-  ['/start/nowon-hobak/', '노원호박나이트', '서울 노원구'],
+  ['/start/sangbong-hangukgwan/', '상봉동한국관나이트', '서울 중랑구 상봉동'],
   ['/start/suwon-chance-dome/', '수원찬스돔나이트', '경기 수원시 권선구'],
   ['/start/incheon-arabian/', '인천아라비안나이트', '인천 계양구'],
   ['/start/cheonan-korea/', '천안코리아나이트', '충남 천안시 서북구'],
