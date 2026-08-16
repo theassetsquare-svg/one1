@@ -17,20 +17,41 @@ jobs:
       - name: Required content present on home
         run: |
           set -e
+          # 홈은 입문 노트 랜딩 (특정 가게 간판·전화번호 금지)
           H=$(curl -sL https://oneb-7z7.pages.dev/)
-          echo "$H" | grep -q "38세 이상" || { echo "MISSING 38세 이상"; exit 1; }
-          echo "$H" | grep -q "광고문의 카톡 besta12" || { echo "MISSING kakao contact"; exit 1; }
-          echo "$H" | grep -q "교통비" || { echo "MISSING 교통비"; exit 1; }
-          echo "$H" | grep -q "맥주" || { echo "MISSING 맥주"; exit 1; }
+          echo "$H" | grep -q "생애 첫 나이트" || { echo "MISSING 입문 노트 브랜드"; exit 1; }
+          echo "$H" | grep -q "광고문의 카카오톡 besta12" || { echo "MISSING kakao contact"; exit 1; }
+          echo "$H" | grep -q "/start/" || { echo "MISSING /start/ link"; exit 1; }
+          if echo "$H" | grep -qE "010[- ][0-9]{3,4}[- ][0-9]{4}"; then echo "FAIL 홈에 전화번호 노출"; exit 1; fi
+          # 대전원나이트 안내 문구는 하위 페이지에서 확인
+          I=$(curl -sL https://oneb-7z7.pages.dev/info)
+          echo "$I" | grep -q "38세 이상" || { echo "MISSING 38세 이상 (info)"; exit 1; }
+          echo "$I" | grep -q "광고문의 카톡 besta12" || { echo "MISSING kakao contact (info)"; exit 1; }
+          L=$(curl -sL https://oneb-7z7.pages.dev/ladies)
+          echo "$L" | grep -q "교통비" || { echo "MISSING 교통비 (ladies)"; exit 1; }
+          echo "$L" | grep -q "맥주" || { echo "MISSING 맥주 (ladies)"; exit 1; }
+          # 입문 노트 허브
+          S=$(curl -sL https://oneb-7z7.pages.dev/start/)
+          echo "$S" | grep -q "전국 나이트 입문 노트 40" || { echo "MISSING 허브 제목"; exit 1; }
           echo "OK content"
 
       - name: Schema.org types present
         run: |
           set -e
           H=$(curl -sL https://oneb-7z7.pages.dev/)
-          for t in WebSite NightClub LocalBusiness BreadcrumbList FAQPage HowTo GeoCoordinates OpeningHoursSpecification; do
-            echo "$H" | grep -q "\"$t\"" || { echo "MISSING schema $t"; exit 1; }
-            echo "OK schema $t"
+          for t in WebSite DefinedTermSet FAQPage BreadcrumbList; do
+            echo "$H" | grep -q "\"$t\"" || { echo "MISSING schema $t (home)"; exit 1; }
+            echo "OK schema $t (home)"
+          done
+          I=$(curl -sL https://oneb-7z7.pages.dev/info)
+          for t in WebSite NightClub LocalBusiness BreadcrumbList HowTo GeoCoordinates OpeningHoursSpecification; do
+            echo "$I" | grep -q "\"$t\"" || { echo "MISSING schema $t (info)"; exit 1; }
+            echo "OK schema $t (info)"
+          done
+          S=$(curl -sL https://oneb-7z7.pages.dev/start/)
+          for t in ItemList BreadcrumbList; do
+            echo "$S" | grep -q "\"$t\"" || { echo "MISSING schema $t (start hub)"; exit 1; }
+            echo "OK schema $t (start hub)"
           done
 
       - name: No fake AggregateRating
