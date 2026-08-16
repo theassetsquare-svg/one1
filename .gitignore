@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 감사 스크립트 산출물
+.night-audit.json
+.start-audit.json
+.start-og-report.json
+.og-report.json

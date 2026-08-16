@@ -45,7 +45,7 @@ export default function SEO({
       <link rel="alternate" hrefLang="ko-KR" href={url} />
       <link rel="alternate" hrefLang="x-default" href={url} />
       <link rel="manifest" href="/site.webmanifest" />
-      <link rel="alternate" type="application/rss+xml" title="대전원나이트 공식 안내" href={`${SITE}/rss.xml`} />
+      <link rel="alternate" type="application/rss+xml" title={siteName} href={`${SITE}/rss.xml`} />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />

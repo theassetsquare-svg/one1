@@ -19,11 +19,14 @@ const NAV = [
 
 type LayoutProps = {
   children: ReactNode;
-  /** 하단 고정 바 종류. 기본은 대전원나이트 광고문의 카톡, 'phone'은 불광동호박나이트 예약문의 전화 */
-  callBar?: 'kakao' | 'phone';
+  /** 하단 고정 바 종류. 기본은 대전원나이트 광고문의 카톡, 'phone'은 불광동호박나이트 예약문의 전화,
+   *  'kakaoFull'은 입문 노트 홈의 '광고문의 카카오톡' 표기 */
+  callBar?: 'kakao' | 'phone' | 'kakaoFull';
+  /** 상단 로고·푸터 문구. 기본은 대전원나이트, 'note'는 입문 노트 홈 전용 */
+  brand?: 'daejeon' | 'note';
 };
 
-export default function Layout({ children, callBar = 'kakao' }: LayoutProps) {
+export default function Layout({ children, callBar = 'kakao', brand = 'daejeon' }: LayoutProps) {
   const router = useRouter();
   const [copied, setCopied] = useState(false);
   const isActive = (p: string) =>
@@ -44,11 +47,22 @@ export default function Layout({ children, callBar = 'kakao' }: LayoutProps) {
       </a>
       <nav className="nav" aria-label="주요 메뉴">
         <div className="nav-inner">
-          <Link href="/" className="logo" aria-label="대전원나이트 홈으로 이동">
-            <span className="logo-k">DAEJEON</span>
-            <span className="logo-s">대전원나이트 공식 안내</span>
+          <Link
+            href="/"
+            className="logo"
+            aria-label={brand === 'note' ? '입문 노트 홈으로 이동' : '대전원나이트 홈으로 이동'}
+          >
+            <span className="logo-k">{brand === 'note' ? 'FIRST NIGHT' : 'DAEJEON'}</span>
+            <span className="logo-s">
+              {brand === 'note' ? '생애 첫 나이트, 입문 노트' : '대전원나이트 공식 안내'}
+            </span>
           </Link>
           <div className="nav-links">
+            {brand === 'note' && (
+              <Link href="/start/" className="nav-link">
+                입문 노트 40
+              </Link>
+            )}
             {NAV.map((n) => (
               <Link
                 key={n.href}
@@ -64,15 +78,28 @@ export default function Layout({ children, callBar = 'kakao' }: LayoutProps) {
       </nav>
       <main id="main">{children}</main>
       <footer className="footer" role="contentinfo">
-        <div className="footer-inner">
-          <p className="footer-k">DAEJEON ONE NIGHT</p>
-          <p>대전원나이트 공식 안내 사이트</p>
-          <p>평일 20:00 - 02:30 / 주말 20:00 - 03:30 · 38세 이상 입장</p>
-          <p>
-            <Link href="/bulgwangdong-hobak">불광동호박나이트 안내</Link>
-          </p>
-          <p className="footer-copy">© 2026 대전원나이트 · 본 사이트는 업소의 공식 안내 페이지입니다</p>
-        </div>
+        {brand === 'note' ? (
+          <div className="footer-inner">
+            <p className="footer-k">FIRST NIGHT NOTE</p>
+            <p>생애 첫 나이트, 입문 노트</p>
+            <p>
+              <Link href="/start/">전국 나이트 입문 노트 40</Link>
+            </p>
+            <p className="footer-copy">
+              © 2026 · 공개 자료를 정리한 안내 페이지이며, 확인되지 않은 항목은 &quot;확인 불가&quot;로 표기했습니다.
+            </p>
+          </div>
+        ) : (
+          <div className="footer-inner">
+            <p className="footer-k">DAEJEON ONE NIGHT</p>
+            <p>대전원나이트 공식 안내 사이트</p>
+            <p>평일 20:00 - 02:30 / 주말 20:00 - 03:30 · 38세 이상 입장</p>
+            <p>
+              <Link href="/bulgwangdong-hobak">불광동호박나이트 안내</Link>
+            </p>
+            <p className="footer-copy">© 2026 대전원나이트 · 본 사이트는 업소의 공식 안내 페이지입니다</p>
+          </div>
+        )}
       </footer>
       {callBar === 'phone' ? (
         <a
@@ -92,13 +119,15 @@ export default function Layout({ children, callBar = 'kakao' }: LayoutProps) {
           type="button"
           className="call-bar"
           onClick={copyKakaoId}
-          aria-label={`광고문의 카톡 ${KAKAO_ID} 아이디 복사`}
+          aria-label={`광고문의 ${callBar === 'kakaoFull' ? '카카오톡' : '카톡'} ${KAKAO_ID} 아이디 복사`}
         >
           <span className="call-bar-icon" aria-hidden="true">
             💬
           </span>
           <span className="call-bar-text">
-            {copied ? `카톡 아이디 ${KAKAO_ID} 복사됨` : `광고문의 카톡 ${KAKAO_ID}`}
+            {copied
+              ? `카톡 아이디 ${KAKAO_ID} 복사됨`
+              : `광고문의 ${callBar === 'kakaoFull' ? '카카오톡' : '카톡'} ${KAKAO_ID}`}
           </span>
         </button>
       )}

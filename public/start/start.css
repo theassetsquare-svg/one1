@@ -1,0 +1,126 @@
+/* /start/ 입문 노트 전용 스타일 — 웜 베이지 + 브라운, 노트·체크리스트 */
+:root{
+  --bg:#F7EFE1; --paper:#FFFCF5; --paper2:#FBF4E7;
+  --line:#E2D3B8; --line2:#D0BC98;
+  --ink:#3A2C21; --ink2:#6E5B49; --ink3:#8C7862;
+  --ac:#8A5A2B; --ac2:#B9813C; --hi:#F6E2A8;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",Roboto,"Noto Sans KR",sans-serif;
+  font-size:17px; line-height:1.8; letter-spacing:-.2px;
+  padding-bottom:calc(88px + env(safe-area-inset-bottom,0px));
+}
+img{max-width:100%;height:auto}
+a{color:var(--ac)}
+.hand{
+  font-family:"Nanum Pen Script","Gaegu","Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  letter-spacing:0;
+}
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{left:8px;top:8px;background:#fff;color:#000;padding:8px 12px;z-index:100000}
+
+.topnav{border-bottom:2px solid var(--line2);background:var(--paper)}
+.topnav-in{max-width:800px;margin:0 auto;padding:14px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.topnav a{color:var(--ink2);text-decoration:none;font-size:14px;font-weight:700}
+.topnav a:hover{color:var(--ac)}
+.topnav a[aria-current]{color:var(--ac)}
+.crumb{font-size:13px;color:var(--ink3);max-width:800px;margin:0 auto;padding:10px 20px 0}
+.crumb a{color:var(--ink3)}
+
+main{max-width:800px;margin:0 auto;padding:0 20px}
+article h1{font-size:29px;line-height:1.35;margin:18px 0 6px;font-weight:900;letter-spacing:-1px}
+.meta-line{font-size:13px;color:var(--ink3);margin:0 0 6px}
+.note-tag{
+  display:inline-block;font-size:15px;color:var(--ac);border-bottom:2px dashed var(--line2);
+  padding:0 2px 2px;margin:0 0 18px;
+}
+
+/* 핵심 3줄 직답 박스 — 노트 위에 붙인 메모 */
+.answer-box{
+  background:var(--paper);border:2px solid var(--line2);border-radius:4px;
+  padding:16px 18px 14px;margin:0 0 22px;
+  box-shadow:3px 3px 0 var(--line);
+}
+.answer-box h2{font-size:15px;margin:0 0 10px;color:var(--ac);letter-spacing:0}
+.answer-box ol{margin:0;padding-left:20px}
+.answer-box li{margin:0 0 6px;font-size:16px}
+.answer-box li:last-child{margin-bottom:0}
+
+.lead p{font-size:18px;line-height:1.85;margin:0 0 14px}
+.lead p:last-child{color:var(--ink2)}
+
+section{margin:30px 0}
+section h2{
+  font-size:21px;line-height:1.45;margin:0 0 12px;font-weight:800;letter-spacing:-.6px;
+  padding-left:14px;border-left:5px solid var(--ac2);
+}
+section p{margin:0 0 13px}
+section .term{color:var(--ac);font-weight:700}
+
+/* 사실 표 */
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;background:var(--paper)}
+caption{text-align:left;font-size:14px;color:var(--ink3);padding:0 0 6px}
+th,td{border:1px solid var(--line2);padding:10px 12px;vertical-align:top;text-align:left}
+th{background:var(--paper2);width:32%;color:var(--ink2);font-weight:700}
+
+/* 체크리스트 */
+ul.check{list-style:none;margin:14px 0;padding:0}
+ul.check li{position:relative;padding:0 0 0 28px;margin:0 0 9px}
+ul.check li::before{content:"☑";position:absolute;left:0;top:0;color:var(--ac2);font-size:17px}
+
+/* 맨 끝 답 */
+.final{
+  background:var(--paper);border:2px dashed var(--line2);border-radius:4px;
+  padding:16px 18px;margin:30px 0 0;
+}
+.final h2{border:0;padding:0;font-size:19px;margin:0 0 10px;color:var(--ac)}
+.final p{margin:0 0 10px}
+.final p:last-child{margin:0}
+
+/* FAQ */
+.faq h2{font-size:19px}
+.faq dt{font-weight:800;margin:14px 0 5px}
+.faq dd{margin:0;color:var(--ink2)}
+
+.oneline{
+  margin:26px 0 0;padding:14px 16px;background:var(--hi);border-radius:4px;
+  font-size:17px;font-weight:700;
+}
+
+aside.related{background:var(--paper);border:2px solid var(--line);border-radius:4px;padding:16px 18px;margin:30px 0}
+aside.related h2{font-size:17px;border:0;padding:0;margin:0 0 10px}
+aside.related ul{margin:0;padding-left:18px}
+aside.related li{margin:0 0 6px;font-size:15px}
+
+footer.site{background:var(--paper);border-top:2px solid var(--line2);margin-top:36px;padding:26px 20px}
+.footer-in{max-width:800px;margin:0 auto;font-size:14px;color:var(--ink2)}
+.footer-in p{margin:0 0 8px}
+.ad-inquiry{background:#000;color:#FFF;padding:10px 12px;border-radius:4px;font-weight:700}
+.ad-inquiry b{color:#FFE082}
+.footer-copy{font-size:12px;color:var(--ink3)}
+
+/* 고정 하단 바 */
+.callbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:9999;
+  height:68px;background:#3A2C21;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:17px;font-weight:800;letter-spacing:-.3px;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  border-top:3px solid var(--ac2);
+}
+.callbar a{color:#fff;text-decoration:none;display:flex;align-items:center;height:100%}
+.callbar b{color:#FFE082}
+@media (max-width:400px){
+  .callbar{height:60px;font-size:16px}
+  article h1{font-size:25px}
+}
+
+/* 허브 목록 */
+.hub-list{list-style:none;padding:0;margin:0}
+.hub-list li{border-bottom:1px solid var(--line);padding:12px 0}
+.hub-list a{font-weight:800;text-decoration:none;font-size:17px}
+.hub-list span{display:block;color:var(--ink3);font-size:14px}
+.region-h{font-size:16px;color:var(--ac);margin:24px 0 4px;border:0;padding:0}

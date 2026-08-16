@@ -29,6 +29,8 @@ const ROUTES = new Set([
 // 페이지별 필수 연락처 문구 (불광동호박나이트는 전화, 그 외 대전원나이트는 카톡)
 const CONTACT = {
   'bulgwangdong-hobak': { label: 'phone contact', re: /010 2221 1937/ },
+  // 홈은 입문 노트 랜딩이라 "광고문의 카카오톡 besta12" 표기를 쓴다
+  index: { label: 'kakao contact', re: /광고문의 카카오톡 besta12/ },
   default: { label: 'kakao contact', re: /광고문의 카톡 besta12/ },
 };
 

@@ -59,20 +59,16 @@ ${defs}
 
 render(thumb, 'public/og/og-thumb.png', 1080, 1080);
 
+/* 홈 썸네일 — 배경 단색 브라운, "광고문의"가 가장 크고 그 아래 "카카오톡 besta12" */
 const home = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-${defs}
-<rect width="1200" height="630" fill="url(#bg)"/>
-<rect width="1200" height="630" fill="url(#glow)"/>
-<rect x="24" y="24" width="1152" height="582" rx="20" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.5"/>
-<text x="600" y="92" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#00E5FF" text-anchor="middle" letter-spacing="10">DAEJEON ONE NIGHT</text>
-<line x1="460" y1="118" x2="740" y2="118" stroke="url(#ac)" stroke-width="2"/>
-<text x="600" y="252" font-family="Noto Sans KR" font-size="112" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-3">대전원나이트</text>
-<rect x="420" y="290" width="360" height="84" rx="42" fill="url(#ac)"/>
-<text x="600" y="350" font-family="Noto Sans KR" font-size="50" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-1">광고 문의</text>
-<text x="600" y="418" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#B388FF" text-anchor="middle" letter-spacing="3">38세 이상 입장 · 평일 새벽 2시반 · 주말 새벽 3시반</text>
-<rect x="280" y="460" width="640" height="118" rx="10" fill="rgba(0,229,255,0.10)" stroke="#00E5FF" stroke-width="2"/>
-<text x="600" y="503" font-family="Noto Sans KR" font-size="22" font-weight="500" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">광고문의 카카오톡</text>
-<text x="600" y="555" font-family="Noto Sans KR" font-size="44" font-weight="900" fill="#00E5FF" text-anchor="middle" letter-spacing="-1">카톡 besta12</text>
+<rect width="1200" height="630" fill="#5A3A1E"/>
+<rect x="26" y="26" width="1148" height="578" rx="14" fill="none" stroke="#F7EFE1" stroke-width="3" opacity="0.55"/>
+<text x="600" y="112" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#F7EFE1" text-anchor="middle" letter-spacing="8">생애 첫 나이트, 입문 노트</text>
+<text x="600" y="330" font-family="Noto Sans KR" font-size="184" font-weight="900" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" text-anchor="middle" letter-spacing="-6">광고문의</text>
+<rect x="180" y="404" width="840" height="150" rx="12" fill="#FFFFFF"/>
+<text x="600" y="462" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#5A3A1E" text-anchor="middle" letter-spacing="4">카카오톡</text>
+<text x="600" y="534" font-family="Noto Sans KR" font-size="76" font-weight="900" fill="#3A2C21" text-anchor="middle" letter-spacing="-1">besta12</text>
+<text x="600" y="592" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#F7EFE1" text-anchor="middle" opacity="0.85">업소 사장님 대상 광고 입점 채널</text>
 </svg>`;
 
 render(home, 'public/og/home.png', 1200, 630);
