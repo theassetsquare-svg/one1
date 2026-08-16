@@ -32,10 +32,17 @@ jobs:
       - name: Required content present in build
         run: |
           set -e
-          for f in out/index.html out/info.html out/hours.html out/ladies.html out/faq.html out/contact.html; do
+          # 대전원나이트 하위 페이지: 연령 완전문 + 카톡 표기
+          for f in out/info.html out/hours.html out/ladies.html out/faq.html out/contact.html; do
             grep -q "38세 이상" "$f" || { echo "FAIL $f missing 38세 이상"; exit 1; }
             grep -q "광고문의 카톡 besta12" "$f" || { echo "FAIL $f missing kakao contact"; exit 1; }
           done
+          # 홈은 입문 노트 랜딩: 특정 가게 간판·전화번호 금지, 광고문의 카카오톡 표기
+          H=out/index.html
+          grep -q "생애 첫 나이트" "$H" || { echo "FAIL $H missing 입문 노트 브랜드"; exit 1; }
+          grep -q "광고문의 카카오톡 besta12" "$H" || { echo "FAIL $H missing kakao contact"; exit 1; }
+          grep -q "/start/" "$H" || { echo "FAIL $H missing /start/ link"; exit 1; }
+          if grep -qE "010[- ][0-9]{3,4}[- ][0-9]{4}" "$H"; then echo "FAIL $H phone number present"; exit 1; fi
           echo "OK content"
 
       - name: 불광동호박나이트 page content present
@@ -51,8 +58,13 @@ jobs:
       - name: Schema types present in build
         run: |
           set -e
-          for t in WebSite NightClub LocalBusiness BreadcrumbList FAQPage HowTo GeoCoordinates OpeningHoursSpecification; do
-            grep -q "\"$t\"" out/index.html || { echo "FAIL schema $t"; exit 1; }
+          # 대전원나이트 스키마는 하위 페이지 기준
+          for t in WebSite NightClub LocalBusiness BreadcrumbList HowTo GeoCoordinates OpeningHoursSpecification; do
+            grep -q "\"$t\"" out/info.html || { echo "FAIL schema $t (info)"; exit 1; }
+          done
+          # 홈(입문 노트 랜딩) 스키마
+          for t in WebSite DefinedTermSet FAQPage BreadcrumbList; do
+            grep -q "\"$t\"" out/index.html || { echo "FAIL schema $t (index)"; exit 1; }
           done
           echo "OK schema"
 
