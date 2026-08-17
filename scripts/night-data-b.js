@@ -577,7 +577,7 @@ const PAGES_B = [
 
 /* ───────────────────────── 13. 일산샴푸나이트 · 각도4 처음 가는 사람 시점 ───────────────────────── */
 {
-  no: 13, slug: 'ilsan-shampoo-night', openingHours: ["Mo-Su 18:00-04:00"],
+  no: 13, slug: 'ilsan-shampoo', openingHours: ["Mo-Su 18:00-04:00"],
   name: '일산샴푸나이트', nameB: '일산 샴푸나이트', nameC: '일산동구 나이트클럽',
   region: '경기 고양시 일산동구 마두동', locality: '고양시 일산동구', addrRegion: '경기도',
   angle: 4, angleName: '처음 가는 사람 시점', suffix: '처음 가는 순서',

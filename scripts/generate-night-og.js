@@ -25,7 +25,7 @@ const SPLIT = {
   'suwon-chance-dome-night': ['수원', '찬스돔나이트'],
   'ansan-hit-night': ['안산', '히트나이트'],
   'daejeon-seven-night': ['대전', '세븐나이트'],
-  'ilsan-shampoo-night': ['일산', '샴푸나이트'],
+  'ilsan-shampoo': ['일산', '샴푸나이트'],
 };
 
 /* 지역 짧은 표기 */
@@ -42,7 +42,7 @@ const AREA = {
   'suwon-chance-dome-night': '경기 수원 권선구',
   'ansan-hit-night': '경기 안산 상록구',
   'daejeon-seven-night': '대전 중구 유천동',
-  'ilsan-shampoo-night': '경기 고양 일산동구',
+  'ilsan-shampoo': '경기 고양 일산동구',
 };
 
 function srgb(c) { const s = c / 255; return s <= 0.03928 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4); }
