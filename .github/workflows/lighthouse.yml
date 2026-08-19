@@ -24,7 +24,7 @@ jobs:
           PREFIX=$([ "${{ matrix.form }}" = "mobile" ] && echo m || echo d)
           for p in / /info /hours /ladies /faq /contact; do
             slug=$(echo "$p" | tr '/' '_')
-            npx --yes lighthouse "https://oneb-7z7.pages.dev${p}" \
+            npx --yes lighthouse "https://onee-w8t.pages.dev${p}" \
               --preset=${{ matrix.form }} \
               --only-categories=performance,seo,accessibility,best-practices \
               --output=json \

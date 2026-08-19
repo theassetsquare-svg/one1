@@ -2,7 +2,7 @@ import Link from 'next/link';
 import SEO from '@/components/SEO';
 import Layout from '@/components/Layout';
 
-const SITE = 'https://oneb-7z7.pages.dev';
+const SITE = 'https://onee-w8t.pages.dev';
 const PATH = '/bulgwangdong-hobak';
 const NAME = '불광동호박나이트';
 const TEL_DISPLAY = '010 2221 1937';

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const SITE = 'https://oneb-7z7.pages.dev';
+const SITE = 'https://onee-w8t.pages.dev';
 
 type Props = {
   title: string;

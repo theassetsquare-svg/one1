@@ -1,4 +1,4 @@
-const CACHE = 'oneb-7z7-v2';
+const CACHE = 'onee-w8t-v3';
 const ASSETS = [
   '/',
   '/info',

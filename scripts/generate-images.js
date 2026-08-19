@@ -63,7 +63,7 @@ render(thumb, 'public/og/og-thumb.png', 1080, 1080);
 const home = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <rect width="1200" height="630" fill="#5A3A1E"/>
 <rect x="26" y="26" width="1148" height="578" rx="14" fill="none" stroke="#F7EFE1" stroke-width="3" opacity="0.55"/>
-<text x="600" y="112" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#F7EFE1" text-anchor="middle" letter-spacing="8">생애 첫 나이트, 입문 노트</text>
+<text x="600" y="112" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#F7EFE1" text-anchor="middle" letter-spacing="8">다시 시작하는 이야기</text>
 <text x="600" y="330" font-family="Noto Sans KR" font-size="184" font-weight="900" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" text-anchor="middle" letter-spacing="-6">광고문의</text>
 <rect x="180" y="404" width="840" height="150" rx="12" fill="#FFFFFF"/>
 <text x="600" y="462" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#5A3A1E" text-anchor="middle" letter-spacing="4">카카오톡</text>

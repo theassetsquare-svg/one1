@@ -43,5 +43,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://oneb-7z7.pages.dev/sitemap.xml
-# LLM 참고 문서: https://oneb-7z7.pages.dev/llms.txt
+Sitemap: https://onee-w8t.pages.dev/sitemap.xml
+# LLM 참고 문서: https://onee-w8t.pages.dev/llms.txt
