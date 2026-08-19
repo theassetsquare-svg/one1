@@ -1,6 +1,7 @@
 import SEO from '@/components/SEO';
 import Schema from '@/components/Schema';
 import Layout from '@/components/Layout';
+import Thumb from '@/components/Thumb';
 import PolicyBanner from '@/components/PolicyBanner';
 
 export default function Contact() {
@@ -11,6 +12,7 @@ export default function Contact() {
         description="대전원나이트 예약·룸·단체·VIP·일반 안내. 영업 시간 내 직접 응대합니다. 문의는 페이지 하단 광고문의 카톡 besta12로 한 번에 안내해 드립니다."
         path="/contact"
         ogImage="/og/contact.png"
+        ogAlt="대전원나이트 예약·문의 안내"
       />
       <Schema path="/contact" crumb="예약·문의" pageType="ContactPage" />
       <Layout>
@@ -20,6 +22,7 @@ export default function Contact() {
             예약 · <span className="accent">문의</span>
           </h1>
           <p>예약 및 일반 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다.</p>
+          <Thumb src="/og/contact.png" alt="대전원나이트 예약·문의 안내" />
         </div>
         <div className="container">
           <PolicyBanner />

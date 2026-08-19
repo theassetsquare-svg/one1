@@ -57,21 +57,23 @@ ${defs}
 <text x="540" y="955" font-family="Noto Sans KR" font-size="72" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-2">카톡 besta12</text>
 </svg>`;
 
-render(thumb, 'public/og/og-thumb.png', 1080, 1080);
+render(thumb, 'public/og/og-thumb.png', 1200, 1200);
 
 /* 홈 썸네일 — 배경 단색 브라운, "광고문의"가 가장 크고 그 아래 "카카오톡 besta12" */
-const home = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<rect width="1200" height="630" fill="#5A3A1E"/>
-<rect x="26" y="26" width="1148" height="578" rx="14" fill="none" stroke="#F7EFE1" stroke-width="3" opacity="0.55"/>
+const home = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<rect width="1200" height="1200" fill="#5A3A1E"/>
+<rect x="26" y="26" width="1148" height="1148" rx="14" fill="none" stroke="#F7EFE1" stroke-width="3" opacity="0.55"/>
+<g transform="translate(0,285)">
 <text x="600" y="112" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#F7EFE1" text-anchor="middle" letter-spacing="8">다시 시작하는 이야기</text>
 <text x="600" y="330" font-family="Noto Sans KR" font-size="184" font-weight="900" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" text-anchor="middle" letter-spacing="-6">광고문의</text>
 <rect x="180" y="404" width="840" height="150" rx="12" fill="#FFFFFF"/>
 <text x="600" y="462" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#5A3A1E" text-anchor="middle" letter-spacing="4">카카오톡</text>
 <text x="600" y="534" font-family="Noto Sans KR" font-size="76" font-weight="900" fill="#3A2C21" text-anchor="middle" letter-spacing="-1">besta12</text>
 <text x="600" y="592" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#F7EFE1" text-anchor="middle" opacity="0.85">업소 사장님 대상 광고 입점 채널</text>
+</g>
 </svg>`;
 
-render(home, 'public/og/home.png', 1200, 630);
+render(home, 'public/og/home.png', 1200, 1200);
 
 const icon = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 <defs>
@@ -101,11 +103,12 @@ const pages = [
 ];
 
 pages.forEach((p) => {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
 ${defs}
-<rect width="1200" height="630" fill="url(#bg)"/>
-<rect width="1200" height="630" fill="url(#glow)"/>
-<rect x="24" y="24" width="1152" height="582" rx="20" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.5"/>
+<rect width="1200" height="1200" fill="url(#bg)"/>
+<rect width="1200" height="1200" fill="url(#glow)"/>
+<rect x="24" y="24" width="1152" height="1152" rx="20" fill="none" stroke="url(#ac)" stroke-width="2" opacity="0.5"/>
+<g transform="translate(0,285)">
 <text x="600" y="84" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#00E5FF" text-anchor="middle" letter-spacing="8">${p.kicker}</text>
 <line x1="470" y1="110" x2="730" y2="110" stroke="url(#ac)" stroke-width="2"/>
 <text x="600" y="166" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">대전원나이트</text>
@@ -113,12 +116,13 @@ ${defs}
 <text x="600" y="478" font-family="Noto Sans KR" font-size="32" font-weight="500" fill="#B388FF" text-anchor="middle">${p.title}</text>
 <rect x="300" y="516" width="600" height="86" rx="43" fill="url(#ac)"/>
 <text x="600" y="574" font-family="Noto Sans KR" font-size="40" font-weight="900" fill="#0A0E27" text-anchor="middle" letter-spacing="-1">광고문의 카톡 besta12</text>
+</g>
 </svg>`;
-  render(svg, `public/og/${p.name}.png`, 1200, 630);
+  render(svg, `public/og/${p.name}.png`, 1200, 1200);
 });
 
-// 불광동호박나이트 페이지 OG (1200x630) — 대전 브랜드 컬러와 구분되는 호박(앰버) 계열
-const hobak = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+// 불광동호박나이트 페이지 OG (1200x1200) — 대전 브랜드 컬러와 구분되는 호박(앰버) 계열
+const hobak = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
 <defs>
 <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
 <stop offset="0%" stop-color="#1A0E00"/>
@@ -134,9 +138,10 @@ const hobak = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"
 <stop offset="100%" stop-color="#FFB300" stop-opacity="0"/>
 </radialGradient>
 </defs>
-<rect width="1200" height="630" fill="url(#hbg)"/>
-<rect width="1200" height="630" fill="url(#hglow)"/>
-<rect x="24" y="24" width="1152" height="582" rx="20" fill="none" stroke="url(#hac)" stroke-width="2" opacity="0.55"/>
+<rect width="1200" height="1200" fill="url(#hbg)"/>
+<rect width="1200" height="1200" fill="url(#hglow)"/>
+<rect x="24" y="24" width="1152" height="1152" rx="20" fill="none" stroke="url(#hac)" stroke-width="2" opacity="0.55"/>
+<g transform="translate(0,285)">
 <text x="600" y="92" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#FFB300" text-anchor="middle" letter-spacing="8">SEOUL EUNPYEONG</text>
 <line x1="450" y1="118" x2="750" y2="118" stroke="url(#hac)" stroke-width="2"/>
 <text x="600" y="252" font-family="Noto Sans KR" font-size="96" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">불광동호박나이트</text>
@@ -145,9 +150,10 @@ const hobak = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"
 <text x="600" y="430" font-family="Noto Sans KR" font-size="46" font-weight="900" fill="#1A0E00" text-anchor="middle" letter-spacing="-1">예약문의 손흥민 010 2221 1937</text>
 <rect x="300" y="492" width="600" height="86" rx="10" fill="rgba(255,179,0,0.10)" stroke="#FFB300" stroke-width="2"/>
 <text x="600" y="545" font-family="Noto Sans KR" font-size="26" font-weight="500" fill="#FFFFFF" text-anchor="middle">신분증 지참 · 현금/카드 결제 · 사전 예약 권장</text>
+</g>
 </svg>`;
 
-render(hobak, 'public/og/hobak.png', 1200, 630);
+render(hobak, 'public/og/hobak.png', 1200, 1200);
 
 // 네이버 플레이스 대표 이미지 (1:1) — 프로필로 크게 볼 때 정보까지, 목록에선 대전 대형
 const place = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
@@ -165,7 +171,7 @@ ${defs}
 <text x="540" y="972" font-family="Noto Sans KR" font-size="30" font-weight="400" fill="#B388FF" text-anchor="middle">평일 20:00 - 02:30 · 주말 20:00 - 03:30</text>
 </svg>`;
 
-render(place, 'public/og/place.png', 1080, 1080);
+render(place, 'public/og/place.png', 1200, 1200);
 
 // 네이버 블로그 대표 이미지 (1:1) — VIEW/블로그 탭 작은 썸네일에서 확실히 읽히게 최소 구성
 const blog = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
@@ -182,6 +188,6 @@ ${defs}
 <text x="540" y="1002" font-family="Noto Sans KR" font-size="42" font-weight="700" fill="#00E5FF" text-anchor="middle" letter-spacing="3">새벽까지 논스톱 · 광고문의 카톡</text>
 </svg>`;
 
-render(blog, 'public/og/blog.png', 1080, 1080);
+render(blog, 'public/og/blog.png', 1200, 1200);
 
 console.log('done');

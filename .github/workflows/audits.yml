@@ -29,6 +29,16 @@ jobs:
       - name: HTML quality audit
         run: node scripts/audit-html.js out
 
+      - name: Thumbnail exposure gate (G9+)
+        run: node scripts/audit-thumbs.js out
+
+      - name: Sitemap image entries in sync
+        run: |
+          set -e
+          node scripts/sync-sitemap-images.js out
+          git diff --quiet -- public/sitemap.xml || { echo "FAIL sitemap 이미지 항목이 페이지 og:image 와 불일치"; git diff -- public/sitemap.xml | head -40; exit 1; }
+          echo "OK sitemap images"
+
       - name: Required content present in build
         run: |
           set -e

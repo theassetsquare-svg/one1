@@ -12,6 +12,8 @@ type Props = {
   geoPlacename?: string;
   icbm?: string;
   siteName?: string;
+  /** 썸네일 대체 텍스트 — 가게이름 + 페이지 주제 (미지정 시 title) */
+  ogAlt?: string;
 };
 
 export default function SEO({
@@ -23,10 +25,10 @@ export default function SEO({
   geoPlacename = '대전광역시',
   icbm = '36.3504,127.3845',
   siteName = '대전원나이트',
+  ogAlt,
 }: Props) {
   const url = `${SITE}${path}`;
   const fullOg = `${SITE}${ogImage}`;
-  const isThumb = ogImage === '/og/og-thumb.png';
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -68,14 +70,16 @@ export default function SEO({
       <meta property="og:url" content={url} />
       <meta property="og:image" content={fullOg} />
       <meta property="og:image:secure_url" content={fullOg} />
-      <meta property="og:image:width" content={isThumb ? '1080' : '1200'} />
-      <meta property="og:image:height" content={isThumb ? '1080' : '630'} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="1200" />
       <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:alt" content={title} />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:image:alt" content={ogAlt ?? title} />
+      <meta name="thumbnail" content={fullOg} />
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={fullOg} />
+      <meta name="twitter:image:alt" content={ogAlt ?? title} />
     </Head>
   );
 }

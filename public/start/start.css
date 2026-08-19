@@ -124,3 +124,7 @@ footer.site{background:var(--paper);border-top:2px solid var(--line2);margin-top
 .hub-list a{font-weight:800;text-decoration:none;font-size:17px}
 .hub-list span{display:block;color:var(--ink3);font-size:14px}
 .region-h{font-size:16px;color:var(--ac);margin:24px 0 4px;border:0;padding:0}
+
+/* 본문 썸네일 (og:image와 동일 파일) */
+.thumb-wrap{max-width:520px;margin:22px auto 6px}
+.thumb-wrap img{display:block;width:100%;border-radius:12px}

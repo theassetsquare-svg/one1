@@ -55,6 +55,20 @@ jobs:
             echo "OK schema $t (start hub)"
           done
 
+      - name: 라이브 썸네일 실측 (HTTP 200 + image/png + 본문 img)
+        run: |
+          set -e
+          for u in /og/home.png /og/info.png /og/hobak.png /og/night-hub-og.png /og/start-hub-og.png /og/cheongdam-night-og.png /og/start-sillim-grandprix-og.png; do
+            CT=$(curl -sIL -o /dev/null -w '%{http_code} %{content_type}' "https://onee-w8t.pages.dev$u")
+            case "$CT" in "200 image/png"*) echo "OK $u ($CT)";; *) echo "FAIL $u ($CT)"; exit 1;; esac
+          done
+          for p in / /info /bulgwangdong-hobak /night/ /start/ /night/cheongdam-night/ /start/sillim-grandprix/; do
+            H=$(curl -sL "https://onee-w8t.pages.dev$p")
+            echo "$H" | grep -q '<img[^>]*src="/og/' || { echo "FAIL $p 본문 img 없음"; exit 1; }
+            echo "$H" | grep -q '<meta name="thumbnail"' || { echo "FAIL $p thumbnail 메타 없음"; exit 1; }
+            echo "OK $p"
+          done
+
       - name: No fake AggregateRating
         run: |
           if curl -sL https://onee-w8t.pages.dev/ | grep -q "AggregateRating"; then

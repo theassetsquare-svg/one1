@@ -592,3 +592,14 @@ section.section p {
 .info-table td {
   color: #c3c8e6;
 }
+
+/* 본문 썸네일 (og:image와 동일 파일) */
+.thumb-wrap {
+  max-width: 520px;
+  margin: 22px auto 4px;
+}
+.thumb-wrap img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}

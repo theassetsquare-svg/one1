@@ -205,9 +205,12 @@ function renderPage(p) {
 <meta property="og:description" content="${attr(p.desc)}">
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${og}">
+<meta property="og:image:secure_url" content="${og}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="${attr(p.ogAlt)}">
+<meta name="thumbnail" content="${og}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${attr(p.title)}">
 <meta name="twitter:description" content="${attr(p.desc)}">
@@ -239,6 +242,7 @@ ${nav}
 ${ageBadge}<div class="answer-box">
   <p><strong>${p.name}</strong>은 ${p.region}에 있는 나이트클럽입니다. ${p.answer2}.</p>
 </div>
+<div class="thumb-wrap"><img src="/og/${p.slug}-og.png" alt="${attr(p.ogAlt)}" width="1200" height="1200" style="max-width:100%;height:auto" loading="eager"></div>
 <div class="lead">
 ${p.lead.map((t) => `<p>${t}</p>`).join('\n')}
 </div>
@@ -288,8 +292,17 @@ function renderHub() {
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="나이트 안내 목록 13곳 지역별 정리">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${SITE}/og/og-thumb.png">
+<meta property="og:description" content="서울·경기·부산·대전·울산·창원 나이트클럽 안내 페이지 13곳을 한 곳에 모았습니다.">
+<meta property="og:image" content="${SITE}/og/night-hub-og.png">
+<meta property="og:image:secure_url" content="${SITE}/og/night-hub-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="나이트 안내 목록 13곳 · 지역별 정리">
+<meta name="thumbnail" content="${SITE}/og/night-hub-og.png">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="나이트 안내 목록 13곳 지역별 정리">
+<meta name="twitter:image" content="${SITE}/og/night-hub-og.png">
 <link rel="stylesheet" href="/night/night.css">
 </head>
 <body>
@@ -301,6 +314,7 @@ function renderHub() {
 <article>
 <h1>나이트 안내 목록</h1>
 <p class="meta-line">지역별 13곳 · <time datetime="${TODAY}">${TODAY}</time> 기준</p>
+<div class="thumb-wrap"><img src="/og/night-hub-og.png" alt="나이트 안내 목록 13곳 · 지역별 정리" width="1200" height="1200" style="max-width:100%;height:auto" loading="eager"></div>
 <section>
 <h2>지역별 안내 페이지</h2>
 <ul class="hub-list">

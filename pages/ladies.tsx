@@ -1,6 +1,7 @@
 import SEO from '@/components/SEO';
 import Schema from '@/components/Schema';
 import Layout from '@/components/Layout';
+import Thumb from '@/components/Thumb';
 import PolicyBanner from '@/components/PolicyBanner';
 
 export default function Ladies() {
@@ -11,6 +12,7 @@ export default function Ladies() {
         description="대전원나이트 여성 손님 안내. 22시 이전 입장 시 교통비 3만원 지원과 맥주 1병 기본 제공. 38세 이상 신분증 확인 후 적용. 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다."
         path="/ladies"
         ogImage="/og/ladies.png"
+        ogAlt="대전원나이트 여성 손님 안내"
       />
       <Schema path="/ladies" crumb="여성 손님 안내" pageType="WebPage" />
       <Layout>
@@ -20,6 +22,7 @@ export default function Ladies() {
             여성 손님 <span className="accent">안내</span>
           </h1>
           <p>22시 이전 입장 여성 손님에게 적용되는 안내입니다.</p>
+          <Thumb src="/og/ladies.png" alt="대전원나이트 여성 손님 안내" />
         </div>
         <div className="container">
           <PolicyBanner />

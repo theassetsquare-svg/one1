@@ -125,9 +125,12 @@ function renderPage(p) {
 <meta property="og:description" content="${attr(p.desc)}">
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${og}">
+<meta property="og:image:secure_url" content="${og}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="${attr(p.ogAlt)}">
+<meta name="thumbnail" content="${og}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${attr(p.title)}">
 <meta name="twitter:description" content="${attr(p.desc)}">
@@ -160,6 +163,8 @@ ${jsonld(p)}
 ${p.answer3.map((t) => `<li>${t}</li>`).join('\n')}
 </ol>
 </div>
+
+<div class="thumb-wrap"><img src="/og/start-${p.slug}-og.png" alt="${attr(p.ogAlt)}" width="1200" height="1200" style="max-width:100%;height:auto" loading="eager"></div>
 
 <div class="lead">
 ${p.lead.map((t) => `<p>${t}</p>`).join('\n')}
@@ -261,10 +266,15 @@ ${groups[r].map((p) => `<li><a href="/start/${p.slug}/">${p.name}</a><span>${p.r
 <meta property="og:description" content="전국 나이트클럽 40곳을 초보 눈높이로 정리한 입문 노트 모음입니다.">
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${SITE}/og/start-hub-og.png">
+<meta property="og:image:secure_url" content="${SITE}/og/start-hub-og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="전국 나이트 입문 노트 40 · 광고문의 카카오톡 besta12">
+<meta name="thumbnail" content="${SITE}/og/start-hub-og.png">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="전국 나이트 입문 노트 40 — 처음 가는 사람용 지역별 정리">
+<meta name="twitter:image" content="${SITE}/og/start-hub-og.png">
 <link rel="stylesheet" href="/start/start.css">
 <script type="application/ld+json">${JSON.stringify(itemList)}</script>
 <script type="application/ld+json">${JSON.stringify(crumb)}</script>
@@ -288,6 +298,7 @@ ${groups[r].map((p) => `<li><a href="/start/${p.slug}/">${p.name}</a><span>${p.r
 <li>첫 방문 순서(가기 전 → 입장 → 처음 30분 → 어색할 때)를 읽고 출발하면 됩니다.</li>
 </ol>
 </div>
+<div class="thumb-wrap"><img src="/og/start-hub-og.png" alt="전국 나이트 입문 노트 40 · 광고문의 카카오톡 besta12" width="1200" height="1200" style="max-width:100%;height:auto" loading="eager"></div>
 <section>
 <h2>지역별 입문 노트</h2>
 ${listHtml}

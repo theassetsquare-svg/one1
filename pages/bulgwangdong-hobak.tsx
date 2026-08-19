@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import SEO from '@/components/SEO';
 import Layout from '@/components/Layout';
+import Thumb from '@/components/Thumb';
 
 const SITE = 'https://onee-w8t.pages.dev';
 const PATH = '/bulgwangdong-hobak';
@@ -136,6 +137,7 @@ export default function BulgwangdongHobak() {
         description="불광동호박나이트 예약문의 안내. 서울 은평구 불광동 불광역 인근 나이트클럽 부킹·룸·단체 예약, 입장·복장·주차 정보를 한 페이지에 정리했습니다. 예약문의 손흥민 010 2221 1937."
         path={PATH}
         ogImage="/og/hobak.png"
+        ogAlt="불광동호박나이트 예약문의 안내 · 서울 은평구 불광동"
         geoRegion="KR-11"
         geoPlacename="서울특별시 은평구 불광동"
         icbm="37.6106,126.9296"
@@ -159,6 +161,7 @@ export default function BulgwangdongHobak() {
           <p>
             서울 은평구 불광동 · 불광역 인근 · 부킹 · 룸 · 단체 예약 문의는 {MANAGER} {TEL_DISPLAY}
           </p>
+          <Thumb src="/og/hobak.png" alt="불광동호박나이트 예약문의 안내 · 서울 은평구 불광동" />
           <div className="cta-row">
             <a href={TEL_HREF} className="cta-primary">
               전화 예약문의

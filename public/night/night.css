@@ -95,3 +95,7 @@ footer.site{background:var(--bg2);border-top:1px solid var(--line);margin-top:36
 .hub-list li{border-bottom:1px solid rgba(255,255,255,.09);padding:12px 0}
 .hub-list a{font-weight:800;text-decoration:none;font-size:17px}
 .hub-list span{display:block;color:var(--tx2);font-size:14px}
+
+/* 본문 썸네일 (og:image와 동일 파일) */
+.thumb-wrap{max-width:520px;margin:22px auto 6px}
+.thumb-wrap img{display:block;width:100%;border-radius:12px}

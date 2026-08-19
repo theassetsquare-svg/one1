@@ -120,6 +120,23 @@ function measureWhite(px, w, y0, y1) {
   return { x: minX, y: minY, w: maxX - minX + 1, h: maxY - minY + 1 };
 }
 
+
+/* /night/ 목록 허브 카드 — B그룹과 동일한 내용 규칙 */
+function hubSvg() {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${SIZE}" height="${SIZE}" viewBox="0 0 ${SIZE} ${SIZE}">
+<rect width="${SIZE}" height="${SIZE}" fill="#1A1F4E"/>
+<rect x="30" y="30" width="${SIZE - 60}" height="${SIZE - 60}" rx="22" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.35"/>
+<text x="600" y="150" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="8" opacity="0.9">NIGHT GUIDE</text>
+<text x="600" y="400" font-family="Noto Sans KR" font-size="150" font-weight="900" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="6" text-anchor="middle" letter-spacing="-4">나이트 안내</text>
+<text x="600" y="560" font-family="Noto Sans KR" font-size="150" font-weight="900" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="6" text-anchor="middle" letter-spacing="-4">목록 13곳</text>
+<text x="600" y="660" font-family="Noto Sans KR" font-size="52" font-weight="700" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" text-anchor="middle" opacity="0.95">서울 · 경기 · 부산 · 대전 · 울산 · 창원</text>
+<rect x="150" y="780" width="900" height="4" fill="#FFFFFF" opacity="0.4"/>
+<text x="600" y="900" font-family="Noto Sans KR" font-size="60" font-weight="800" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" text-anchor="middle">지역별 안내</text>
+<text x="600" y="1010" font-family="Noto Sans KR" font-size="42" font-weight="500" fill="#FFFFFF" text-anchor="middle" opacity="0.9">${BRAND}</text>
+<text x="600" y="1100" font-family="Noto Sans KR" font-size="34" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.75">좌석 · 시간대 · 부킹 안내</text>
+</svg>`;
+}
+
 const report = [];
 fs.mkdirSync(OUT, { recursive: true });
 
@@ -159,6 +176,11 @@ for (const p of PAGES) {
   report.push(row);
   console.log(JSON.stringify(row));
 }
+
+const hubPng = render(hubSvg()).asPng();
+fs.writeFileSync(path.join(OUT, 'night-hub-og.png'), hubPng);
+report.push({ slug: 'hub', group: '-', bg: '#1A1F4E', size: `${SIZE}x${SIZE}`, kb: Math.round(hubPng.length / 1024) });
+console.log(JSON.stringify(report[report.length - 1]));
 
 fs.writeFileSync(path.join(__dirname, '../.og-report.json'), JSON.stringify(report, null, 2));
 console.log(`\n${report.length}장 생성 완료`);

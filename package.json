@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generate-images.js",
+    "prebuild": "node scripts/generate-images.js && node scripts/compress-og.js",
     "build": "next build",
     "start": "next start",
-    "images": "node scripts/generate-images.js"
+    "images": "node scripts/generate-images.js && node scripts/compress-og.js"
   },
   "dependencies": {
     "next": "16.2.4",

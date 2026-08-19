@@ -1,6 +1,7 @@
 import SEO from '@/components/SEO';
 import Schema from '@/components/Schema';
 import Layout from '@/components/Layout';
+import Thumb from '@/components/Thumb';
 import PolicyBanner from '@/components/PolicyBanner';
 
 export default function Hours() {
@@ -11,6 +12,7 @@ export default function Hours() {
         description="대전원나이트 영업 시간 안내. 평일 20:00 - 02:30, 주말 20:00 - 03:30. 22시 이전 입장 여성 손님 혜택 시간대까지 한눈에. 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다."
         path="/hours"
         ogImage="/og/hours.png"
+        ogAlt="대전원나이트 영업 시간 안내"
       />
       <Schema path="/hours" crumb="영업 시간" pageType="WebPage" />
       <Layout>
@@ -20,6 +22,7 @@ export default function Hours() {
             영업 <span className="accent">시간</span>
           </h1>
           <p>요일별 영업 시간을 확인하세요.</p>
+          <Thumb src="/og/hours.png" alt="대전원나이트 영업 시간 안내" />
         </div>
         <div className="container">
           <PolicyBanner />

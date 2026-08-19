@@ -1,0 +1,443 @@
+[
+  {
+    "rel": "404.html",
+    "img": "/og/og-thumb.png",
+    "size": "1200x1200",
+    "kb": 78,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "bulgwangdong-hobak.html",
+    "img": "/og/hobak.png",
+    "size": "1200x1200",
+    "kb": 293,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "contact.html",
+    "img": "/og/contact.png",
+    "size": "1200x1200",
+    "kb": 82,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "faq.html",
+    "img": "/og/faq.png",
+    "size": "1200x1200",
+    "kb": 80,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "hours.html",
+    "img": "/og/hours.png",
+    "size": "1200x1200",
+    "kb": 82,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "index.html",
+    "img": "/og/home.png",
+    "size": "1200x1200",
+    "kb": 37,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "info.html",
+    "img": "/og/info.png",
+    "size": "1200x1200",
+    "kb": 82,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "ladies.html",
+    "img": "/og/ladies.png",
+    "size": "1200x1200",
+    "kb": 80,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/ansan-hit-night/index.html",
+    "img": "/og/ansan-hit-night-og.png",
+    "size": "1200x1200",
+    "kb": 51,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/bulgwang-hobak-night/index.html",
+    "img": "/og/bulgwang-hobak-night-og.png",
+    "size": "1200x1200",
+    "kb": 57,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/busan-asiad-night/index.html",
+    "img": "/og/busan-asiad-night-og.png",
+    "size": "1200x1200",
+    "kb": 47,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/changwon-lululala-night/index.html",
+    "img": "/og/changwon-lululala-night-og.png",
+    "size": "1200x1200",
+    "kb": 66,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/cheongdam-night/index.html",
+    "img": "/og/cheongdam-night-og.png",
+    "size": "1200x1200",
+    "kb": 58,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/daejeon-one-night/index.html",
+    "img": "/og/daejeon-one-night-og.png",
+    "size": "1200x1200",
+    "kb": 49,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/daejeon-seven-night/index.html",
+    "img": "/og/daejeon-seven-night-og.png",
+    "size": "1200x1200",
+    "kb": 45,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/ilsan-shampoo/index.html",
+    "img": "/og/ilsan-shampoo-og.png",
+    "size": "1200x1200",
+    "kb": 46,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/index.html",
+    "img": "/og/night-hub-og.png",
+    "size": "1200x1200",
+    "kb": 60,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/sangbong-hangukgwan-night/index.html",
+    "img": "/og/sangbong-hangukgwan-night-og.png",
+    "size": "1200x1200",
+    "kb": 51,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/sillim-grandprix-night/index.html",
+    "img": "/og/sillim-grandprix-night-og.png",
+    "size": "1200x1200",
+    "kb": 48,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/suwon-chance-dome-night/index.html",
+    "img": "/og/suwon-chance-dome-night-og.png",
+    "size": "1200x1200",
+    "kb": 47,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/suyu-shampoo-night/index.html",
+    "img": "/og/suyu-shampoo-night-og.png",
+    "size": "1200x1200",
+    "kb": 47,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "night/ulsan-champion-night/index.html",
+    "img": "/og/ulsan-champion-night-og.png",
+    "size": "1200x1200",
+    "kb": 61,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/ansan-hit/index.html",
+    "img": "/og/start-ansan-hit-og.png",
+    "size": "1200x1200",
+    "kb": 51,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/bucheon-gorae/index.html",
+    "img": "/og/start-bucheon-gorae-og.png",
+    "size": "1200x1200",
+    "kb": 50,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/bulgwang-hobak/index.html",
+    "img": "/og/start-bulgwang-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 56,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/busan-asiad/index.html",
+    "img": "/og/start-busan-asiad-og.png",
+    "size": "1200x1200",
+    "kb": 53,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/changwon-lululala/index.html",
+    "img": "/og/start-changwon-lululala-og.png",
+    "size": "1200x1200",
+    "kb": 68,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/cheonan-korea/index.html",
+    "img": "/og/start-cheonan-korea-og.png",
+    "size": "1200x1200",
+    "kb": 55,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/cheonan-stardome/index.html",
+    "img": "/og/start-cheonan-stardome-og.png",
+    "size": "1200x1200",
+    "kb": 55,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/cheongdam/index.html",
+    "img": "/og/start-cheongdam-og.png",
+    "size": "1200x1200",
+    "kb": 56,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/cheongju-hobak/index.html",
+    "img": "/og/start-cheongju-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 55,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/daegu-hobak/index.html",
+    "img": "/og/start-daegu-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 49,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/daejeon-one/index.html",
+    "img": "/og/start-daejeon-one-og.png",
+    "size": "1200x1200",
+    "kb": 54,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/daejeon-seven/index.html",
+    "img": "/og/start-daejeon-seven-og.png",
+    "size": "1200x1200",
+    "kb": 52,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/dapsimni-miracle/index.html",
+    "img": "/og/start-dapsimni-miracle-og.png",
+    "size": "1200x1200",
+    "kb": 54,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/doksan-gukbingwan/index.html",
+    "img": "/og/start-doksan-gukbingwan-og.png",
+    "size": "1200x1200",
+    "kb": 49,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/gangseo-hobak/index.html",
+    "img": "/og/start-gangseo-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 51,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/gildong-chance/index.html",
+    "img": "/og/start-gildong-chance-og.png",
+    "size": "1200x1200",
+    "kb": 53,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/gumi-hobak/index.html",
+    "img": "/og/start-gumi-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 49,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/guri-hobak/index.html",
+    "img": "/og/start-guri-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 50,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/gwangju-cheomdan/index.html",
+    "img": "/og/start-gwangju-cheomdan-og.png",
+    "size": "1200x1200",
+    "kb": 53,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/gwangju-sangmu/index.html",
+    "img": "/og/start-gwangju-sangmu-og.png",
+    "size": "1200x1200",
+    "kb": 52,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/ilsan-shampoo/index.html",
+    "img": "/og/start-ilsan-shampoo-og.png",
+    "size": "1200x1200",
+    "kb": 51,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/incheon-arabian/index.html",
+    "img": "/og/start-incheon-arabian-og.png",
+    "size": "1200x1200",
+    "kb": 55,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/indeogwon-gukbingwan/index.html",
+    "img": "/og/start-indeogwon-gukbingwan-og.png",
+    "size": "1200x1200",
+    "kb": 55,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/index.html",
+    "img": "/og/start-hub-og.png",
+    "size": "1200x1200",
+    "kb": 55,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/jeju-do/index.html",
+    "img": "/og/start-jeju-do-og.png",
+    "size": "1200x1200",
+    "kb": 50,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/nowon-hobak/index.html",
+    "img": "/og/start-nowon-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 47,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/osan-hobak/index.html",
+    "img": "/og/start-osan-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 50,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/paju-yadang-skydome/index.html",
+    "img": "/og/start-paju-yadang-skydome-og.png",
+    "size": "1200x1200",
+    "kb": 58,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/pyeongtaek-hobak/index.html",
+    "img": "/og/start-pyeongtaek-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 52,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/sangbong-hangukgwan/index.html",
+    "img": "/og/start-sangbong-hangukgwan-og.png",
+    "size": "1200x1200",
+    "kb": 57,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/seongnam-shampoo/index.html",
+    "img": "/og/start-seongnam-shampoo-og.png",
+    "size": "1200x1200",
+    "kb": 56,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/seosan-hobak/index.html",
+    "img": "/og/start-seosan-hobak-og.png",
+    "size": "1200x1200",
+    "kb": 53,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/sillim-grandprix/index.html",
+    "img": "/og/start-sillim-grandprix-og.png",
+    "size": "1200x1200",
+    "kb": 49,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/suwon-chance-dome/index.html",
+    "img": "/og/start-suwon-chance-dome-og.png",
+    "size": "1200x1200",
+    "kb": 50,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/suwon-korea/index.html",
+    "img": "/og/start-suwon-korea-og.png",
+    "size": "1200x1200",
+    "kb": 54,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/suyu-shampoo/index.html",
+    "img": "/og/start-suyu-shampoo-og.png",
+    "size": "1200x1200",
+    "kb": 49,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/uijeongbu-baekakgwan/index.html",
+    "img": "/og/start-uijeongbu-baekakgwan-og.png",
+    "size": "1200x1200",
+    "kb": 58,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/uijeongbu-hangukgwan/index.html",
+    "img": "/og/start-uijeongbu-hangukgwan-og.png",
+    "size": "1200x1200",
+    "kb": 58,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/ulsan-champion/index.html",
+    "img": "/og/start-ulsan-champion-og.png",
+    "size": "1200x1200",
+    "kb": 60,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/ulsan-newworld/index.html",
+    "img": "/og/start-ulsan-newworld-og.png",
+    "size": "1200x1200",
+    "kb": 51,
+    "verdict": "PASS"
+  },
+  {
+    "rel": "start/yeongdeungpo-terminal/index.html",
+    "img": "/og/start-yeongdeungpo-terminal-og.png",
+    "size": "1200x1200",
+    "kb": 56,
+    "verdict": "PASS"
+  }
+]

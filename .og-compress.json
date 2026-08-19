@@ -1,0 +1,522 @@
+[
+  {
+    "file": "ansan-hit-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 51,
+    "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "blog.png",
+    "size": "1200x1200",
+    "beforeKB": 335,
+    "afterKB": 82,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "bulgwang-hobak-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 57,
+    "afterKB": 57,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "busan-asiad-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 47,
+    "afterKB": 47,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "changwon-lululala-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 66,
+    "afterKB": 66,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "cheongdam-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 58,
+    "afterKB": 58,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "contact.png",
+    "size": "1200x1200",
+    "beforeKB": 340,
+    "afterKB": 82,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "daejeon-one-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "daejeon-seven-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 45,
+    "afterKB": 45,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "faq.png",
+    "size": "1200x1200",
+    "beforeKB": 338,
+    "afterKB": 80,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 293,
+    "afterKB": 293,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "home.png",
+    "size": "1200x1200",
+    "beforeKB": 37,
+    "afterKB": 37,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "hours.png",
+    "size": "1200x1200",
+    "beforeKB": 340,
+    "afterKB": 82,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "ilsan-shampoo-og.png",
+    "size": "1200x1200",
+    "beforeKB": 46,
+    "afterKB": 46,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "info.png",
+    "size": "1200x1200",
+    "beforeKB": 340,
+    "afterKB": 82,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "ladies.png",
+    "size": "1200x1200",
+    "beforeKB": 341,
+    "afterKB": 80,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "night-hub-og.png",
+    "size": "1200x1200",
+    "beforeKB": 60,
+    "afterKB": 60,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "og-thumb.png",
+    "size": "1200x1200",
+    "beforeKB": 335,
+    "afterKB": 78,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "place.png",
+    "size": "1200x1200",
+    "beforeKB": 364,
+    "afterKB": 88,
+    "colors": 256,
+    "verdict": "PASS"
+  },
+  {
+    "file": "sangbong-hangukgwan-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 51,
+    "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "sillim-grandprix-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 48,
+    "afterKB": 48,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-ansan-hit-og.png",
+    "size": "1200x1200",
+    "beforeKB": 51,
+    "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-bucheon-gorae-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-bulgwang-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 56,
+    "afterKB": 56,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-busan-asiad-og.png",
+    "size": "1200x1200",
+    "beforeKB": 53,
+    "afterKB": 53,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-changwon-lululala-og.png",
+    "size": "1200x1200",
+    "beforeKB": 68,
+    "afterKB": 68,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-cheonan-korea-og.png",
+    "size": "1200x1200",
+    "beforeKB": 55,
+    "afterKB": 55,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-cheonan-stardome-og.png",
+    "size": "1200x1200",
+    "beforeKB": 55,
+    "afterKB": 55,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-cheongdam-og.png",
+    "size": "1200x1200",
+    "beforeKB": 56,
+    "afterKB": 56,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-cheongju-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 55,
+    "afterKB": 55,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-daegu-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-daejeon-one-og.png",
+    "size": "1200x1200",
+    "beforeKB": 54,
+    "afterKB": 54,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-daejeon-seven-og.png",
+    "size": "1200x1200",
+    "beforeKB": 52,
+    "afterKB": 52,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-dapsimni-miracle-og.png",
+    "size": "1200x1200",
+    "beforeKB": 54,
+    "afterKB": 54,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-doksan-gukbingwan-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-gangseo-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 51,
+    "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-gildong-chance-og.png",
+    "size": "1200x1200",
+    "beforeKB": 53,
+    "afterKB": 53,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-gumi-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-guri-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-gwangju-cheomdan-og.png",
+    "size": "1200x1200",
+    "beforeKB": 53,
+    "afterKB": 53,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-gwangju-sangmu-og.png",
+    "size": "1200x1200",
+    "beforeKB": 52,
+    "afterKB": 52,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-hub-og.png",
+    "size": "1200x1200",
+    "beforeKB": 55,
+    "afterKB": 55,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-ilsan-shampoo-og.png",
+    "size": "1200x1200",
+    "beforeKB": 51,
+    "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-incheon-arabian-og.png",
+    "size": "1200x1200",
+    "beforeKB": 55,
+    "afterKB": 55,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-indeogwon-gukbingwan-og.png",
+    "size": "1200x1200",
+    "beforeKB": 55,
+    "afterKB": 55,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-jeju-do-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-nowon-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 47,
+    "afterKB": 47,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-osan-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-paju-yadang-skydome-og.png",
+    "size": "1200x1200",
+    "beforeKB": 58,
+    "afterKB": 58,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-pyeongtaek-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 52,
+    "afterKB": 52,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-sangbong-hangukgwan-og.png",
+    "size": "1200x1200",
+    "beforeKB": 57,
+    "afterKB": 57,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-seongnam-shampoo-og.png",
+    "size": "1200x1200",
+    "beforeKB": 56,
+    "afterKB": 56,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-seosan-hobak-og.png",
+    "size": "1200x1200",
+    "beforeKB": 53,
+    "afterKB": 53,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-sillim-grandprix-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-suwon-chance-dome-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-suwon-korea-og.png",
+    "size": "1200x1200",
+    "beforeKB": 54,
+    "afterKB": 54,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-suyu-shampoo-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-uijeongbu-baekakgwan-og.png",
+    "size": "1200x1200",
+    "beforeKB": 58,
+    "afterKB": 58,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-uijeongbu-hangukgwan-og.png",
+    "size": "1200x1200",
+    "beforeKB": 58,
+    "afterKB": 58,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-ulsan-champion-og.png",
+    "size": "1200x1200",
+    "beforeKB": 60,
+    "afterKB": 60,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-ulsan-newworld-og.png",
+    "size": "1200x1200",
+    "beforeKB": 51,
+    "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-yeongdeungpo-terminal-og.png",
+    "size": "1200x1200",
+    "beforeKB": 56,
+    "afterKB": 56,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "suwon-chance-dome-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 47,
+    "afterKB": 47,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "suyu-shampoo-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 47,
+    "afterKB": 47,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "ulsan-champion-night-og.png",
+    "size": "1200x1200",
+    "beforeKB": 61,
+    "afterKB": 61,
+    "colors": "-",
+    "verdict": "PASS"
+  }
+]

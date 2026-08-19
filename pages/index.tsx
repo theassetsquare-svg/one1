@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import SEO from '@/components/SEO';
+import Thumb from '@/components/Thumb';
 
 const SITE = 'https://onee-w8t.pages.dev';
 
@@ -77,6 +78,7 @@ export default function Home() {
         geoRegion="KR"
         geoPlacename="대한민국"
         siteName="다시 시작하는 이야기"
+        ogAlt="다시 시작하는 이야기 성공스토리 안내"
       />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
@@ -94,6 +96,7 @@ export default function Home() {
           플라스틱 의자에 앉아 두 시간 동안 일어나지 못했던 사람의 이야기입니다. 이 사람을 여기서는 K라고
           부르겠습니다.
         </p>
+        <Thumb src="/og/home.png" alt="다시 시작하는 이야기 성공스토리 안내" />
         <hr className="st-rule" />
 
         <section className="st-sec">
