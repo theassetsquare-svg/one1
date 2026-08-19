@@ -6,7 +6,7 @@ const { SITE, PAGES } = require('./night-data.js');
 const TODAY = '2026-08-15';
 const OUT_ROOT = path.join(__dirname, '..', 'public', 'night');
 const GSV = 'HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88';
-const NSV = '640ba0cfbfb8328f279f76e9cade5342aba13ece';
+const NSV = 'de7f572176f78093fb88bfb999b59fe0d65c37cb';
 const KAKAO = 'besta12';
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

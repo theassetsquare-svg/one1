@@ -5,7 +5,7 @@ const { SITE, KAKAO, TODAY, PAGES } = require('./start-data.js');
 
 const OUT_ROOT = path.join(__dirname, '..', 'public', 'start');
 const GSV = 'HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88';
-const NSV = '640ba0cfbfb8328f279f76e9cade5342aba13ece';
+const NSV = 'de7f572176f78093fb88bfb999b59fe0d65c37cb';
 
 const attr = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const strip = (s) => String(s).replace(/<[^>]+>/g, '');

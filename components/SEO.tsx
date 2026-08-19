@@ -31,7 +31,7 @@ export default function SEO({
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       <meta name="google-site-verification" content="HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88" />
-      <meta name="naver-site-verification" content="640ba0cfbfb8328f279f76e9cade5342aba13ece" />
+      <meta name="naver-site-verification" content="de7f572176f78093fb88bfb999b59fe0d65c37cb" />
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
