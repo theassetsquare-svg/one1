@@ -55,19 +55,26 @@ jobs:
             echo "OK schema $t (start hub)"
           done
 
-      - name: 라이브 썸네일 실측 (HTTP 200 + image/png + 본문 img)
+      - name: 라이브 썸네일 실측 (HTTP 200 + image/png + 본문 img · 홈은 메타만)
         run: |
           set -e
           for u in /og/home.png /og/info.png /og/hobak.png /og/night-hub-og.png /og/start-hub-og.png /og/cheongdam-night-og.png /og/start-sillim-grandprix-og.png; do
             CT=$(curl -sIL -o /dev/null -w '%{http_code} %{content_type}' "https://onee-w8t.pages.dev$u")
             case "$CT" in "200 image/png"*) echo "OK $u ($CT)";; *) echo "FAIL $u ($CT)"; exit 1;; esac
           done
-          for p in / /info /bulgwangdong-hobak /night/ /start/ /night/cheongdam-night/ /start/sillim-grandprix/; do
+          # 본문 썸네일 + thumbnail 메타 (홈 제외 — 홈은 독립 성공스토리라 본문 이미지를 싣지 않는다)
+          for p in /info /bulgwangdong-hobak /night/ /start/ /night/cheongdam-night/ /start/sillim-grandprix/; do
             H=$(curl -sL "https://onee-w8t.pages.dev$p")
             echo "$H" | grep -q '<img[^>]*src="/og/' || { echo "FAIL $p 본문 img 없음"; exit 1; }
             echo "$H" | grep -q '<meta name="thumbnail"' || { echo "FAIL $p thumbnail 메타 없음"; exit 1; }
             echo "OK $p"
           done
+          # 홈 — 본문 img 는 0개여야 하고, thumbnail/og:image 메타는 있어야 한다
+          H=$(curl -sL "https://onee-w8t.pages.dev/")
+          if echo "$H" | grep -q '<img'; then echo "FAIL / 홈에 본문 img 존재"; exit 1; fi
+          echo "$H" | grep -q '<meta name="thumbnail"' || { echo "FAIL / thumbnail 메타 없음"; exit 1; }
+          echo "$H" | grep -q 'og:image" content="https://onee-w8t.pages.dev/og/home.png"' || { echo "FAIL / og:image 없음"; exit 1; }
+          echo "OK / (본문 img 0 · 메타 유지)"
 
       - name: No fake AggregateRating
         run: |
