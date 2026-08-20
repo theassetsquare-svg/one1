@@ -11,12 +11,18 @@
  *  ④ PNG 실측 1200x1200
  *  ⑤ PNG 300KB 이하
  *  ⑥ img alt 에 가게이름(페이지 주체) 포함
+ *
+ * 예외 — 홈(/)은 본문 썸네일을 싣지 않는다(독립 성공스토리 단독 페이지).
+ * ①②는 건너뛰고 ③④⑤는 og:image 기준으로, ⑥은 og:image:alt 기준으로 검사한다.
  */
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = process.argv[2] || 'out';
 const LIMIT = 300 * 1024;
+
+/* 본문 썸네일을 싣지 않는 페이지 — og:image 만으로 검사한다 */
+const NO_BODY_IMG = new Set(['index.html']);
 
 /* 페이지 주체(가게이름) — alt 에 반드시 들어가야 하는 문자열 */
 function subject(rel) {
@@ -67,7 +73,9 @@ for (const file of walk(ROOT).sort()) {
   const ogPath = og ? og.replace(/^https?:\/\/[^/]+/, '') : undefined;
   const errs = [];
 
-  if (!bodyImg) errs.push('①본문img없음');
+  const noBody = NO_BODY_IMG.has(rel);
+  if (!bodyImg && !noBody) errs.push('①본문img없음');
+  if (bodyImg && noBody) errs.push('①본문img 금지 페이지인데 존재');
   if (!ogPath) errs.push('②og:image없음');
   else if (bodyImg && ogPath !== bodyImg) errs.push(`②불일치(og=${ogPath} img=${bodyImg})`);
 
@@ -85,7 +93,8 @@ for (const file of walk(ROOT).sort()) {
   if (og && !/^https:\/\//.test(og)) errs.push('③og:image절대URL아님');
 
   let size = '-', kb = '-';
-  const png = bodyImg ? path.join(ROOT, bodyImg.replace(/^\//, '')) : null;
+  const imgPath = bodyImg || ogPath;
+  const png = imgPath ? path.join(ROOT, imgPath.replace(/^\//, '')) : null;
   if (png && fs.existsSync(png)) {
     const buf = fs.readFileSync(png);
     const d = dims(buf);
@@ -93,20 +102,21 @@ for (const file of walk(ROOT).sort()) {
     kb = Math.round(buf.length / 1024);
     if (d.w !== 1200 || d.h !== 1200) errs.push('④규격' + size);
     if (buf.length > LIMIT) errs.push('⑤용량' + kb + 'KB');
-  } else if (bodyImg) errs.push('④파일없음');
+  } else if (imgPath) errs.push('④파일없음');
 
   const sub = subject(rel);
-  if (!alt) errs.push('⑥alt없음');
-  else if (sub && !alt.includes(sub)) errs.push(`⑥alt에 "${sub}" 없음`);
+  const altToCheck = noBody ? oalt : alt;   // 홈은 og:image:alt 로 대신 검사
+  if (!altToCheck) errs.push('⑥alt없음');
+  else if (sub && !altToCheck.includes(sub)) errs.push(`⑥alt에 "${sub}" 없음`);
   else if (!sub) {
     // /night/{slug}/, /start/{slug}/ — 업소명은 h1 에서 추출해 대조
     const h1 = (html.match(/<h1[^>]*>([^<]*)</) || [])[1] || '';
     const name = h1.split(/[ ,·—(]/)[0];
-    if (name && !alt.includes(name)) errs.push(`⑥alt에 "${name}" 없음`);
+    if (name && !altToCheck.includes(name)) errs.push(`⑥alt에 "${name}" 없음`);
   }
 
   if (errs.length) fails++;
-  rows.push({ rel, img: bodyImg || '-', size, kb, verdict: errs.length ? 'FAIL ' + errs.join(' / ') : 'PASS' });
+  rows.push({ rel, img: bodyImg || (noBody ? ogPath + ' (og만)' : '-'), size, kb, verdict: errs.length ? 'FAIL ' + errs.join(' / ') : 'PASS' });
 }
 
 for (const r of rows) {
