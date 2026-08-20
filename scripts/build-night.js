@@ -16,10 +16,14 @@ const attr = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').rep
 const byNo = {};
 PAGES.forEach((p) => { byNo[p.no] = p; });
 
+/* 전화바에 가게이름을 함께 노출하는 업소 (2026-08-20 청담나이트 승격) */
+const BAR_WITH_VENUE = new Set(['청담나이트']);
+
 function callbar(p) {
   if (p.group === 'A') {
+    const who = (BAR_WITH_VENUE.has(p.name) ? p.name + ' ' : '') + p.manager;
     return `<div class="callbar" role="complementary" aria-label="전화 연결">
-  <a href="tel:${p.telHref}">📞 ${p.manager} ${p.tel}</a>
+  <a href="tel:${p.telHref}">📞 ${who} ${p.tel}</a>
 </div>`;
   }
   return `<div class="callbar" role="complementary" aria-label="광고 제휴 문의">

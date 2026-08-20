@@ -133,7 +133,7 @@ export default function BulgwangdongHobak() {
   return (
     <>
       <SEO
-        title="불광동호박나이트 예약문의 - 부킹·룸 안내 | 대전원나이트"
+        title="불광동호박나이트 예약문의 - 부킹·룸 안내 | 서울 은평구 불광역"
         description="불광동호박나이트 예약문의 안내. 서울 은평구 불광동 불광역 인근 나이트클럽 부킹·룸·단체 예약, 입장·복장·주차 정보를 한 페이지에 정리했습니다. 예약문의 손흥민 010 2221 1937."
         path={PATH}
         ogImage="/og/hobak.png"
@@ -152,7 +152,7 @@ export default function BulgwangdongHobak() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
-      <Layout callBar="phone">
+      <Layout callBar="phone" brand="hobak">
         <div className="hero">
           <div className="hero-kicker">BULGWANG HOBAK</div>
           <h1>
@@ -167,7 +167,7 @@ export default function BulgwangdongHobak() {
               전화 예약문의
             </a>
             <Link href="/" className="cta-secondary">
-              대전원나이트 안내 보기
+              홈으로 돌아가기
             </Link>
           </div>
         </div>

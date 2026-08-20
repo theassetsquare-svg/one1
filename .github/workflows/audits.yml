@@ -32,6 +32,9 @@ jobs:
       - name: Thumbnail exposure gate (G9+)
         run: node scripts/audit-thumbs.js out
 
+      - name: Contamination + thumbnail size gate (G10/G13/G14/G15)
+        run: node scripts/audit-gates.js out
+
       - name: Sitemap image entries in sync
         run: |
           set -e

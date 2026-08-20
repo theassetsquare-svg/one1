@@ -8,6 +8,13 @@ const HOBAK_TEL = '010 2221 1937';
 const HOBAK_TEL_HREF = 'tel:+821022211937';
 const HOBAK_MANAGER = '손흥민';
 
+/* 상단 로고 — 페이지 주체 가게이름 1개만 노출한다 */
+const LOGO = {
+  daejeon: { aria: '홈으로 이동', k: 'DAEJEON', s: '대전원나이트 공식 안내' },
+  note: { aria: '입문 노트 홈으로 이동', k: 'FIRST NIGHT', s: '생애 첫 나이트, 입문 노트' },
+  hobak: { aria: '홈으로 이동', k: 'BULGWANG HOBAK', s: '불광동호박나이트 예약문의 안내' },
+} as const;
+
 const NAV = [
   { href: '/', label: '홈' },
   { href: '/info', label: '입장 안내' },
@@ -22,8 +29,9 @@ type LayoutProps = {
   /** 하단 고정 바 종류. 기본은 대전원나이트 광고문의 카톡, 'phone'은 불광동호박나이트 예약문의 전화,
    *  'kakaoFull'은 입문 노트 홈의 '광고문의 카카오톡' 표기 */
   callBar?: 'kakao' | 'phone' | 'kakaoFull';
-  /** 상단 로고·푸터 문구. 기본은 대전원나이트, 'note'는 입문 노트 홈 전용 */
-  brand?: 'daejeon' | 'note';
+  /** 상단 로고·푸터 문구. 기본은 대전원나이트, 'note'는 입문 노트 홈 전용,
+   *  'hobak'은 불광동호박나이트 단독 페이지 전용(1페이지=1가게이름 규칙) */
+  brand?: 'daejeon' | 'note' | 'hobak';
 };
 
 export default function Layout({ children, callBar = 'kakao', brand = 'daejeon' }: LayoutProps) {
@@ -50,12 +58,10 @@ export default function Layout({ children, callBar = 'kakao', brand = 'daejeon' 
           <Link
             href="/"
             className="logo"
-            aria-label={brand === 'note' ? '입문 노트 홈으로 이동' : '대전원나이트 홈으로 이동'}
+            aria-label={LOGO[brand].aria}
           >
-            <span className="logo-k">{brand === 'note' ? 'FIRST NIGHT' : 'DAEJEON'}</span>
-            <span className="logo-s">
-              {brand === 'note' ? '생애 첫 나이트, 입문 노트' : '대전원나이트 공식 안내'}
-            </span>
+            <span className="logo-k">{LOGO[brand].k}</span>
+            <span className="logo-s">{LOGO[brand].s}</span>
           </Link>
           <div className="nav-links">
             {brand === 'note' && (
@@ -88,6 +94,13 @@ export default function Layout({ children, callBar = 'kakao', brand = 'daejeon' 
             <p className="footer-copy">
               © 2026 · 공개 자료를 정리한 안내 페이지이며, 확인되지 않은 항목은 &quot;확인 불가&quot;로 표기했습니다.
             </p>
+          </div>
+        ) : brand === 'hobak' ? (
+          <div className="footer-inner">
+            <p className="footer-k">BULGWANG HOBAK NIGHT</p>
+            <p>불광동호박나이트 안내 페이지 · 서울 은평구 불광동</p>
+            <p>불광역 인근 · 부킹 · 룸 · 단체 · 신분증 확인</p>
+            <p className="footer-copy">© 2026 불광동호박나이트 · 본 페이지는 업소의 안내 페이지입니다</p>
           </div>
         ) : (
           <div className="footer-inner">

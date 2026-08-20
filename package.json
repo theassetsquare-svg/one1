@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generate-images.js && node scripts/compress-og.js",
+    "prebuild": "node scripts/build-night.js && node scripts/build-start.js && node scripts/generate-icons.js && node scripts/generate-og.js && node scripts/compress-og.js",
     "build": "next build",
     "start": "next start",
-    "images": "node scripts/generate-images.js && node scripts/compress-og.js"
+    "images": "node scripts/generate-icons.js && node scripts/generate-og.js && node scripts/compress-og.js",
+    "gates": "node scripts/audit-thumbs.js out && node scripts/audit-gates.js out"
   },
   "dependencies": {
     "next": "16.2.4",
@@ -19,6 +20,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "opentype.js": "^2.0.0",
+    "sharp": "^0.35.3",
     "typescript": "^5"
   }
 }
