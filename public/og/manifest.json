@@ -1189,14 +1189,18 @@
     "file": "/og/daejeon-seven-night-og.png",
     "pageUrl": "https://onee-w8t.pages.dev/night/daejeon-seven-night/",
     "venue": "대전세븐나이트",
-    "category": "B",
-    "advertiser": null,
-    "heroText": "광고문의",
-    "heroRole": "광고문의",
+    "category": "A",
+    "advertiser": {
+      "nick": "영탁",
+      "tel": "010-7770-0869"
+    },
+    "heroText": "010-7770-0869",
+    "heroRole": "전화번호",
     "drawnTexts": [
       "대전세븐나이트",
-      "광고문의",
-      "카카오톡 besta12"
+      "영탁",
+      "010-7770-0869",
+      "광고문의 카톡 besta12"
     ],
     "texts": [
       {
@@ -1206,38 +1210,50 @@
         "targetWidthPct": 64.5,
         "pathWidthPx": 696.6,
         "pathHeightPx": 105.4,
-        "measuredWidthPx": 698,
+        "measuredWidthPx": 696,
         "measuredHeightPx": 106,
-        "measuredWidthPct": 64.6,
+        "measuredWidthPct": 64.4,
         "uniformScale": true
       },
       {
-        "role": "광고문의",
-        "text": "광고문의",
-        "hero": true,
-        "targetWidthPct": 84.5,
-        "pathWidthPx": 912.6,
-        "pathHeightPx": 244.8,
-        "measuredWidthPx": 914,
-        "measuredHeightPx": 245,
-        "measuredWidthPct": 84.6,
-        "uniformScale": true
-      },
-      {
-        "role": "카카오톡",
-        "text": "카카오톡 besta12",
+        "role": "닉네임",
+        "text": "영탁",
         "hero": false,
-        "targetWidthPct": 79.5,
-        "pathWidthPx": 858.6,
-        "pathHeightPx": 132,
-        "measuredWidthPx": 859,
-        "measuredHeightPx": 133,
-        "measuredWidthPct": 79.5,
+        "targetWidthPct": 46,
+        "pathWidthPx": 496.8,
+        "pathHeightPx": 176,
+        "measuredWidthPx": 498,
+        "measuredHeightPx": 177,
+        "measuredWidthPct": 46.1,
         "uniformScale": false
+      },
+      {
+        "role": "전화번호",
+        "text": "010-7770-0869",
+        "hero": true,
+        "targetWidthPct": 95.5,
+        "pathWidthPx": 1031.4,
+        "pathHeightPx": 200,
+        "measuredWidthPx": 1032,
+        "measuredHeightPx": 201,
+        "measuredWidthPct": 95.6,
+        "uniformScale": false
+      },
+      {
+        "role": "광고문의(보조)",
+        "text": "광고문의 카톡 besta12",
+        "hero": false,
+        "targetWidthPct": 59.5,
+        "pathWidthPx": 642.6,
+        "pathHeightPx": 61.7,
+        "measuredWidthPx": 642,
+        "measuredHeightPx": 62,
+        "measuredWidthPct": 59.4,
+        "uniformScale": true
       }
     ],
-    "bg": "#062028",
-    "bytes": 53950,
+    "bg": "#5C3000",
+    "bytes": 63699,
     "note": null
   },
   {
@@ -1684,14 +1700,18 @@
     "file": "/og/start-daejeon-seven-og.png",
     "pageUrl": "https://onee-w8t.pages.dev/start/daejeon-seven/",
     "venue": "대전세븐나이트",
-    "category": "B",
-    "advertiser": null,
-    "heroText": "광고문의",
-    "heroRole": "광고문의",
+    "category": "A",
+    "advertiser": {
+      "nick": "영탁",
+      "tel": "010-7770-0869"
+    },
+    "heroText": "010-7770-0869",
+    "heroRole": "전화번호",
     "drawnTexts": [
       "대전세븐나이트",
-      "광고문의",
-      "카카오톡 besta12"
+      "영탁",
+      "010-7770-0869",
+      "광고문의 카톡 besta12"
     ],
     "texts": [
       {
@@ -1701,38 +1721,50 @@
         "targetWidthPct": 64.5,
         "pathWidthPx": 696.6,
         "pathHeightPx": 105.4,
-        "measuredWidthPx": 698,
+        "measuredWidthPx": 696,
         "measuredHeightPx": 106,
-        "measuredWidthPct": 64.6,
+        "measuredWidthPct": 64.4,
         "uniformScale": true
       },
       {
-        "role": "광고문의",
-        "text": "광고문의",
-        "hero": true,
-        "targetWidthPct": 84.5,
-        "pathWidthPx": 912.6,
-        "pathHeightPx": 244.8,
-        "measuredWidthPx": 913,
-        "measuredHeightPx": 245,
-        "measuredWidthPct": 84.5,
-        "uniformScale": true
-      },
-      {
-        "role": "카카오톡",
-        "text": "카카오톡 besta12",
+        "role": "닉네임",
+        "text": "영탁",
         "hero": false,
-        "targetWidthPct": 79.5,
-        "pathWidthPx": 858.6,
-        "pathHeightPx": 132,
-        "measuredWidthPx": 859,
-        "measuredHeightPx": 133,
-        "measuredWidthPct": 79.5,
+        "targetWidthPct": 46,
+        "pathWidthPx": 496.8,
+        "pathHeightPx": 176,
+        "measuredWidthPx": 498,
+        "measuredHeightPx": 177,
+        "measuredWidthPct": 46.1,
         "uniformScale": false
+      },
+      {
+        "role": "전화번호",
+        "text": "010-7770-0869",
+        "hero": true,
+        "targetWidthPct": 95.5,
+        "pathWidthPx": 1031.4,
+        "pathHeightPx": 200,
+        "measuredWidthPx": 1032,
+        "measuredHeightPx": 201,
+        "measuredWidthPct": 95.6,
+        "uniformScale": false
+      },
+      {
+        "role": "광고문의(보조)",
+        "text": "광고문의 카톡 besta12",
+        "hero": false,
+        "targetWidthPct": 59.5,
+        "pathWidthPx": 642.6,
+        "pathHeightPx": 61.7,
+        "measuredWidthPx": 642,
+        "measuredHeightPx": 62,
+        "measuredWidthPct": 59.4,
+        "uniformScale": true
       }
     ],
-    "bg": "#1C1430",
-    "bytes": 57516,
+    "bg": "#5C3000",
+    "bytes": 63699,
     "note": null
   },
   {
