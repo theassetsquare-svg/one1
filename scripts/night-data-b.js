@@ -504,7 +504,7 @@ const PAGES_B = [
   name: '대전세븐나이트', nameB: '대전 세븐나이트', nameC: '유천동 나이트클럽',
   region: '대전 중구 유천동', locality: '중구', addrRegion: '대전광역시',
   angle: 3, angleName: '장면 묘사형', suffix: '자정 무렵 홀 안',
-  group: 'B', manager: null, tel: null, telHref: null,
+  group: 'A', manager: '영탁', tel: '010-7770-0869', telHref: '01077700869',
   age: null, bg: '#5C3000',
   title: '대전세븐나이트 자정 무렵 홀 안 중구 유천동 밤 풍경',
   desc: '대전세븐나이트의 자정 무렵을 도착 순간부터 무대까지 장면으로 따라갔습니다. 밴드와 디제이가 교대하는 구간에서 홀 공기가 어떻게 바뀌는지 확인하세요.',
