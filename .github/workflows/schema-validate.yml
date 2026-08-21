@@ -58,12 +58,12 @@ jobs:
       - name: 라이브 썸네일 실측 (HTTP 200 + image/png + 본문 img · 홈은 메타만)
         run: |
           set -e
-          for u in /og/home.png /og/info.png /og/hobak.png /og/night-hub-og.png /og/start-hub-og.png /og/cheongdam-night-og.png /og/start-sillim-grandprix-og.png; do
+          for u in /og/home.png /og/info.png /og/hobak.png /og/night-hub-og.png /og/start-hub-og.png /og/cheongdam-guide-night-guide-og.png /og/start-sillim-grandprix-og.png; do
             CT=$(curl -sIL -o /dev/null -w '%{http_code} %{content_type}' "https://onee-w8t.pages.dev$u")
             case "$CT" in "200 image/png"*) echo "OK $u ($CT)";; *) echo "FAIL $u ($CT)"; exit 1;; esac
           done
           # 본문 썸네일 + thumbnail 메타 (홈 제외 — 홈은 독립 성공스토리라 본문 이미지를 싣지 않는다)
-          for p in /info /bulgwangdong-hobak /night/ /start/ /night/cheongdam-night/ /start/sillim-grandprix/; do
+          for p in /info /bulgwangdong-hobak /night/ /start/ /night/cheongdam-night-guide/ /start/sillim-grandprix/; do
             H=$(curl -sL "https://onee-w8t.pages.dev$p")
             echo "$H" | grep -q '<img[^>]*src="/og/' || { echo "FAIL $p 본문 img 없음"; exit 1; }
             echo "$H" | grep -q '<meta name="thumbnail"' || { echo "FAIL $p thumbnail 메타 없음"; exit 1; }
