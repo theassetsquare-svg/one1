@@ -57,7 +57,7 @@
   },
   {
     "rel": "night/ansan-hit-night/index.html",
-    "img": "/og/ansan-hit-guide-night-og.png",
+    "img": "/og/ansan-hit-night-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -71,7 +71,7 @@
   },
   {
     "rel": "night/busan-asiad-night/index.html",
-    "img": "/og/busan-asiad-night-guide-og.png",
+    "img": "/og/busan-asiad-night-og.png",
     "size": "1200x1200",
     "kb": 51,
     "verdict": "PASS"
@@ -85,14 +85,14 @@
   },
   {
     "rel": "night/cheongdam-night/index.html",
-    "img": "/og/cheongdam-guide-night-guide-og.png",
+    "img": "/og/cheongdam-night-guide-og.png",
     "size": "1200x1200",
     "kb": 65,
     "verdict": "PASS"
   },
   {
     "rel": "night/daejeon-one-night/index.html",
-    "img": "/og/daejeon-one-guide-night-og.png",
+    "img": "/og/daejeon-one-night-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
@@ -155,7 +155,7 @@
   },
   {
     "rel": "start/ansan-hit/index.html",
-    "img": "/og/start-ansan-hit-guide-og.png",
+    "img": "/og/start-ansan-hit-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -204,7 +204,7 @@
   },
   {
     "rel": "start/cheongdam/index.html",
-    "img": "/og/start-cheongdam-guide-og.png",
+    "img": "/og/start-cheongdam-og.png",
     "size": "1200x1200",
     "kb": 65,
     "verdict": "PASS"
@@ -225,7 +225,7 @@
   },
   {
     "rel": "start/daejeon-one/index.html",
-    "img": "/og/start-daejeon-one-guide-og.png",
+    "img": "/og/start-daejeon-one-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
@@ -337,7 +337,7 @@
   },
   {
     "rel": "start/osan-hobak/index.html",
-    "img": "/og/start-osan-hobak-guide-og.png",
+    "img": "/og/start-osan-hobak-og.png",
     "size": "1200x1200",
     "kb": 56,
     "verdict": "PASS"
@@ -372,7 +372,7 @@
   },
   {
     "rel": "start/seosan-hobak/index.html",
-    "img": "/og/start-seosan-hobak-guide-og.png",
+    "img": "/og/start-seosan-hobak-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"

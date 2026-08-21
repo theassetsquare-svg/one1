@@ -117,7 +117,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/cheongdam-guide-night-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/cheongdam-night-guide-og.png</image:loc>
       <image:caption>청담나이트 예약문의 펩시맨 010-5655-4866 안내 카드 · 서울 강남구 청담동</image:caption>
     </image:image>
   </url>
@@ -127,7 +127,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/daejeon-one-guide-night-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/daejeon-one-night-og.png</image:loc>
       <image:caption>대전원나이트 안내 카드 · 대전 중구 · 만 38세 이상 출입 표기</image:caption>
     </image:image>
   </url>
@@ -162,12 +162,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/night/busan-asiad-night-guide/</loc>
+    <loc>https://onee-w8t.pages.dev/night/busan-asiad-night/</loc>
     <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/busan-asiad-night-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/busan-asiad-night-og.png</image:loc>
       <image:caption>부산아시아드나이트 안내 카드 · 부산 동래구 온천동 · 온천장역 인근</image:caption>
     </image:image>
   </url>
@@ -187,7 +187,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/ansan-hit-guide-night-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/ansan-hit-night-og.png</image:loc>
       <image:caption>안산히트나이트 안내 카드 · 경기 안산시 상록구 상록수로</image:caption>
     </image:image>
   </url>
@@ -272,12 +272,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/ansan-hit-guide/</loc>
+    <loc>https://onee-w8t.pages.dev/start/ansan-hit/</loc>
     <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-ansan-hit-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-ansan-hit-og.png</image:loc>
       <image:caption>안산히트나이트 입문 노트 · 경기 안산시 상록구 본오동 · 초보 대처 안내</image:caption>
     </image:image>
   </url>
@@ -302,22 +302,22 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/cheongdam-guide/</loc>
+    <loc>https://onee-w8t.pages.dev/start/cheongdam/</loc>
     <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-cheongdam-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-cheongdam-og.png</image:loc>
       <image:caption>청담나이트 예약문의 펩시맨 010-5655-4866 · 서울 강남구 청담동 입문 안내</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/daejeon-one-guide/</loc>
+    <loc>https://onee-w8t.pages.dev/start/daejeon-one/</loc>
     <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-daejeon-one-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-daejeon-one-og.png</image:loc>
       <image:caption>대전원나이트 입문 노트 · 대전 중구 · 만 38세 이상 출입 안내</image:caption>
     </image:image>
   </url>
@@ -462,12 +462,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/osan-hobak-guide/</loc>
+    <loc>https://onee-w8t.pages.dev/start/osan-hobak/</loc>
     <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-osan-hobak-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-osan-hobak-og.png</image:loc>
       <image:caption>오산호박나이트 입문 노트 · 경기 오산시 원동 · 오산역 도보 안내</image:caption>
     </image:image>
   </url>
@@ -567,7 +567,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-seosan-hobak-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-seosan-hobak-og.png</image:loc>
       <image:caption>서산호박나이트 입문 노트 · 충남 서산시 읍내동 · 차량 방문 안내</image:caption>
     </image:image>
   </url>
