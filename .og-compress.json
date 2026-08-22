@@ -24,6 +24,14 @@
     "verdict": "PASS"
   },
   {
+    "file": "bulgwang-hobak-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 61,
+    "afterKB": 61,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "bulgwang-hobak-night-og.png",
     "size": "1200x1200",
     "beforeKB": 61,
@@ -44,6 +52,14 @@
     "size": "1200x1200",
     "beforeKB": 51,
     "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "changwon-lululala-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 59,
+    "afterKB": 59,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -120,14 +136,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "dome-chance-suwon-guide-night-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "faq-guide-guide.png",
     "size": "1200x1200",
     "beforeKB": 39,
@@ -176,6 +184,14 @@
     "verdict": "PASS"
   },
   {
+    "file": "ilsan-shampoo-1-guide-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "ilsan-shampoo-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
@@ -216,34 +232,10 @@
     "verdict": "PASS"
   },
   {
-    "file": "night-hangukgwan-sangbong-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 50,
-    "afterKB": 50,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "night-hobak-bulgwang-og.png",
-    "size": "1200x1200",
-    "beforeKB": 61,
-    "afterKB": 61,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "night-hub-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
     "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "night-lululala-changwon-og.png",
-    "size": "1200x1200",
-    "beforeKB": 59,
-    "afterKB": 59,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -264,7 +256,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "sangbong-hangukgwan-night-og.png",
+    "file": "sangbong-hangukgwan-1-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
@@ -272,18 +264,10 @@
     "verdict": "PASS"
   },
   {
-    "file": "shampoo-ilsan-guide-guide-guide-og.png",
+    "file": "sangbong-hangukgwan-night-og.png",
     "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "shampoo-suyu-guide-night-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 54,
-    "afterKB": 54,
+    "beforeKB": 50,
+    "afterKB": 50,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -480,14 +464,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-dome-chance-suwon-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "start-gangseo-hobak-og.png",
     "size": "1200x1200",
     "beforeKB": 52,
@@ -564,6 +540,14 @@
     "size": "1200x1200",
     "beforeKB": 48,
     "afterKB": 48,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-ilsan-shampoo-1-guide-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -712,22 +696,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-shampoo-ilsan-guide-guide-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "start-shampoo-suyu-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 48,
-    "afterKB": 48,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "start-sillim-grandprix-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
@@ -752,10 +720,26 @@
     "verdict": "PASS"
   },
   {
+    "file": "start-suwon-chancedome-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "start-suwon-korea-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-suyu-shampoo-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 48,
+    "afterKB": 48,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -820,6 +804,22 @@
     "size": "1200x1200",
     "beforeKB": 49,
     "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "suwon-chancedome-1-night-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "suyu-shampoo-1-night-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 54,
+    "afterKB": 54,
     "colors": "-",
     "verdict": "PASS"
   },

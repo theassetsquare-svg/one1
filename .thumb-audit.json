@@ -64,7 +64,7 @@
   },
   {
     "rel": "night/bulgwang-hobak-night/index.html",
-    "img": "/og/night-hobak-bulgwang-og.png",
+    "img": "/og/bulgwang-hobak-1-og.png",
     "size": "1200x1200",
     "kb": 61,
     "verdict": "PASS"
@@ -78,7 +78,7 @@
   },
   {
     "rel": "night/changwon-lululala-night/index.html",
-    "img": "/og/night-lululala-changwon-og.png",
+    "img": "/og/changwon-lululala-1-og.png",
     "size": "1200x1200",
     "kb": 59,
     "verdict": "PASS"
@@ -106,7 +106,7 @@
   },
   {
     "rel": "night/ilsan-shampoo/index.html",
-    "img": "/og/shampoo-ilsan-guide-guide-guide-og.png",
+    "img": "/og/ilsan-shampoo-1-guide-guide-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
@@ -120,7 +120,7 @@
   },
   {
     "rel": "night/sangbong-hangukgwan-night/index.html",
-    "img": "/og/night-hangukgwan-sangbong-guide-og.png",
+    "img": "/og/sangbong-hangukgwan-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -134,14 +134,14 @@
   },
   {
     "rel": "night/suwon-chance-dome-night/index.html",
-    "img": "/og/dome-chance-suwon-guide-night-guide-og.png",
+    "img": "/og/suwon-chancedome-1-night-guide-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
   },
   {
     "rel": "night/suyu-shampoo-night/index.html",
-    "img": "/og/shampoo-suyu-guide-night-guide-og.png",
+    "img": "/og/suyu-shampoo-1-night-guide-og.png",
     "size": "1200x1200",
     "kb": 54,
     "verdict": "PASS"
@@ -295,7 +295,7 @@
   },
   {
     "rel": "start/ilsan-shampoo/index.html",
-    "img": "/og/start-shampoo-ilsan-guide-guide-guide-og.png",
+    "img": "/og/start-ilsan-shampoo-1-guide-guide-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
@@ -386,7 +386,7 @@
   },
   {
     "rel": "start/suwon-chance-dome/index.html",
-    "img": "/og/start-dome-chance-suwon-guide-og.png",
+    "img": "/og/start-suwon-chancedome-1-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
@@ -400,7 +400,7 @@
   },
   {
     "rel": "start/suyu-shampoo/index.html",
-    "img": "/og/start-shampoo-suyu-guide-og.png",
+    "img": "/og/start-suyu-shampoo-1-og.png",
     "size": "1200x1200",
     "kb": 48,
     "verdict": "PASS"
