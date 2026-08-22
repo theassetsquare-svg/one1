@@ -2220,14 +2220,18 @@
     "file": "/og/start-dapsimni-miracle-og.png",
     "pageUrl": "https://onee-w8t.pages.dev/start/dapsimni-miracle/",
     "venue": "답십리미라클나이트",
-    "category": "B",
-    "advertiser": null,
-    "heroText": "광고문의",
-    "heroRole": "광고문의",
+    "category": "A",
+    "advertiser": {
+      "nick": "유재석",
+      "tel": "010-8156-6558"
+    },
+    "heroText": "010-8156-6558",
+    "heroRole": "전화번호",
     "drawnTexts": [
       "답십리미라클나이트",
-      "광고문의",
-      "카카오톡 besta12"
+      "유재석",
+      "010-8156-6558",
+      "광고문의 카톡 besta12"
     ],
     "texts": [
       {
@@ -2238,37 +2242,49 @@
         "pathWidthPx": 696.6,
         "pathHeightPx": 81.9,
         "measuredWidthPx": 698,
-        "measuredHeightPx": 82,
+        "measuredHeightPx": 83,
         "measuredWidthPct": 64.6,
         "uniformScale": true
       },
       {
-        "role": "광고문의",
-        "text": "광고문의",
-        "hero": true,
-        "targetWidthPct": 84.5,
-        "pathWidthPx": 912.6,
-        "pathHeightPx": 244.8,
-        "measuredWidthPx": 914,
-        "measuredHeightPx": 246,
-        "measuredWidthPct": 84.6,
+        "role": "닉네임",
+        "text": "유재석",
+        "hero": false,
+        "targetWidthPct": 46,
+        "pathWidthPx": 496.8,
+        "pathHeightPx": 179.7,
+        "measuredWidthPx": 498,
+        "measuredHeightPx": 181,
+        "measuredWidthPct": 46.1,
         "uniformScale": true
       },
       {
-        "role": "카카오톡",
-        "text": "카카오톡 besta12",
-        "hero": false,
-        "targetWidthPct": 79.5,
-        "pathWidthPx": 858.6,
-        "pathHeightPx": 132,
-        "measuredWidthPx": 859,
-        "measuredHeightPx": 132,
-        "measuredWidthPct": 79.5,
+        "role": "전화번호",
+        "text": "010-8156-6558",
+        "hero": true,
+        "targetWidthPct": 95.5,
+        "pathWidthPx": 1031.4,
+        "pathHeightPx": 200,
+        "measuredWidthPx": 1032,
+        "measuredHeightPx": 200,
+        "measuredWidthPct": 95.6,
         "uniformScale": false
+      },
+      {
+        "role": "광고문의(보조)",
+        "text": "광고문의 카톡 besta12",
+        "hero": false,
+        "targetWidthPct": 59.5,
+        "pathWidthPx": 642.6,
+        "pathHeightPx": 61.7,
+        "measuredWidthPx": 643,
+        "measuredHeightPx": 62,
+        "measuredWidthPct": 59.5,
+        "uniformScale": true
       }
     ],
-    "bg": "#2A0F22",
-    "bytes": 49163,
+    "bg": "#1A0E2E",
+    "bytes": 66479,
     "note": null
   },
   {
