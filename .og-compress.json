@@ -24,14 +24,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "bulgwang-hobak-night-hall-og.png",
-    "size": "1200x1200",
-    "beforeKB": 61,
-    "afterKB": 61,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "bulgwang-hobak-night-og.png",
     "size": "1200x1200",
     "beforeKB": 61,
@@ -56,14 +48,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "changwon-lululala-night-hall-og.png",
-    "size": "1200x1200",
-    "beforeKB": 59,
-    "afterKB": 59,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "changwon-lululala-night-og.png",
     "size": "1200x1200",
     "beforeKB": 59,
@@ -84,6 +68,14 @@
     "size": "1200x1200",
     "beforeKB": 65,
     "afterKB": 65,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "contact-guide-guide.png",
+    "size": "1200x1200",
+    "beforeKB": 39,
+    "afterKB": 39,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -128,6 +120,22 @@
     "verdict": "PASS"
   },
   {
+    "file": "dome-chance-suwon-night-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "faq-guide-guide.png",
+    "size": "1200x1200",
+    "beforeKB": 39,
+    "afterKB": 39,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "faq.png",
     "size": "1200x1200",
     "beforeKB": 39,
@@ -152,7 +160,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "hours.png",
+    "file": "hours-guide-guide.png",
     "size": "1200x1200",
     "beforeKB": 39,
     "afterKB": 39,
@@ -160,10 +168,10 @@
     "verdict": "PASS"
   },
   {
-    "file": "ilsan-shampoo-hall-guide-og.png",
+    "file": "hours.png",
     "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
+    "beforeKB": 39,
+    "afterKB": 39,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -176,7 +184,23 @@
     "verdict": "PASS"
   },
   {
+    "file": "info-guide-guide.png",
+    "size": "1200x1200",
+    "beforeKB": 39,
+    "afterKB": 39,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "info.png",
+    "size": "1200x1200",
+    "beforeKB": 39,
+    "afterKB": 39,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "ladies-guide-guide.png",
     "size": "1200x1200",
     "beforeKB": 39,
     "afterKB": 39,
@@ -192,10 +216,34 @@
     "verdict": "PASS"
   },
   {
+    "file": "night-hangukgwan-sangbong-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "night-hobak-bulgwang-og.png",
+    "size": "1200x1200",
+    "beforeKB": 61,
+    "afterKB": 61,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "night-hub-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
     "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "night-lululala-changwon-og.png",
+    "size": "1200x1200",
+    "beforeKB": 59,
+    "afterKB": 59,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -216,7 +264,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "sangbong-hangukgwan-night-hall-og.png",
+    "file": "sangbong-hangukgwan-night-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
@@ -224,10 +272,18 @@
     "verdict": "PASS"
   },
   {
-    "file": "sangbong-hangukgwan-night-og.png",
+    "file": "shampoo-ilsan-guide-og.png",
     "size": "1200x1200",
-    "beforeKB": 50,
-    "afterKB": 50,
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "shampoo-suyu-night-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 54,
+    "afterKB": 54,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -256,7 +312,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-bucheon-gorae-guide-og.png",
+    "file": "start-bucheon-gorae-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
@@ -296,6 +352,14 @@
     "verdict": "PASS"
   },
   {
+    "file": "start-cheonan-korea-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 51,
+    "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "start-cheonan-korea-og.png",
     "size": "1200x1200",
     "beforeKB": 51,
@@ -304,7 +368,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-cheonan-stardome-guide-og.png",
+    "file": "start-cheonan-stardome-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 55,
     "afterKB": 55,
@@ -336,10 +400,26 @@
     "verdict": "PASS"
   },
   {
+    "file": "start-cheongju-hobak-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "start-cheongju-hobak-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
     "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-daegu-hobak-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 54,
+    "afterKB": 54,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -400,6 +480,14 @@
     "verdict": "PASS"
   },
   {
+    "file": "start-dome-chance-suwon-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "start-gangseo-hobak-og.png",
     "size": "1200x1200",
     "beforeKB": 52,
@@ -409,6 +497,14 @@
   },
   {
     "file": "start-gildong-chance-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-gumi-hobak-guide-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
@@ -432,10 +528,26 @@
     "verdict": "PASS"
   },
   {
+    "file": "start-gwangju-cheomdan-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "start-gwangju-cheomdan-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-gwangju-sangmu-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -456,14 +568,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-ilsan-shampoo-hall-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "start-ilsan-shampoo-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
@@ -472,7 +576,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-incheon-arabian-guide-og.png",
+    "file": "start-incheon-arabian-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 56,
     "afterKB": 56,
@@ -488,7 +592,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-indeogwon-gukbingwan-guide-og.png",
+    "file": "start-indeogwon-gukbingwan-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 48,
     "afterKB": 48,
@@ -500,6 +604,14 @@
     "size": "1200x1200",
     "beforeKB": 48,
     "afterKB": 48,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-jeju-do-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 54,
+    "afterKB": 54,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -536,7 +648,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-paju-yadang-skydome-guide-og.png",
+    "file": "start-paju-yadang-skydome-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 51,
     "afterKB": 51,
@@ -552,7 +664,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-pyeongtaek-hobak-guide-og.png",
+    "file": "start-pyeongtaek-hobak-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
@@ -576,7 +688,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-seongnam-shampoo-guide-og.png",
+    "file": "start-seongnam-shampoo-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
@@ -592,7 +704,7 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-seosan-hobak-guide-og.png",
+    "file": "start-seosan-hobak-hall-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
     "afterKB": 49,
@@ -608,18 +720,26 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-sillim-grandprix-og.png",
+    "file": "start-shampoo-ilsan-guide-og.png",
     "size": "1200x1200",
-    "beforeKB": 50,
-    "afterKB": 50,
+    "beforeKB": 49,
+    "afterKB": 49,
     "colors": "-",
     "verdict": "PASS"
   },
   {
-    "file": "start-suwon-chance-dome-hall-og.png",
+    "file": "start-shampoo-suyu-og.png",
     "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
+    "beforeKB": 48,
+    "afterKB": 48,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-sillim-grandprix-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -636,14 +756,6 @@
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "start-suyu-shampoo-hall-og.png",
-    "size": "1200x1200",
-    "beforeKB": 48,
-    "afterKB": 48,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -680,6 +792,14 @@
     "verdict": "PASS"
   },
   {
+    "file": "start-ulsan-newworld-guide-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "start-ulsan-newworld-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
@@ -696,26 +816,10 @@
     "verdict": "PASS"
   },
   {
-    "file": "suwon-chance-dome-hall-night-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 49,
-    "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "suwon-chance-dome-night-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
     "afterKB": 49,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "suyu-shampoo-hall-night-guide-og.png",
-    "size": "1200x1200",
-    "beforeKB": 54,
-    "afterKB": 54,
     "colors": "-",
     "verdict": "PASS"
   },

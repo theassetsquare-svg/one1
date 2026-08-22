@@ -29,11 +29,11 @@ const NICK_OWNER = Object.fromEntries(Object.entries(ADVERTISERS).map(([v, a]) =
 /* ── 페이지 목록: 파일 → {url, 자기 가게이름, 허브 여부} ── */
 const PAGES = [
   { f: 'index.html', url: '/', own: [], hub: true },            // 홈 = 독립 성공스토리(가게이름 0)
-  { f: 'info.html', url: '/info', own: ['대전원나이트'] },
-  { f: 'hours.html', url: '/hours', own: ['대전원나이트'] },
-  { f: 'ladies.html', url: '/ladies', own: ['대전원나이트'] },
-  { f: 'faq.html', url: '/faq', own: ['대전원나이트'] },
-  { f: 'contact.html', url: '/contact', own: ['대전원나이트'] },
+  { f: 'info.html', url: '/info-guide', own: ['대전원나이트'] },
+  { f: 'hours.html', url: '/hours-guide', own: ['대전원나이트'] },
+  { f: 'ladies.html', url: '/ladies-guide', own: ['대전원나이트'] },
+  { f: 'faq.html', url: '/faq-guide', own: ['대전원나이트'] },
+  { f: 'contact.html', url: '/contact-guide', own: ['대전원나이트'] },
   { f: '404.html', url: '/404', own: ['대전원나이트'] },
   { f: 'bulgwangdong-hobak.html', url: '/bulgwangdong-hobak', own: ['불광동호박나이트'] },
   { f: 'night/index.html', url: '/night/', own: [], hub: true },

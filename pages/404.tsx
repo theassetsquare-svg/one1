@@ -24,7 +24,7 @@ export default function NotFound() {
             <Link href="/" className="cta-primary">
               홈으로 이동
             </Link>
-            <Link href="/info" className="cta-secondary">
+            <Link href="/info-guide" className="cta-secondary">
               입장 안내 보기
             </Link>
           </div>

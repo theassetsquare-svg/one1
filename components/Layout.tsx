@@ -17,11 +17,11 @@ const LOGO = {
 
 const NAV = [
   { href: '/', label: '홈' },
-  { href: '/info', label: '입장 안내' },
-  { href: '/hours', label: '영업 시간' },
-  { href: '/ladies', label: '여성 손님' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/contact', label: '문의' },
+  { href: '/info-guide', label: '입장 안내' },
+  { href: '/hours-guide', label: '영업 시간' },
+  { href: '/ladies-guide', label: '여성 손님' },
+  { href: '/faq-guide', label: 'FAQ' },
+  { href: '/contact-guide', label: '문의' },
 ];
 
 type LayoutProps = {

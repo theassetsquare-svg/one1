@@ -1,11 +1,11 @@
 const CACHE = 'onee-w8t-v3';
 const ASSETS = [
   '/',
-  '/info',
-  '/hours',
-  '/ladies',
-  '/faq',
-  '/contact',
+  '/info-guide',
+  '/hours-guide',
+  '/ladies-guide',
+  '/faq-guide',
+  '/contact-guide',
   '/bulgwangdong-hobak',
   '/site.webmanifest',
   '/og/og-thumb.png',
