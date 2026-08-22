@@ -142,22 +142,22 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/night/night-hangukgwan-sangbong/</loc>
+    <loc>https://onee-w8t.pages.dev/night/night-hangukgwan-sangbong-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/night-hangukgwan-sangbong-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/night-hangukgwan-sangbong-guide-og.png</image:loc>
       <image:caption>상봉동한국관나이트 안내 카드 · 서울 중랑구 망우로 · 상봉역 인근</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/night/night-shampoo-suyu/</loc>
+    <loc>https://onee-w8t.pages.dev/night/night-shampoo-suyu-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/shampoo-suyu-night-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/shampoo-suyu-guide-night-guide-og.png</image:loc>
       <image:caption>수유샴푸나이트 안내 카드 · 서울 강북구 도봉로 · 수유역 인근</image:caption>
     </image:image>
   </url>
@@ -172,12 +172,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/night/night-dome-chance-suwon/</loc>
+    <loc>https://onee-w8t.pages.dev/night/night-dome-chance-suwon-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/dome-chance-suwon-night-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/dome-chance-suwon-guide-night-guide-og.png</image:loc>
       <image:caption>수원찬스돔나이트 안내 카드 · 경기 수원시 권선구 권선로</image:caption>
     </image:image>
   </url>
@@ -202,12 +202,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/night/shampoo-ilsan/</loc>
+    <loc>https://onee-w8t.pages.dev/night/shampoo-ilsan-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/shampoo-ilsan-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/shampoo-ilsan-guide-guide-guide-og.png</image:loc>
       <image:caption>일산샴푸나이트 안내 카드 · 경기 고양시 일산동구 마두동 · 마두역 인근</image:caption>
     </image:image>
   </url>
@@ -242,12 +242,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/shampoo-suyu/</loc>
+    <loc>https://onee-w8t.pages.dev/start/shampoo-suyu-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-shampoo-suyu-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-shampoo-suyu-guide-og.png</image:loc>
       <image:caption>수유샴푸나이트 입문 노트 · 서울 강북구 수유동 · 도착 시간 안내</image:caption>
     </image:image>
   </url>
@@ -262,12 +262,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/dome-chance-suwon/</loc>
+    <loc>https://onee-w8t.pages.dev/start/dome-chance-suwon-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-dome-chance-suwon-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-dome-chance-suwon-guide-og.png</image:loc>
       <image:caption>수원찬스돔나이트 입문 노트 · 경기 수원시 권선구 · 첫 방문 예습 안내</image:caption>
     </image:image>
   </url>
@@ -292,12 +292,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/shampoo-ilsan/</loc>
+    <loc>https://onee-w8t.pages.dev/start/shampoo-ilsan-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-shampoo-ilsan-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-shampoo-ilsan-guide-guide-guide-og.png</image:loc>
       <image:caption>일산샴푸나이트 입문 노트 · 경기 고양시 일산동구 마두동 · 합석 안내</image:caption>
     </image:image>
   </url>
@@ -492,12 +492,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/incheon-arabian-hall/</loc>
+    <loc>https://onee-w8t.pages.dev/start/arabian-incheon/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-incheon-arabian-hall-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-arabian-incheon-og.png</image:loc>
       <image:caption>인천아라비안나이트 입문 노트 · 인천 계양구 · 인천아라비아나이트 표기 안내</image:caption>
     </image:image>
   </url>
@@ -522,22 +522,22 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/cheonan-stardome-hall/</loc>
+    <loc>https://onee-w8t.pages.dev/start/stardome-cheonan/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-cheonan-stardome-hall-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-stardome-cheonan-og.png</image:loc>
       <image:caption>천안스타돔나이트 입문 노트 · 충남 천안시 서북구 성정동 · 타지 방문 안내</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/cheonan-korea-guide/</loc>
+    <loc>https://onee-w8t.pages.dev/start/cheonan-korea-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-cheonan-korea-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-cheonan-korea-hall-og.png</image:loc>
       <image:caption>천안코리아나이트 입문 노트 · 충남 천안시 서북구 쌍용동 · 주문 안내</image:caption>
     </image:image>
   </url>
@@ -552,12 +552,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://onee-w8t.pages.dev/start/ulsan-newworld-guide/</loc>
+    <loc>https://onee-w8t.pages.dev/start/ulsan-newworld-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://onee-w8t.pages.dev/og/start-ulsan-newworld-guide-og.png</image:loc>
+      <image:loc>https://onee-w8t.pages.dev/og/start-ulsan-newworld-hall-og.png</image:loc>
       <image:caption>울산뉴월드나이트 입문 노트 · 울산 남구 삼산동 · 1층 홀 안내</image:caption>
     </image:image>
   </url>

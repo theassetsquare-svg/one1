@@ -87,13 +87,13 @@ https://onee-w8t.pages.dev/night/ulsan-champion-night/ — 울산챔피언나이
 https://onee-w8t.pages.dev/night/cheongdam-night/ — 청담나이트 — 서울 강남구 청담동 — 영동대로변 호텔 건물 지하 1층에 홀을 두고 있으며 청담역 9번 출구에서 걸어서 3분 거리입니다.
 https://onee-w8t.pages.dev/night/daejeon-one-night/ — 대전원나이트 — 대전 중구 — 만 38세 이상만 출입 가능한 홀이며, 평일은 20시부터 새벽 2시 30분까지 주말은 새벽 3시 30분까지 운영합니다.
 https://onee-w8t.pages.dev/night/sillim-grandprix-night/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 신림로 340 복합상가 안에 홀을 두고 평일은 저녁 6시부터 새벽 4시까지, 주말은 새벽 6시까지 운영합니다.
-https://onee-w8t.pages.dev/night/night-hangukgwan-sangbong/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 망우로 대로변 건물 2층에서 저녁 7시부터 새벽 6시까지 운영하며 룸·부스·테이블을 함께 둡니다.
-https://onee-w8t.pages.dev/night/night-shampoo-suyu/ — 수유샴푸나이트 — 서울 강북구 수유동 — 도봉로 대로변 건물 지하 1~2층을 쓰며 저녁 7시부터 새벽 5시까지 문을 엽니다.
+https://onee-w8t.pages.dev/night/night-hangukgwan-sangbong-guide/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 망우로 대로변 건물 2층에서 저녁 7시부터 새벽 6시까지 운영하며 룸·부스·테이블을 함께 둡니다.
+https://onee-w8t.pages.dev/night/night-shampoo-suyu-guide/ — 수유샴푸나이트 — 서울 강북구 수유동 — 도봉로 대로변 건물 지하 1~2층을 쓰며 저녁 7시부터 새벽 5시까지 문을 엽니다.
 https://onee-w8t.pages.dev/night/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 온천장로107번길 건물 지하 1~2층을 통째로 쓰는 동래 상권의 대형 홀입니다.
-https://onee-w8t.pages.dev/night/night-dome-chance-suwon/ — 수원찬스돔나이트 — 경기 수원시 권선구 — 권선로 673 대로변에 자리한 홀로 저녁 6시부터 새벽 4시까지 룸·부스·테이블을 함께 운영합니다.
+https://onee-w8t.pages.dev/night/night-dome-chance-suwon-guide/ — 수원찬스돔나이트 — 경기 수원시 권선구 — 권선로 673 대로변에 자리한 홀로 저녁 6시부터 새벽 4시까지 룸·부스·테이블을 함께 운영합니다.
 https://onee-w8t.pages.dev/night/ansan-hit-night/ — 안산히트나이트 — 경기 안산시 상록구 본오동 — 상록수로 34 상가 건물 지층에 홀을 두고 있으며 상록수역에서 걸어서 닿는 거리입니다.
 https://onee-w8t.pages.dev/night/daejeon-seven-night/ — 대전세븐나이트 — 대전 중구 유천동 — 유천동 당디로에 자리한 홀로 무대에서 라이브 밴드와 디제이가 번갈아 무대를 채웁니다.
-https://onee-w8t.pages.dev/night/shampoo-ilsan/ — 일산샴푸나이트 — 경기 고양시 일산동구 마두동 — 중앙로 1160 건물 9층에 홀을 두고 저녁 6시부터 새벽 4시까지 룸과 부스, 테이블을 함께 운영합니다.
+https://onee-w8t.pages.dev/night/shampoo-ilsan-guide/ — 일산샴푸나이트 — 경기 고양시 일산동구 마두동 — 중앙로 1160 건물 9층에 홀을 두고 저녁 6시부터 새벽 4시까지 룸과 부스, 테이블을 함께 운영합니다.
 
 ## 나이트 입문 노트 (/start/)
 
@@ -107,12 +107,12 @@ https://onee-w8t.pages.dev/night/shampoo-ilsan/ — 일산샴푸나이트 — �
 ### 수록 업소 40곳
 - 신림그랑프리나이트 — 서울 관악구 신림동 · 2호선 신림역 · https://onee-w8t.pages.dev/start/sillim-grandprix/
 - 상봉동한국관나이트 — 서울 중랑구 상봉동 · 7호선·경의중앙선·경춘선 상봉역 · https://onee-w8t.pages.dev/start/sangbong-hangukgwan/
-- 수유샴푸나이트 — 서울 강북구 수유동 · 4호선 수유역 · https://onee-w8t.pages.dev/start/shampoo-suyu/
+- 수유샴푸나이트 — 서울 강북구 수유동 · 4호선 수유역 · https://onee-w8t.pages.dev/start/shampoo-suyu-guide/
 - 부산아시아드나이트 — 부산 동래구 온천동 · 1호선 온천장역 / 명륜역 · https://onee-w8t.pages.dev/start/busan-asiad/
-- 수원찬스돔나이트 — 경기 수원시 권선구 · 1호선 수원역 방면 · https://onee-w8t.pages.dev/start/dome-chance-suwon/
+- 수원찬스돔나이트 — 경기 수원시 권선구 · 1호선 수원역 방면 · https://onee-w8t.pages.dev/start/dome-chance-suwon-guide/
 - 안산히트나이트 — 경기 안산시 상록구 본오동 · 4호선 상록수역 · https://onee-w8t.pages.dev/start/ansan-hit/
 - 대전세븐나이트 — 대전 중구 유천동 · 1호선 서대전네거리역 방면 · https://onee-w8t.pages.dev/start/daejeon-seven/
-- 일산샴푸나이트 — 경기 고양시 일산동구 마두동 · 3호선 마두역 · https://onee-w8t.pages.dev/start/shampoo-ilsan/
+- 일산샴푸나이트 — 경기 고양시 일산동구 마두동 · 3호선 마두역 · https://onee-w8t.pages.dev/start/shampoo-ilsan-guide/
 - 청담나이트 — 서울 강남구 청담동 · 7호선 청담역 · https://onee-w8t.pages.dev/start/cheongdam/
 - 대전원나이트 — 대전 중구 · 1호선 중앙로역 방면 · https://onee-w8t.pages.dev/start/daejeon-one/
 - 창원룰루랄라나이트 — 경남 창원시 성산구 상남동 · 창원 상남동 상권 (도시철도 미연결) · https://onee-w8t.pages.dev/start/changwon-lululala/
@@ -132,13 +132,13 @@ https://onee-w8t.pages.dev/night/shampoo-ilsan/ — 일산샴푸나이트 — �
 - 오산호박나이트 — 경기 오산시 원동 · 1호선 오산역 도보 5분 · https://onee-w8t.pages.dev/start/osan-hobak/
 - 인덕원국빈관나이트 — 경기 안양시 동안구 관양동 · 4호선 인덕원역 2번 출구 앞 · https://onee-w8t.pages.dev/start/indeogwon-gukbingwan-hall/
 - 성남샴푸나이트 — 경기 성남시 중원구 성남동 · 수인분당선·8호선 모란역 방면 · https://onee-w8t.pages.dev/start/seongnam-shampoo-hall/
-- 인천아라비안나이트 — 인천 계양구 · 인천1호선·서울7호선 작전역 방면 · https://onee-w8t.pages.dev/start/incheon-arabian-hall/
+- 인천아라비안나이트 — 인천 계양구 · 인천1호선·서울7호선 작전역 방면 · https://onee-w8t.pages.dev/start/arabian-incheon/
 - 부천고래나이트 — 경기 부천시 중동 · 7호선 신중동역 방면 · https://onee-w8t.pages.dev/start/bucheon-gorae-hall/
 - 평택호박나이트 — 경기 평택시 평택동 · 1호선 평택역 도보권 · https://onee-w8t.pages.dev/start/pyeongtaek-hobak-hall/
-- 천안스타돔나이트 — 충남 천안시 서북구 성정동 · 1호선 천안역 방면 (도보 거리 확인 불가) · https://onee-w8t.pages.dev/start/cheonan-stardome-hall/
-- 천안코리아나이트 — 충남 천안시 서북구 쌍용동 · 1호선 쌍용역(나사렛대) · https://onee-w8t.pages.dev/start/cheonan-korea-guide/
+- 천안스타돔나이트 — 충남 천안시 서북구 성정동 · 1호선 천안역 방면 (도보 거리 확인 불가) · https://onee-w8t.pages.dev/start/stardome-cheonan/
+- 천안코리아나이트 — 충남 천안시 서북구 쌍용동 · 1호선 쌍용역(나사렛대) · https://onee-w8t.pages.dev/start/cheonan-korea-hall/
 - 청주호박나이트 — 충북 청주시 상당구 · 청주는 도시철도가 없어 버스·택시 이용 · https://onee-w8t.pages.dev/start/cheongju-hobak-guide/
-- 울산뉴월드나이트 — 울산 남구 삼산동 · 도시철도 미연결 (버스·택시 이용) · https://onee-w8t.pages.dev/start/ulsan-newworld-guide/
+- 울산뉴월드나이트 — 울산 남구 삼산동 · 도시철도 미연결 (버스·택시 이용) · https://onee-w8t.pages.dev/start/ulsan-newworld-hall/
 - 서산호박나이트 — 충남 서산시 읍내동 · 철도 미연결 (버스·택시 이용) · https://onee-w8t.pages.dev/start/seosan-hobak-hall/
 - 대구호박나이트 — 대구 북구 · 대구 칠곡 방면 (역 도보 거리 확인 불가) · https://onee-w8t.pages.dev/start/daegu-hobak-guide/
 - 구미호박나이트 — 경북 구미시 원평동 · 경부선 구미역 방면 · https://onee-w8t.pages.dev/start/gumi-hobak-guide/
