@@ -199,7 +199,7 @@ let simTop = [];
   const ext = [], broken = [];
   const files = PAGES.map((p) => ({ id: p.slug, s: html[p.slug] }))
     .concat([{ id: 'hub', s: fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8') }]);
-  const known = new Set(['/', '/start/', '/info-guide', '/hours-guide', '/ladies-guide', '/faq-guide', '/contact-guide', '/night/', '/bulgwangdong-hobak']);
+  const known = new Set(['/', '/start/', '/info-1', '/hours-1', '/ladies-1', '/faq-1', '/contact-1', '/night/', '/bulgwangdong-hobak']);
   for (const f of files) {
     for (const m of f.s.matchAll(/<a [^>]*href="([^"]+)"/g)) {
       const h = m[1];

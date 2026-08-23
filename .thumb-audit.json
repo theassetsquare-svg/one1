@@ -64,7 +64,7 @@
   },
   {
     "rel": "night/bulgwang-hobak-night/index.html",
-    "img": "/og/bulgwang-hobak-1-og.png",
+    "img": "/og/bulgwang-hobak-2-og.png",
     "size": "1200x1200",
     "kb": 61,
     "verdict": "PASS"
@@ -78,7 +78,7 @@
   },
   {
     "rel": "night/changwon-lululala-night/index.html",
-    "img": "/og/changwon-lululala-1-og.png",
+    "img": "/og/changwon-lululala-2-og.png",
     "size": "1200x1200",
     "kb": 59,
     "verdict": "PASS"
@@ -106,7 +106,7 @@
   },
   {
     "rel": "night/ilsan-shampoo/index.html",
-    "img": "/og/ilsan-shampoo-1-guide-guide-og.png",
+    "img": "/og/ilsan-shampoo-2-guide-guide-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
@@ -120,7 +120,7 @@
   },
   {
     "rel": "night/sangbong-hangukgwan-night/index.html",
-    "img": "/og/sangbong-hangukgwan-1-og.png",
+    "img": "/og/sangbong-hangukgwan-2-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -134,14 +134,14 @@
   },
   {
     "rel": "night/suwon-chance-dome-night/index.html",
-    "img": "/og/suwon-chancedome-1-night-guide-og.png",
+    "img": "/og/suwon-chancedome-2-night-guide-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
   },
   {
     "rel": "night/suyu-shampoo-night/index.html",
-    "img": "/og/suyu-shampoo-1-night-guide-og.png",
+    "img": "/og/suyu-shampoo-2-night-guide-og.png",
     "size": "1200x1200",
     "kb": 54,
     "verdict": "PASS"
@@ -162,7 +162,7 @@
   },
   {
     "rel": "start/bucheon-gorae/index.html",
-    "img": "/og/start-bucheon-gorae-hall-og.png",
+    "img": "/og/start-bucheon-gorae-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -190,14 +190,14 @@
   },
   {
     "rel": "start/cheonan-korea/index.html",
-    "img": "/og/start-cheonan-korea-hall-og.png",
+    "img": "/og/start-cheonan-korea-1-og.png",
     "size": "1200x1200",
     "kb": 51,
     "verdict": "PASS"
   },
   {
     "rel": "start/cheonan-stardome/index.html",
-    "img": "/og/start-stardome-cheonan-og.png",
+    "img": "/og/start-cheonan-stardome-1-og.png",
     "size": "1200x1200",
     "kb": 55,
     "verdict": "PASS"
@@ -211,14 +211,14 @@
   },
   {
     "rel": "start/cheongju-hobak/index.html",
-    "img": "/og/start-cheongju-hobak-guide-og.png",
+    "img": "/og/start-cheongju-hobak-1-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
   },
   {
     "rel": "start/daegu-hobak/index.html",
-    "img": "/og/start-daegu-hobak-guide-og.png",
+    "img": "/og/start-daegu-hobak-1-og.png",
     "size": "1200x1200",
     "kb": 54,
     "verdict": "PASS"
@@ -267,7 +267,7 @@
   },
   {
     "rel": "start/gumi-hobak/index.html",
-    "img": "/og/start-gumi-hobak-guide-og.png",
+    "img": "/og/start-gumi-hobak-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -281,35 +281,35 @@
   },
   {
     "rel": "start/gwangju-cheomdan/index.html",
-    "img": "/og/start-gwangju-cheomdan-guide-og.png",
+    "img": "/og/start-gwangju-cheomdan-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
   },
   {
     "rel": "start/gwangju-sangmu/index.html",
-    "img": "/og/start-gwangju-sangmu-guide-og.png",
+    "img": "/og/start-gwangju-sangmu-1-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
   },
   {
     "rel": "start/ilsan-shampoo/index.html",
-    "img": "/og/start-ilsan-shampoo-1-guide-guide-og.png",
+    "img": "/og/start-ilsan-shampoo-2-guide-guide-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
   },
   {
     "rel": "start/incheon-arabian/index.html",
-    "img": "/og/start-arabian-incheon-og.png",
+    "img": "/og/start-incheon-arabian-1-og.png",
     "size": "1200x1200",
     "kb": 56,
     "verdict": "PASS"
   },
   {
     "rel": "start/indeogwon-gukbingwan/index.html",
-    "img": "/og/start-indeogwon-gukbingwan-hall-og.png",
+    "img": "/og/start-indeogwon-gukbingwan-1-og.png",
     "size": "1200x1200",
     "kb": 48,
     "verdict": "PASS"
@@ -323,7 +323,7 @@
   },
   {
     "rel": "start/jeju-do/index.html",
-    "img": "/og/start-jeju-do-guide-og.png",
+    "img": "/og/start-jeju-1-og.png",
     "size": "1200x1200",
     "kb": 54,
     "verdict": "PASS"
@@ -344,14 +344,14 @@
   },
   {
     "rel": "start/paju-yadang-skydome/index.html",
-    "img": "/og/start-paju-yadang-skydome-hall-og.png",
+    "img": "/og/start-paju-skydome-1-og.png",
     "size": "1200x1200",
     "kb": 51,
     "verdict": "PASS"
   },
   {
     "rel": "start/pyeongtaek-hobak/index.html",
-    "img": "/og/start-pyeongtaek-hobak-hall-og.png",
+    "img": "/og/start-pyeongtaek-hobak-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -365,7 +365,7 @@
   },
   {
     "rel": "start/seongnam-shampoo/index.html",
-    "img": "/og/start-seongnam-shampoo-hall-og.png",
+    "img": "/og/start-seongnam-shampoo-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
@@ -386,21 +386,21 @@
   },
   {
     "rel": "start/suwon-chance-dome/index.html",
-    "img": "/og/start-suwon-chancedome-1-og.png",
+    "img": "/og/start-suwon-chancedome-2-og.png",
     "size": "1200x1200",
     "kb": 49,
     "verdict": "PASS"
   },
   {
     "rel": "start/suwon-korea/index.html",
-    "img": "/og/start-suwon-korea-og.png",
+    "img": "/og/start-suwon-korea-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"
   },
   {
     "rel": "start/suyu-shampoo/index.html",
-    "img": "/og/start-suyu-shampoo-1-og.png",
+    "img": "/og/start-suyu-shampoo-2-og.png",
     "size": "1200x1200",
     "kb": 48,
     "verdict": "PASS"
@@ -428,7 +428,7 @@
   },
   {
     "rel": "start/ulsan-newworld/index.html",
-    "img": "/og/start-ulsan-newworld-hall-og.png",
+    "img": "/og/start-ulsan-newworld-1-og.png",
     "size": "1200x1200",
     "kb": 50,
     "verdict": "PASS"

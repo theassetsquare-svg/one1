@@ -23,7 +23,7 @@ export default function PolicyBanner() {
           <div className="policy-fine">신분증 확인 후 적용 · 운영 정책에 따라 변경될 수 있습니다</div>
         </div>
       </div>
-      <Link href="/contact-guide" className="policy-cta">
+      <Link href="/contact-1" className="policy-cta">
         예약 · 문의 안내
       </Link>
     </section>
