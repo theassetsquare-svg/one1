@@ -1,7 +1,7 @@
 /* /start/ 입문 노트 40개 데이터 집합
    - 콘셉트: "처음 가는 사람 입문 노트"
    - 광고주 4업소(group 'A')만 전화 노출, 나머지는 광고문의 카톡 besta12 */
-const SITE = 'https://onee-w8t.pages.dev';
+const SITE = 'https://f.nolcool.com';
 const KAKAO = 'besta12';
 const TODAY = '2026-08-16';
 

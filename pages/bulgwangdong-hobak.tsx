@@ -3,7 +3,7 @@ import SEO from '@/components/SEO';
 import Layout from '@/components/Layout';
 import Thumb from '@/components/Thumb';
 
-const SITE = 'https://onee-w8t.pages.dev';
+const SITE = 'https://f.nolcool.com';
 const PATH = '/bulgwangdong-hobak';
 const NAME = '불광동호박나이트';
 const TEL_DISPLAY = '010 2221 1937';

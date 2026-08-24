@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import SEO from '@/components/SEO';
 
-const SITE = 'https://onee-w8t.pages.dev';
+const SITE = 'https://f.nolcool.com';
 
 const TITLE = '다시 시작하는 데 필요한 건 자신감이 아니었다';
 const DESC =

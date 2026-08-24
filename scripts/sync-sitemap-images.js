@@ -8,7 +8,7 @@ const path = require('path');
 
 const ROOT = process.argv[2] || 'out';
 const SITEMAP = 'public/sitemap.xml';
-const SITE = 'https://onee-w8t.pages.dev';
+const SITE = 'https://f.nolcool.com';
 
 function htmlFor(loc) {
   let p = loc.replace(SITE, '').replace(/^\//, '');

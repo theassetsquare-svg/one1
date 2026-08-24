@@ -2,7 +2,7 @@
 const night = require('./night-data.js');
 const start = require('./start-data.js');
 
-const SITE = 'https://onee-w8t.pages.dev';
+const SITE = 'https://f.nolcool.com';
 const KAKAO = 'besta12';
 
 /* ★광고주 정답표 */
