@@ -50,8 +50,8 @@
   {
     "file": "busan-asiad-night-og.png",
     "size": "1200x1200",
-    "beforeKB": 51,
-    "afterKB": 51,
+    "beforeKB": 65,
+    "afterKB": 65,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -322,8 +322,8 @@
   {
     "file": "start-busan-asiad-og.png",
     "size": "1200x1200",
-    "beforeKB": 51,
-    "afterKB": 51,
+    "beforeKB": 65,
+    "afterKB": 65,
     "colors": "-",
     "verdict": "PASS"
   },

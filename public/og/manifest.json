@@ -1024,14 +1024,18 @@
     "file": "/og/busan-asiad-night-og.png",
     "pageUrl": "https://f.nolcool.com/night/busan-asiad-night/",
     "venue": "부산아시아드나이트",
-    "category": "B",
-    "advertiser": null,
-    "heroText": "광고문의",
-    "heroRole": "광고문의",
+    "category": "A",
+    "advertiser": {
+      "nick": "새우깡",
+      "tel": "010-3614-1056"
+    },
+    "heroText": "010-3614-1056",
+    "heroRole": "전화번호",
     "drawnTexts": [
       "부산아시아드나이트",
-      "광고문의",
-      "카카오톡 besta12"
+      "새우깡",
+      "010-3614-1056",
+      "광고문의 카톡 besta12"
     ],
     "texts": [
       {
@@ -1047,32 +1051,44 @@
         "uniformScale": true
       },
       {
-        "role": "광고문의",
-        "text": "광고문의",
-        "hero": true,
-        "targetWidthPct": 84.5,
-        "pathWidthPx": 912.6,
-        "pathHeightPx": 244.8,
-        "measuredWidthPx": 914,
-        "measuredHeightPx": 246,
-        "measuredWidthPct": 84.6,
+        "role": "닉네임",
+        "text": "새우깡",
+        "hero": false,
+        "targetWidthPct": 46.5,
+        "pathWidthPx": 502.6,
+        "pathHeightPx": 176,
+        "measuredWidthPx": 503,
+        "measuredHeightPx": 177,
+        "measuredWidthPct": 46.6,
         "uniformScale": true
       },
       {
-        "role": "카카오톡",
-        "text": "카카오톡 besta12",
-        "hero": false,
-        "targetWidthPct": 79.5,
-        "pathWidthPx": 858.6,
-        "pathHeightPx": 132,
-        "measuredWidthPx": 859,
-        "measuredHeightPx": 132,
-        "measuredWidthPct": 79.5,
+        "role": "전화번호",
+        "text": "010-3614-1056",
+        "hero": true,
+        "targetWidthPct": 95.5,
+        "pathWidthPx": 1031.4,
+        "pathHeightPx": 200,
+        "measuredWidthPx": 1032,
+        "measuredHeightPx": 201,
+        "measuredWidthPct": 95.6,
         "uniformScale": false
+      },
+      {
+        "role": "광고문의(보조)",
+        "text": "광고문의 카톡 besta12",
+        "hero": false,
+        "targetWidthPct": 59.5,
+        "pathWidthPx": 642.6,
+        "pathHeightPx": 61.7,
+        "measuredWidthPx": 644,
+        "measuredHeightPx": 62,
+        "measuredWidthPct": 59.6,
+        "uniformScale": true
       }
     ],
-    "bg": "#062028",
-    "bytes": 52165,
+    "bg": "#101A33",
+    "bytes": 66616,
     "note": null
   },
   {
@@ -1535,14 +1551,18 @@
     "file": "/og/start-busan-asiad-og.png",
     "pageUrl": "https://f.nolcool.com/start/busan-asiad/",
     "venue": "부산아시아드나이트",
-    "category": "B",
-    "advertiser": null,
-    "heroText": "광고문의",
-    "heroRole": "광고문의",
+    "category": "A",
+    "advertiser": {
+      "nick": "새우깡",
+      "tel": "010-3614-1056"
+    },
+    "heroText": "010-3614-1056",
+    "heroRole": "전화번호",
     "drawnTexts": [
       "부산아시아드나이트",
-      "광고문의",
-      "카카오톡 besta12"
+      "새우깡",
+      "010-3614-1056",
+      "광고문의 카톡 besta12"
     ],
     "texts": [
       {
@@ -1558,32 +1578,44 @@
         "uniformScale": true
       },
       {
-        "role": "광고문의",
-        "text": "광고문의",
-        "hero": true,
-        "targetWidthPct": 84.5,
-        "pathWidthPx": 912.6,
-        "pathHeightPx": 244.8,
-        "measuredWidthPx": 914,
-        "measuredHeightPx": 246,
-        "measuredWidthPct": 84.6,
+        "role": "닉네임",
+        "text": "새우깡",
+        "hero": false,
+        "targetWidthPct": 46.5,
+        "pathWidthPx": 502.6,
+        "pathHeightPx": 176,
+        "measuredWidthPx": 503,
+        "measuredHeightPx": 177,
+        "measuredWidthPct": 46.6,
         "uniformScale": true
       },
       {
-        "role": "카카오톡",
-        "text": "카카오톡 besta12",
-        "hero": false,
-        "targetWidthPct": 79.5,
-        "pathWidthPx": 858.6,
-        "pathHeightPx": 132,
-        "measuredWidthPx": 859,
-        "measuredHeightPx": 132,
-        "measuredWidthPct": 79.5,
+        "role": "전화번호",
+        "text": "010-3614-1056",
+        "hero": true,
+        "targetWidthPct": 95.5,
+        "pathWidthPx": 1031.4,
+        "pathHeightPx": 200,
+        "measuredWidthPx": 1032,
+        "measuredHeightPx": 201,
+        "measuredWidthPct": 95.6,
         "uniformScale": false
+      },
+      {
+        "role": "광고문의(보조)",
+        "text": "광고문의 카톡 besta12",
+        "hero": false,
+        "targetWidthPct": 59.5,
+        "pathWidthPx": 642.6,
+        "pathHeightPx": 61.7,
+        "measuredWidthPx": 644,
+        "measuredHeightPx": 62,
+        "measuredWidthPct": 59.6,
+        "uniformScale": true
       }
     ],
-    "bg": "#062028",
-    "bytes": 52165,
+    "bg": "#101A33",
+    "bytes": 66616,
     "note": null
   },
   {

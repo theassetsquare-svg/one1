@@ -258,7 +258,7 @@ const PAGES_B = [
   name: '부산아시아드나이트', nameB: '부산 아시아드나이트', nameC: '동래구 나이트클럽',
   region: '부산 동래구 온천동', locality: '동래구', addrRegion: '부산광역시',
   angle: 13, angleName: '단골 관점형', suffix: '재방문 요령',
-  group: 'B', manager: null, tel: null, telHref: null,
+  group: 'A', manager: '새우깡', tel: '010-3614-1056', telHref: '01036141056',
   age: null, bg: '#103A6B',
   title: '부산아시아드나이트 재방문 요령 온천장역 도보 5분',
   desc: '부산아시아드나이트를 여러 번 다녀본 사람들이 챙기는 순서를 정리했습니다. 자리 확보와 웨이터 소통, 시간대 선택에서 첫 방문과 무엇이 갈리는지 확인하세요.',
