@@ -20,6 +20,20 @@ const ADVERTISERS = {
 const BG = ['#0B1B3A','#1A0E2E','#2A1206','#08221F','#231018','#0E1E14','#1C1430','#2B1A06','#101A2B','#241016','#062028','#2A0F22'];
 const hash = (s) => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
 const bgOf = (slug) => BG[hash(slug) % BG.length];
+/* ★ 2026-08-25 — 썸네일 판 번호.
+ *
+ * 왜 필요한가
+ *   /og/* 가 30일 캐시로 걸려 있어, 같은 이름으로 그림을 덮어써도
+ *   브라우저·CDN 이 옛 그림을 계속 내보낸다. 부산아시아드나이트에 새우깡을 넣었는데
+ *   30일 내내 "광고문의" 카드가 나가고 있었다(2026-08-25 실측).
+ *   _headers 의 캐시 규칙도 같이 고쳤지만, **이미 캐시에 박힌 것**은
+ *   이름을 바꿔야 즉시 교체된다.
+ * 쓰는 법: 그림을 바꾼 가게를 여기에 적고 번호를 올린다. 페이지도 새 이름을 부르게 된다. */
+const OG_V = {
+  '부산아시아드나이트': '-v2',
+};
+const vOf = (venue) => (venue && OG_V[venue]) || '';
+
 const AD_BG = { '대전세븐나이트': '#5C3000', '울산챔피언나이트': '#0B1B3A', '창원룰루랄라나이트': '#2A0F22', '불광동호박나이트': '#2B1A06', '청담나이트': '#062028', '답십리미라클나이트': '#1A0E2E', '부산아시아드나이트': '#101A33' };
 
 /* cat: A=광고주 / B=비광고주 / C=가게 전용 사이트 자기 가게 페이지 / HUB=허브·목록(=B 규칙, 중립 문구) */
@@ -40,7 +54,7 @@ push({ file: 'hobak.png', url: '/bulgwangdong-hobak', venue: '불광동호박나
 push({ file: 'night-hub-og.png', url: '/night/', venue: null, cat: 'B', head: '나이트 안내 목록', bg: '#08221F' });
 night.PAGES.forEach((p) => {
   const ad = ADVERTISERS[p.name];
-  push({ file: `${p.slug}-og.png`, url: `/night/${p.slug}/`, venue: p.name, cat: ad ? 'A' : 'B',
+  push({ file: `${p.slug}-og.png`, url: `/night/${p.slug}/`, venue: p.name, cat: ad ? 'A' : 'B', v: vOf(p.name),
          bg: ad ? AD_BG[p.name] : bgOf(p.slug) });
 });
 
@@ -48,7 +62,7 @@ night.PAGES.forEach((p) => {
 push({ file: 'start-hub-og.png', url: '/start/', venue: null, cat: 'B', head: '전국 나이트 입문 노트 40', bg: '#231018' });
 start.PAGES.forEach((p) => {
   const ad = ADVERTISERS[p.name];
-  push({ file: `start-${p.slug}-og.png`, url: `/start/${p.slug}/`, venue: p.name, cat: ad ? 'A' : 'B',
+  push({ file: `start-${p.slug}-og.png`, url: `/start/${p.slug}/`, venue: p.name, cat: ad ? 'A' : 'B', v: vOf(p.name),
          bg: ad ? AD_BG[p.name] : bgOf('s' + p.slug) });
 });
 

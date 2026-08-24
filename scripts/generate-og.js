@@ -170,6 +170,9 @@ for (const spec of SPECS) {
   const png = rendered.asPng();
   const target = path.join(OUT, spec.file);
   fs.writeFileSync(target, png);
+  /* ★ 2026-08-25 — 판 번호 파일도 같이 만든다. 캐시된 옛 그림을 피하려는 것이다.
+     페이지가 부르는 이름이 <이름>-v2.png 로 바뀌므로 반드시 같이 있어야 한다. */
+  if (spec.v) fs.writeFileSync(path.join(OUT, spec.file.replace(/.png$/, spec.v + '.png')), png);
 
   const pix = measurePixels(rendered.pixels, boxes, spec.bg);
   const texts = boxes.map((b, i) => ({
