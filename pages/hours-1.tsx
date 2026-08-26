@@ -10,11 +10,11 @@ export default function Hours() {
       <SEO
         title="대전원나이트 영업 시간 - 평일 새벽 2시반 / 주말 3시반까지"
         description="대전원나이트 영업 시간 안내. 평일 20:00 - 02:30, 주말 20:00 - 03:30. 22시 이전 입장 여성 손님 혜택 시간대까지 한눈에. 문의는 페이지 하단 광고문의 카톡 besta12로 안내드립니다."
-        path="/hours-1"
+        path="/hours-2/"
         ogImage="/og/hours.png"
         ogAlt="대전원나이트 영업 시간 안내"
       />
-      <Schema path="/hours-1" crumb="영업 시간" pageType="WebPage" />
+      <Schema path="/hours-2/" crumb="영업 시간" pageType="WebPage" />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">HOURS</div>

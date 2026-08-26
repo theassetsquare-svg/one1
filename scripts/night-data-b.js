@@ -3,7 +3,7 @@
 const PAGES_B = [
 /* ───────────────────────── 6. 신림그랑프리나이트 · 각도10 짧은 요약형 ───────────────────────── */
 {
-  no: 6, slug: 'sillim-grandprix-night', openingHours: ["Mo-Th 18:00-04:00","Fr-Su 18:00-06:00"],
+  no: 6, slug: 'sillim-grandprix-night-1', openingHours: ["Mo-Th 18:00-04:00","Fr-Su 18:00-06:00"],
   name: '신림그랑프리나이트', nameB: '신림 그랑프리나이트', nameC: '신림동 나이트클럽',
   region: '서울 관악구 신림동', locality: '관악구', addrRegion: '서울특별시',
   angle: 10, angleName: '짧은 요약형', suffix: '핵심 셋',
@@ -89,7 +89,7 @@ const PAGES_B = [
 
 /* ───────────────────────── 7. 상봉동한국관나이트 · 각도11 인원별 공략형 ───────────────────────── */
 {
-  no: 7, slug: 'sangbong-hangukgwan-night', openingHours: ["Mo-Su 19:00-06:00"],
+  no: 7, slug: 'sangbong-hangukgwan-night-1', openingHours: ["Mo-Su 19:00-06:00"],
   name: '상봉동한국관나이트', nameB: '상봉동 한국관나이트', nameC: '상봉동 나이트클럽',
   region: '서울 중랑구 상봉동', locality: '중랑구', addrRegion: '서울특별시',
   angle: 11, angleName: '인원별 공략형', suffix: '몇 명이 적당할까',
@@ -418,7 +418,7 @@ const PAGES_B = [
 
 /* ───────────────────────── 11. 안산히트나이트 · 각도2 질문 던지기형 ───────────────────────── */
 {
-  no: 11, slug: 'ansan-hit-night',
+  no: 11, slug: 'ansan-hit-night-1',
   name: '안산히트나이트', nameB: '안산 히트나이트', nameC: '상록구 나이트클럽',
   region: '경기 안산시 상록구 본오동', locality: '안산시 상록구', addrRegion: '경기도',
   angle: 2, angleName: '질문 던지기형', suffix: '예약이 필요할까',

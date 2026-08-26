@@ -172,7 +172,7 @@ const PAGES = [
 
 /* ───────────────────────── 3. 울산챔피언나이트 · 각도7 문답형 ───────────────────────── */
 {
-  no: 3, slug: 'ulsan-champion-night',
+  no: 3, slug: 'ulsan-champion-night-1',
   name: '울산챔피언나이트', nameB: '울산 챔피언나이트', nameC: '울산 나이트클럽',
   region: '울산 남구 삼산동', locality: '남구', addrRegion: '울산광역시',
   angle: 7, angleName: '문답형', suffix: '질문 열다섯',
@@ -333,7 +333,7 @@ const PAGES = [
 
 /* ───────────────────────── 5. 대전원나이트 · 각도9 비교 설명형 ───────────────────────── */
 {
-  no: 5, slug: 'daejeon-one-night', openingHours: ["Su-Th 20:00-02:30","Fr-Sa 20:00-03:30"],
+  no: 5, slug: 'daejeon-one-night-1', openingHours: ["Su-Th 20:00-02:30","Fr-Sa 20:00-03:30"],
   name: '대전원나이트', nameB: '대전 원나이트', nameC: '대전 나이트클럽',
   region: '대전 중구', locality: '중구', addrRegion: '대전광역시',
   angle: 9, angleName: '비교 설명형', suffix: '구별되는 점',

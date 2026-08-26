@@ -10,11 +10,11 @@ export default function Contact() {
       <SEO
         title="대전원나이트 예약·문의 안내"
         description="대전원나이트 예약·룸·단체·VIP·일반 안내. 영업 시간 내 직접 응대합니다. 문의는 페이지 하단 광고문의 카톡 besta12로 한 번에 안내해 드립니다."
-        path="/contact-1"
+        path="/contact-2/"
         ogImage="/og/contact.png"
         ogAlt="대전원나이트 예약·문의 안내"
       />
-      <Schema path="/contact-1" crumb="예약·문의" pageType="ContactPage" />
+      <Schema path="/contact-2/" crumb="예약·문의" pageType="ContactPage" />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">CONTACT</div>
