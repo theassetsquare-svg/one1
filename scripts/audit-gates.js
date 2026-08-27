@@ -31,11 +31,11 @@ const NICK_OWNER = Object.fromEntries(Object.entries(ADVERTISERS).map(([v, a]) =
       이 표의 f 만 옛 이름이라 5개 페이지가 계속 "파일 없음"으로 실패했다. */
 const PAGES = [
   { f: 'index.html', url: '/', own: [], hub: true },            // 홈 = 독립 성공스토리(가게이름 0)
-  { f: 'info-2.html', url: '/info-2/', own: ['대전원나이트'] },
-  { f: 'hours-2.html', url: '/hours-2/', own: ['대전원나이트'] },
+  { f: 'info-2.html', url: '/info-2', own: ['대전원나이트'] },
+  { f: 'hours-2.html', url: '/hours-2', own: ['대전원나이트'] },
   { f: 'ladies-1.html', url: '/ladies-1', own: ['대전원나이트'] },
   { f: 'faq-1.html', url: '/faq-1', own: ['대전원나이트'] },
-  { f: 'contact-2.html', url: '/contact-2/', own: ['대전원나이트'] },
+  { f: 'contact-2.html', url: '/contact-2', own: ['대전원나이트'] },
   { f: '404.html', url: '/404', own: ['대전원나이트'] },
   { f: 'bulgwangdong-hobak.html', url: '/bulgwangdong-hobak', own: ['불광동호박나이트'] },
   { f: 'night/index.html', url: '/night/', own: [], hub: true },

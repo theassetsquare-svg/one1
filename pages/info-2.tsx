@@ -10,11 +10,11 @@ export default function Info() {
       <SEO
         title="대전원나이트 입장 가이드 - 38세부터 들어가는 법"
         description="대전원나이트 첫 방문이 처음이라면. 신분증·드레스코드·시간대·결제·주차까지 한 번에 알려주는 입장 가이드. 문의는 페이지 하단 광고문의 카톡 besta12로 확인하세요."
-        path="/info-2/"
+        path="/info-2"
         ogImage="/og/info.png"
         ogAlt="대전원나이트 입장 안내"
       />
-      <Schema path="/info-2/" crumb="입장 안내" pageType="WebPage" includeHowTo />
+      <Schema path="/info-2" crumb="입장 안내" pageType="WebPage" includeHowTo />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">ENTRY</div>
