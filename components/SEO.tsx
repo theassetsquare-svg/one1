@@ -7,6 +7,8 @@ type Props = {
   description: string;
   path: string;
   ogImage?: string;
+  /** ★ 홈 순수성(2026-08-31): true 면 og:image 계열을 아예 넣지 않는다 */
+  noImage?: boolean;
   /** 지역 페이지가 다른 행정구역을 다룰 때만 지정 (기본값은 대전) */
   geoRegion?: string;
   geoPlacename?: string;
@@ -21,6 +23,7 @@ export default function SEO({
   description,
   path,
   ogImage = '/og/og-thumb.png',
+  noImage = false,
   geoRegion = 'KR-30',
   geoPlacename = '대전광역시',
   icbm = '36.3504,127.3845',
@@ -68,17 +71,31 @@ export default function SEO({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
+      {!noImage && (
       <meta property="og:image" content={fullOg} />
+      )}
+      {!noImage && (
       <meta property="og:image:secure_url" content={fullOg} />
+      )}
+      {!noImage && (
       <meta property="og:image:width" content="1200" />
+      )}
+      {!noImage && (
       <meta property="og:image:height" content="1200" />
+      )}
+      {!noImage && (
       <meta property="og:image:type" content="image/png" />
+      )}
+      {!noImage && (
       <meta property="og:image:alt" content={ogAlt ?? title} />
+      )}
       <meta name="thumbnail" content={fullOg} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      {!noImage && (
       <meta name="twitter:image" content={fullOg} />
+      )}
       <meta name="twitter:image:alt" content={ogAlt ?? title} />
     </Head>
   );

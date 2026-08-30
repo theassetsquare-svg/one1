@@ -70,10 +70,10 @@ export default function Home() {
   return (
     <>
       <SEO
+        noImage
         title={TITLE}
         description={DESC}
         path="/"
-        ogImage="/og/home.png"
         geoRegion="KR"
         geoPlacename="대한민국"
         siteName="다시 시작하는 이야기"
