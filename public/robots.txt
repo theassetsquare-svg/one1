@@ -43,5 +43,16 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+# 공식 문서로 확인된 크롤러
+User-agent: Claude-SearchBot
+Allow: /
+# 공식 문서로 확인된 크롤러
+User-agent: Claude-User
+Allow: /
+# 공식 문서로 확인된 크롤러
+User-agent: Perplexity-User
+Allow: /
+
+
 Sitemap: https://f.nolcool.com/sitemap.xml
 # LLM 참고 문서: https://f.nolcool.com/llms.txt
