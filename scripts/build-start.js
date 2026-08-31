@@ -10,6 +10,15 @@ const NSV = 'de7f572176f78093fb88bfb999b59fe0d65c37cb';
 const attr = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const strip = (s) => String(s).replace(/<[^>]+>/g, '');
 
+/* ★★ 2026-08-30 — 아래 두 곳은 글은 그대로 두고 주소만 /night/ 쪽으로 옮겼다.
+   여기서 /start/ 판을 또 만들면 같은 글이 두 주소에 올라가 네이버가 하나를 버린다.
+   (실측: 어절 3-gram 100% · 문장 100% 겹침) 링크도 옮긴 주소로 건다. */
+const MOVED = {
+  'gwangju-cheomdan': '/night/gwangju-cheomdan-night-1/',
+  'indeogwon-gukbingwan': '/night/indeogwon-gukbingwan-night-1/',
+};
+const hrefFor = (slug) => MOVED[slug] || ('/start/' + slug + '/');
+
 const byNo = {};
 PAGES.forEach((p) => { byNo[p.no] = p; });
 
@@ -197,7 +206,7 @@ ${p.faq.map((f) => `<dt>${f.q}</dt>\n<dd>${f.a}</dd>`).join('\n')}
 <aside class="related">
 <h2>같이 보면 좋은 입문 노트</h2>
 <ul>
-${rel.map((r) => `<li><a href="/start/${r.slug}/">${r.name}</a> — ${r.region}</li>`).join('\n')}
+${rel.map((r) => `<li><a href="${hrefFor(r.slug)}">${r.name}</a> — ${r.region}</li>`).join('\n')}
 <li><a href="/start/">전국 나이트 입문 노트 40 전체 보기</a></li>
 </ul>
 </aside>
@@ -228,7 +237,7 @@ function renderHub() {
 
   const listHtml = order.map((r) => `<h3 class="region-h">${r} ${groups[r].length}곳</h3>
 <ul class="hub-list">
-${groups[r].map((p) => `<li><a href="/start/${p.slug}/">${p.name}</a><span>${p.region} · ${p.station}</span></li>`).join('\n')}
+${groups[r].map((p) => `<li><a href="${hrefFor(p.slug)}">${p.name}</a><span>${p.region} · ${p.station}</span></li>`).join('\n')}
 </ul>`).join('\n');
 
   const itemList = {
@@ -237,7 +246,7 @@ ${groups[r].map((p) => `<li><a href="/start/${p.slug}/">${p.name}</a><span>${p.r
     name: '전국 나이트 입문 노트 40',
     numberOfItems: PAGES.length,
     itemListElement: PAGES.map((p, i) => ({
-      '@type': 'ListItem', position: i + 1, name: p.name, url: `${SITE}/start/${p.slug}/`,
+      '@type': 'ListItem', position: i + 1, name: p.name, url: `${SITE}${hrefFor(p.slug)}`,
     })),
   };
   const crumb = {
@@ -322,12 +331,17 @@ ${listHtml}
 `;
 }
 
-let n = 0;
+let n = 0, moved = 0;
 PAGES.forEach((p) => {
   const dir = path.join(OUT_ROOT, p.slug);
+  if (MOVED[p.slug]) {                      /* 옮긴 주소는 여기서 만들지 않는다 */
+    fs.rmSync(dir, { recursive: true, force: true });
+    moved++;
+    return;
+  }
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), renderPage(p), 'utf8');
   n++;
 });
 fs.writeFileSync(path.join(OUT_ROOT, 'index.html'), renderHub(), 'utf8');
-console.log(`/start/ ${n}개 페이지 + 허브 생성 완료`);
+console.log(`/start/ ${n}개 페이지 + 허브 생성 완료 (옮긴 주소 ${moved}개는 만들지 않음)`);

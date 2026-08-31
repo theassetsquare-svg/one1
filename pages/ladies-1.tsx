@@ -25,7 +25,7 @@ export default function Ladies() {
           <Thumb src="/og/ladies.png" alt="대전원나이트 여성 손님 안내" />
         </div>
         <div className="container">
-          <PolicyBanner />
+          <PolicyBanner page="ladies-1" />
 
           <section className="section">
             <div className="section-kicker">BENEFITS</div>

@@ -25,7 +25,7 @@ export default function Faq() {
           <Thumb src="/og/faq.png" alt="대전원나이트 자주 묻는 질문" />
         </div>
         <div className="container">
-          <PolicyBanner />
+          <PolicyBanner page="faq-1" />
 
           <section className="section">
             <div className="section-kicker">QUESTIONS</div>

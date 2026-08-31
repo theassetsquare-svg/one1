@@ -30,7 +30,19 @@ export default function SEO({
   siteName = '대전원나이트',
   ogAlt,
 }: Props) {
-  const url = `${SITE}${path}`;
+  /* ★ 2026-08-31 — 이 사이트를 슬래시 정본으로 바꿨다(next.config.ts trailingSlash: true).
+     네이버가 색인한 주소가 /faq-1/ /bulgwangdong-hobak/ 처럼 슬래시형인데
+     canonical 이 슬래시 없는 쪽을 가리키면 네이버가 색인한 주소를 스스로 부정하는 꼴이 된다.
+     정규식은 쓰지 않는다 — 점 이스케이프에서 사고가 났었다. */
+  const 슬래시붙이기 = (p2: string) => {
+    if (!p2 || p2 === "/") return "/";
+    if (p2.endsWith("/")) return p2;
+    const [경로, 뒤] = [p2.split("#")[0].split("?")[0], p2.slice(p2.split("#")[0].split("?")[0].length)];
+    const 끝조각 = 경로.split("/").pop() || "";
+    if (끝조각.includes(".")) return p2;
+    return 경로 + "/" + 뒤;
+  };
+  const url = `${SITE}${슬래시붙이기(path)}`;
   const fullOg = `${SITE}${ogImage}`;
   return (
     <Head>

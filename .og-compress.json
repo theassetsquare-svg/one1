@@ -8,6 +8,14 @@
     "verdict": "PASS"
   },
   {
+    "file": "ansan-hit-night-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "ansan-hit-night-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
@@ -44,6 +52,14 @@
     "size": "1200x1200",
     "beforeKB": 51,
     "afterKB": 51,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "busan-asiad-night-og-v2.png",
+    "size": "1200x1200",
+    "beforeKB": 65,
+    "afterKB": 65,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -112,6 +128,14 @@
     "verdict": "PASS"
   },
   {
+    "file": "daejeon-one-night-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 49,
+    "afterKB": 49,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "daejeon-one-night-og.png",
     "size": "1200x1200",
     "beforeKB": 49,
@@ -132,6 +156,14 @@
     "size": "1200x1200",
     "beforeKB": 62,
     "afterKB": 62,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "exp-ulsan-champion-f.png",
+    "size": "1200x1200",
+    "beforeKB": 16,
+    "afterKB": 16,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -256,7 +288,23 @@
     "verdict": "PASS"
   },
   {
+    "file": "r1-sillim-grandprix-f.png",
+    "size": "1200x1200",
+    "beforeKB": 14,
+    "afterKB": 14,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "sangbong-hangukgwan-2-og.png",
+    "size": "1200x1200",
+    "beforeKB": 50,
+    "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "sangbong-hangukgwan-night-1-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
@@ -268,6 +316,14 @@
     "size": "1200x1200",
     "beforeKB": 50,
     "afterKB": 50,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "sillim-grandprix-night-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 48,
+    "afterKB": 48,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -316,6 +372,14 @@
     "size": "1200x1200",
     "beforeKB": 61,
     "afterKB": 61,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "start-busan-asiad-og-v2.png",
+    "size": "1200x1200",
+    "beforeKB": 65,
+    "afterKB": 65,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -836,6 +900,14 @@
     "size": "1200x1200",
     "beforeKB": 54,
     "afterKB": 54,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "ulsan-champion-night-1-og.png",
+    "size": "1200x1200",
+    "beforeKB": 63,
+    "afterKB": 63,
     "colors": "-",
     "verdict": "PASS"
   },

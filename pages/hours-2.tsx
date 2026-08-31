@@ -25,7 +25,7 @@ export default function Hours() {
           <Thumb src="/og/hours.png" alt="대전원나이트 영업 시간 안내" />
         </div>
         <div className="container">
-          <PolicyBanner />
+          <PolicyBanner page="hours-2" />
 
           <section className="section">
             <div className="section-kicker">WEEKLY</div>

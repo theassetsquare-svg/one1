@@ -25,7 +25,7 @@ export default function Info() {
           <Thumb src="/og/info.png" alt="대전원나이트 입장 안내" />
         </div>
         <div className="container">
-          <PolicyBanner />
+          <PolicyBanner page="info-2" />
 
           <section className="section">
             <div className="section-kicker">STEP BY STEP</div>

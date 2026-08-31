@@ -25,7 +25,7 @@ export default function Contact() {
           <Thumb src="/og/contact.png" alt="대전원나이트 예약·문의 안내" />
         </div>
         <div className="container">
-          <PolicyBanner />
+          <PolicyBanner page="contact-2" />
 
           <section className="section">
             <div className="section-kicker">CHANNELS</div>
