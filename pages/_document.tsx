@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="ko">
       <Head>
+        {/* ★ 2026-08-31 — 파비콘 선언이 없어 검색 결과에 아이콘이 안 떴다(체크리스트 #58) */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* ★ 네이버 소유확인 태그는 여기(_document)에 둔다.
             components/SEO.tsx 에 이미 name 이 같은 태그가 있는데,
             next/head 는 같은 name 의 meta 를 하나만 남기므로
