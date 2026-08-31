@@ -1,31 +1,20 @@
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
+# 아래는 각 회사 공식 문서에서 이름을 확인한 크롤러입니다 (2026-09-01 확인).
 User-agent: Yeti
 Allow: /
 
-User-agent: NaverBot
-Allow: /
-
-User-agent: Daumoa
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
+User-agent: Googlebot
 Allow: /
 
 User-agent: Google-Extended
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: GPTBot
 Allow: /
 
 User-agent: OAI-SearchBot
@@ -34,25 +23,19 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: anthropic-ai
+User-agent: ClaudeBot
 Allow: /
 
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-# 공식 문서로 확인된 크롤러
 User-agent: Claude-SearchBot
 Allow: /
-# 공식 문서로 확인된 크롤러
+
 User-agent: Claude-User
 Allow: /
-# 공식 문서로 확인된 크롤러
+
+User-agent: PerplexityBot
+Allow: /
+
 User-agent: Perplexity-User
 Allow: /
 
-
 Sitemap: https://f.nolcool.com/sitemap.xml
-# LLM 참고 문서: https://f.nolcool.com/llms.txt
