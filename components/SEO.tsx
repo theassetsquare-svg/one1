@@ -101,14 +101,18 @@ export default function SEO({
       {!noImage && (
       <meta property="og:image:alt" content={ogAlt ?? title} />
       )}
+      {!noImage && (
       <meta name="thumbnail" content={fullOg} />
+      )}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {!noImage && (
       <meta name="twitter:image" content={fullOg} />
       )}
+      {!noImage && (
       <meta name="twitter:image:alt" content={ogAlt ?? title} />
+      )}
     </Head>
   );
 }

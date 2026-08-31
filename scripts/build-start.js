@@ -12,7 +12,7 @@ const strip = (s) => String(s).replace(/<[^>]+>/g, '');
 
 /* ★★ 2026-08-30 — 아래 두 곳은 글은 그대로 두고 주소만 /night/ 쪽으로 옮겼다.
    여기서 /start/ 판을 또 만들면 같은 글이 두 주소에 올라가 네이버가 하나를 버린다.
-   (실측: 어절 3-gram 100% · 문장 100% 겹침) 링크도 옮긴 주소로 건다. */
+   (실측: 어절 3-gram 전부 · 문장 전부 겹침) 링크도 옮긴 주소로 건다. */
 const MOVED = {
   'gwangju-cheomdan': '/night/gwangju-cheomdan-night-1/',
   'indeogwon-gukbingwan': '/night/indeogwon-gukbingwan-night-1/',
@@ -278,16 +278,8 @@ ${groups[r].map((p) => `<li><a href="${hrefFor(p.slug)}">${p.name}</a><span>${p.
 <meta property="og:title" content="전국 나이트 입문 노트 40 — 처음 가는 사람용 지역별 정리">
 <meta property="og:description" content="전국 나이트클럽 40곳을 초보 눈높이로 정리한 입문 노트 모음입니다.">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${SITE}/og/start-hub-og.png">
-<meta property="og:image:secure_url" content="${SITE}/og/start-hub-og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="전국 나이트 입문 노트 40 · 광고문의 카카오톡 besta12">
-<meta name="thumbnail" content="${SITE}/og/start-hub-og.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="전국 나이트 입문 노트 40 — 처음 가는 사람용 지역별 정리">
-<meta name="twitter:image" content="${SITE}/og/start-hub-og.png">
 <link rel="stylesheet" href="/start/start.css">
 <script type="application/ld+json">${JSON.stringify(itemList)}</script>
 <script type="application/ld+json">${JSON.stringify(crumb)}</script>
@@ -311,7 +303,6 @@ ${groups[r].map((p) => `<li><a href="${hrefFor(p.slug)}">${p.name}</a><span>${p.
 <li>첫 방문 순서(가기 전 → 입장 → 처음 30분 → 어색할 때)를 읽고 출발하면 됩니다.</li>
 </ol>
 </div>
-<div class="thumb-wrap"><img src="/og/start-hub-og.png" alt="전국 나이트 입문 노트 40 · 광고문의 카카오톡 besta12" width="1200" height="1200" style="max-width:100%;height:auto" loading="eager"></div>
 <section>
 <h2>지역별 입문 노트</h2>
 ${listHtml}
@@ -326,6 +317,8 @@ ${listHtml}
 <div class="callbar" role="complementary" aria-label="광고 문의">
   <span>💬 광고문의 카카오톡 <b>${KAKAO}</b></span>
 </div>
+<p class="age-notice" style="margin:18px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">성인 대상 업소 안내입니다. 만 19세 미만의 출입·고용은 금지되어 있습니다.</p>
+<p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">해당 업소와 관계가 없는 제3자 안내 페이지입니다.</p>
 </body>
 </html>
 `;
