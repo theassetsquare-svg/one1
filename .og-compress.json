@@ -24,6 +24,278 @@
     "verdict": "PASS"
   },
   {
+    "file": "auto-area-first-visit-area-index.png",
+    "size": "1200x1200",
+    "beforeKB": 60,
+    "afterKB": 60,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-bucheon-gorae.png",
+    "size": "1200x1200",
+    "beforeKB": 62,
+    "afterKB": 62,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-bulgwang-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 75,
+    "afterKB": 75,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-busan-asiad.png",
+    "size": "1200x1200",
+    "beforeKB": 80,
+    "afterKB": 80,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-changwon-lululala.png",
+    "size": "1200x1200",
+    "beforeKB": 73,
+    "afterKB": 73,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-cheonan-korea.png",
+    "size": "1200x1200",
+    "beforeKB": 68,
+    "afterKB": 68,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-cheonan-stardome.png",
+    "size": "1200x1200",
+    "beforeKB": 66,
+    "afterKB": 66,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-cheongdam.png",
+    "size": "1200x1200",
+    "beforeKB": 76,
+    "afterKB": 76,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-cheongju-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 67,
+    "afterKB": 67,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-daegu-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 62,
+    "afterKB": 62,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-daejeon-one.png",
+    "size": "1200x1200",
+    "beforeKB": 64,
+    "afterKB": 64,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-daejeon-seven.png",
+    "size": "1200x1200",
+    "beforeKB": 76,
+    "afterKB": 76,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-dapsimni-miracle.png",
+    "size": "1200x1200",
+    "beforeKB": 80,
+    "afterKB": 80,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-doksan-gukbingwan.png",
+    "size": "1200x1200",
+    "beforeKB": 65,
+    "afterKB": 65,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-gangseo-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 67,
+    "afterKB": 67,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-gumi-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 62,
+    "afterKB": 62,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-gwangju-sangmu.png",
+    "size": "1200x1200",
+    "beforeKB": 68,
+    "afterKB": 68,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-ilsan-shampoo.png",
+    "size": "1200x1200",
+    "beforeKB": 65,
+    "afterKB": 65,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-incheon-arabian.png",
+    "size": "1200x1200",
+    "beforeKB": 68,
+    "afterKB": 68,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-jeju.png",
+    "size": "1200x1200",
+    "beforeKB": 63,
+    "afterKB": 63,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-nowon-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 64,
+    "afterKB": 64,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-osan-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 66,
+    "afterKB": 66,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-paju-skydome.png",
+    "size": "1200x1200",
+    "beforeKB": 69,
+    "afterKB": 69,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-policy-index.png",
+    "size": "1200x1200",
+    "beforeKB": 60,
+    "afterKB": 60,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-pyeongtaek-hobak.png",
+    "size": "1200x1200",
+    "beforeKB": 65,
+    "afterKB": 65,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-sangbong-hangukgwan.png",
+    "size": "1200x1200",
+    "beforeKB": 70,
+    "afterKB": 70,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-seongnam-shampoo.png",
+    "size": "1200x1200",
+    "beforeKB": 66,
+    "afterKB": 66,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-sillim-grandprix.png",
+    "size": "1200x1200",
+    "beforeKB": 65,
+    "afterKB": 65,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-suwon-chancedome.png",
+    "size": "1200x1200",
+    "beforeKB": 68,
+    "afterKB": 68,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-suwon-korea.png",
+    "size": "1200x1200",
+    "beforeKB": 68,
+    "afterKB": 68,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-suyu-shampoo.png",
+    "size": "1200x1200",
+    "beforeKB": 66,
+    "afterKB": 66,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-ulsan-champion.png",
+    "size": "1200x1200",
+    "beforeKB": 82,
+    "afterKB": 82,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-ulsan-newworld.png",
+    "size": "1200x1200",
+    "beforeKB": 66,
+    "afterKB": 66,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
+    "file": "auto-yeongdeungpo-terminal.png",
+    "size": "1200x1200",
+    "beforeKB": 66,
+    "afterKB": 66,
+    "colors": "-",
+    "verdict": "PASS"
+  },
+  {
     "file": "blog.png",
     "size": "1200x1200",
     "beforeKB": 44,

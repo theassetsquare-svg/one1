@@ -51,6 +51,9 @@ function jsonld(p) {
       addressLocality: p.locality,
       addressRegion: p.addrRegion,
       addressCountry: 'KR',
+      /* ★ 2026-09-01 — streetAddress 가 빠져 있어 빌드마다 주소가 지워졌다.
+         지어내지 않는다: data/shops 의 verified 된 값만 넣는다(없으면 넣지 않는다). */
+      ...(ADDR[p.name] ? { streetAddress: ADDR[p.name] } : {}),
     },
   };
   if (p.group === 'A') club.telephone = '+82-' + p.tel.replace(/^0/, '');
@@ -220,6 +223,8 @@ ${rel.map((r) => `<li><a href="${hrefFor(r.slug)}">${r.name}</a> — ${r.region}
 </div>
 </footer>
 ${callbar(p)}
+<p class="age-notice" style="margin:18px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">성인(만 19세 이상) 전용 공간을 다룹니다. 청소년 출입과 고용은 금지되어 있습니다.</p>
+<p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">이 글은 업소와 무관한 안내입니다. 공개된 자료만 옮겼습니다.</p>
 </body>
 </html>
 `;
@@ -228,6 +233,8 @@ ${callbar(p)}
 
 /* ── 허브 ── */
 const REGION_ORDER = ['서울특별시', '경기도', '인천광역시', '충청남도', '충청북도', '대전광역시', '광주광역시', '대구광역시', '경상북도', '경상남도', '울산광역시', '부산광역시', '제주특별자치도'];
+/* 확인된 주소표 (data/shops 에서 뽑아 둔 것) — 없으면 빈 표 */
+const ADDR = (() => { try { return require('./start-addr.json'); } catch { return {}; } })();
 
 function renderHub() {
   const url = `${SITE}/start/`;

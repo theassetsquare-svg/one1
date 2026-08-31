@@ -3,6 +3,35 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import type { ReactNode } from 'react';
 
+/* ★ 2026-08-31 — 연령·관계 고지가 없어 신고에 취약했다(설계도 4장).
+   이 레이아웃이 감싸는 쪽에는 담당자 광고가 실리지 않는다(고정 연락바 없음).
+   그래서 '업소와 관계 없음' 쪽 문구만 쓴다. */
+const 광고고지 = [
+  "이 페이지에는 해당 업소 담당자의 광고가 실려 있습니다. 만 19세 이상 성인 대상입니다.",
+  "아래 담당자 연락처는 광고로 실린 것입니다. 만 19세 이상만 이용할 수 있습니다.",
+  "담당자 연락처 안내는 광고입니다. 만 19세 이상 성인 업소를 다룹니다.",
+  "업소 담당자의 요청으로 광고를 싣고 있습니다. 성인(만 19세 이상) 대상입니다.",
+];
+const 안내고지 = [
+  "만 19세 이상 이용 가능한 성인 업소 안내입니다. 업소와 제휴 관계가 없는 정보 페이지입니다.",
+  "성인(만 19세 이상)만 이용할 수 있는 곳을 다룹니다. 업소와 광고·제휴 관계가 없습니다.",
+  "이 글은 만 19세 이상 성인 대상 업소 안내이며, 업소와 아무런 관계가 없습니다.",
+  "만 19세 미만은 출입할 수 없습니다. 공개 자료만 정리한 제3자 안내 페이지입니다.",
+  "성인 전용 업소를 다루는 안내입니다. 업소로부터 대가를 받지 않았습니다.",
+  "만 19세 이상만 들어갈 수 있는 곳입니다. 업소와 제휴하지 않은 정보 페이지입니다.",
+  "성인 대상 업소 안내이며 청소년 출입·고용은 금지입니다. 공개 자료 기준입니다.",
+  "만 19세 이상 성인만 이용하는 업소를 안내합니다. 업소의 공식 채널이 아닙니다.",
+];
+function 안내고지고르기(씨: unknown, 광고쪽?: boolean) {
+  /* ★ 고정바에 담당자 전화가 나가는 쪽(callBar='phone')은 광고를 싣는 것이다 */
+  const 곳간 = 광고쪽 ? 광고고지 : 안내고지;
+  const s = String(씨 ?? "");
+  let n = 0;
+  for (let k = 0; k < s.length; k++) n = (n * 131 + s.charCodeAt(k)) % 1000003;
+  return 곳간[n % 곳간.length];
+}
+
+
 const KAKAO_ID = 'besta12';
 const HOBAK_TEL = '010 2221 1937';
 const HOBAK_TEL_HREF = 'tel:+821022211937';
@@ -113,7 +142,8 @@ export default function Layout({ children, callBar = 'kakao', brand = 'daejeon' 
             <p className="footer-copy">© 2026 대전원나이트 · 본 사이트는 업소의 공식 안내 페이지입니다</p>
           </div>
         )}
-      </footer>
+              <p style={{ margin: "8px 0 0", fontSize: 13, lineHeight: 1.7, color: "#9aa0a6" }}>{안내고지고르기(router.asPath, callBar === 'phone')}</p>
+</footer>
       {callBar === 'phone' ? (
         <a
           className="call-bar call-bar-phone"
