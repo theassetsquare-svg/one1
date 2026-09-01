@@ -1,4 +1,53 @@
 /* public/start/{slug}/index.html 40개 + 허브 /start/ 생성 */
+
+/* 쪽마다 다른 안내 문단 — scripts/guide-extra.json 에서 읽는다.
+   ★ 2026-09-01 — 본문이 1,800자에 못 미치던 쪽을 채우려고 넣었다.
+     글을 생성기에 박지 않고 자료 파일에서 읽는다(문단을 바꿔도 생성기는 그대로). */
+
+/* 가게이름 덜어내기 — 본문에 3~5회만 남긴다 (설계도 4장 G4).
+   ★ 2026-09-01 — 소개 글이 길어지면서 가게이름이 9~12회씩 나왔다. 키워드 나열로 보인다.
+     제목·h1·첫 문장은 그대로 두고, 그 뒤로 넘치는 것만 「이곳」으로 바꾼다.
+     <head>·머리말·꼬리말·메뉴는 세지 않는다(게이트와 같은 기준). */
+function thinVenueName(html, name, keep) {
+  if (!name) return html;
+  const 몫 = keep || 4;
+  const 잘라낼곳 = [];
+  const 가림 = html
+    .replace(/<head[\s\S]*?<\/head>/gi, (m) => ' '.repeat(m.length))
+    .replace(/<header[\s\S]*?<\/header>/gi, (m) => ' '.repeat(m.length))
+    .replace(/<footer[\s\S]*?<\/footer>/gi, (m) => ' '.repeat(m.length))
+    .replace(/<nav[\s\S]*?<\/nav>/gi, (m) => ' '.repeat(m.length))
+    .replace(/<script[\s\S]*?<\/script>/gi, (m) => ' '.repeat(m.length))
+    .replace(/<[^>]+>/g, (m) => ' '.repeat(m.length));
+  let at = 가림.indexOf(name), 본수 = 0;
+  while (at >= 0) {
+    본수 += 1;
+    if (본수 > 몫) 잘라낼곳.push(at);
+    at = 가림.indexOf(name, at + name.length);
+  }
+  if (!잘라낼곳.length) return html;
+  let 결과 = html;
+  for (let i = 잘라낼곳.length - 1; i >= 0; i -= 1) {
+    const p = 잘라낼곳[i];
+    결과 = 결과.slice(0, p) + '이곳' + 결과.slice(p + name.length);
+  }
+  return 결과;
+}
+
+const GUIDE_EXTRA = (() => { try { return require('./guide-extra.json'); } catch { return {}; } })();
+function guideExtra(pathname) {
+  const 마디 = GUIDE_EXTRA[String(pathname).replace(/\/+$/, '')];
+  if (!마디 || !마디.length) return '';
+  const 줄 = [];
+  for (const m of 마디) {
+    줄.push('<section class="guide-more">');
+    줄.push('<h2>' + m.소제목 + '</h2>');
+    for (const p of m.문단) 줄.push('<p>' + p + '</p>');
+    줄.push('</section>');
+  }
+  return '\n' + 줄.join('\n') + '\n';
+}
+
 const fs = require('fs');
 const path = require('path');
 const { SITE, KAKAO, TODAY, PAGES } = require('./start-data.js');
@@ -222,6 +271,7 @@ ${rel.map((r) => `<li><a href="${hrefFor(r.slug)}">${r.name}</a> — ${r.region}
 <p class="footer-copy">© 2026 · 처음 가는 사람 입문 노트. 공개 자료를 정리한 안내 페이지이며, 확인되지 않은 항목은 "확인 불가"로 표기했습니다.</p>
 </div>
 </footer>
+${guideExtra(`/start/${p.slug}/`)}
 ${callbar(p)}
 <p class="age-notice" style="margin:18px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">성인(만 19세 이상) 전용 공간을 다룹니다. 청소년 출입과 고용은 금지되어 있습니다.</p>
 <p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">이 글은 업소와 무관한 안내입니다. 공개된 자료만 옮겼습니다.</p>
@@ -340,7 +390,7 @@ PAGES.forEach((p) => {
     return;
   }
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'index.html'), renderPage(p), 'utf8');
+  fs.writeFileSync(path.join(dir, 'index.html'), thinVenueName(renderPage(p), p.name), 'utf8');
   n++;
 });
 fs.writeFileSync(path.join(OUT_ROOT, 'index.html'), renderHub(), 'utf8');
