@@ -2543,14 +2543,18 @@
     "file": "/og/start-paju-yadang-skydome-og.png",
     "pageUrl": "https://f.nolcool.com/start/paju-yadang-skydome/",
     "venue": "파주야당스카이돔나이트",
-    "category": "B",
-    "advertiser": null,
-    "heroText": "광고문의",
-    "heroRole": "광고문의",
+    "category": "A",
+    "advertiser": {
+      "nick": "딸기",
+      "tel": "010-3447-0963"
+    },
+    "heroText": "010-3447-0963",
+    "heroRole": "전화번호",
     "drawnTexts": [
       "파주야당스카이돔나이트",
-      "광고문의",
-      "카카오톡 besta12"
+      "딸기",
+      "010-3447-0963",
+      "광고문의 카톡 besta12"
     ],
     "texts": [
       {
@@ -2560,38 +2564,50 @@
         "targetWidthPct": 64.5,
         "pathWidthPx": 696.6,
         "pathHeightPx": 66.6,
-        "measuredWidthPx": 697,
-        "measuredHeightPx": 68,
-        "measuredWidthPct": 64.5,
+        "measuredWidthPx": 698,
+        "measuredHeightPx": 67,
+        "measuredWidthPct": 64.6,
         "uniformScale": true
       },
       {
-        "role": "광고문의",
-        "text": "광고문의",
-        "hero": true,
-        "targetWidthPct": 84.5,
-        "pathWidthPx": 912.6,
-        "pathHeightPx": 244.8,
-        "measuredWidthPx": 914,
-        "measuredHeightPx": 245,
-        "measuredWidthPct": 84.6,
-        "uniformScale": true
-      },
-      {
-        "role": "카카오톡",
-        "text": "카카오톡 besta12",
+        "role": "닉네임",
+        "text": "딸기",
         "hero": false,
-        "targetWidthPct": 79.5,
-        "pathWidthPx": 858.6,
-        "pathHeightPx": 132,
-        "measuredWidthPx": 859,
-        "measuredHeightPx": 133,
-        "measuredWidthPct": 79.5,
+        "targetWidthPct": 46,
+        "pathWidthPx": 496.8,
+        "pathHeightPx": 176,
+        "measuredWidthPx": 498,
+        "measuredHeightPx": 177,
+        "measuredWidthPct": 46.1,
         "uniformScale": false
+      },
+      {
+        "role": "전화번호",
+        "text": "010-3447-0963",
+        "hero": true,
+        "targetWidthPct": 95.5,
+        "pathWidthPx": 1031.4,
+        "pathHeightPx": 200,
+        "measuredWidthPx": 1032,
+        "measuredHeightPx": 200,
+        "measuredWidthPct": 95.6,
+        "uniformScale": false
+      },
+      {
+        "role": "광고문의(보조)",
+        "text": "광고문의 카톡 besta12",
+        "hero": false,
+        "targetWidthPct": 59.5,
+        "pathWidthPx": 642.6,
+        "pathHeightPx": 61.7,
+        "measuredWidthPx": 644,
+        "measuredHeightPx": 62,
+        "measuredWidthPct": 59.6,
+        "uniformScale": true
       }
     ],
-    "bg": "#062028",
-    "bytes": 52010,
+    "bg": "#123028",
+    "bytes": 64167,
     "note": null
   },
   {
