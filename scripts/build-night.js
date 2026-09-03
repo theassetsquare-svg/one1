@@ -249,9 +249,9 @@ function renderPage(p) {
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="${url}">
 <link rel="alternate" hreflang="ko-KR" href="${url}">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://f.nolcool.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://f.nolcool.com/favicon-16x16.png">
+<link rel="apple-touch-icon" href="https://f.nolcool.com/icons/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="${attr(p.title)}">
@@ -352,7 +352,7 @@ function renderHub() {
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="나이트 안내 목록 13곳 지역별 정리">
 <link rel="stylesheet" href="/night/night.css">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://f.nolcool.com/favicon.ico">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://f.nolcool.com/"},{"@type":"ListItem","position":2,"name":"나이트 안내 목록","item":"https://f.nolcool.com/night/"}]}</script>
 </head>
 <body>

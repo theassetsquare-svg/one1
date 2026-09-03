@@ -45,3 +45,4 @@ next-env.d.ts
 .start-audit.json
 .start-og-report.json
 .og-report.json
+.og-compress.json

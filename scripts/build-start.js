@@ -181,9 +181,9 @@ function renderPage(p) {
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="${url}">
 <link rel="alternate" hreflang="ko-KR" href="${url}">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://f.nolcool.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://f.nolcool.com/favicon-16x16.png">
+<link rel="apple-touch-icon" href="https://f.nolcool.com/icons/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="${attr(p.title)}">
@@ -329,7 +329,7 @@ ${groups[r].map((p) => `<li><a href="${hrefFor(p.slug)}">${p.name}</a><span>${p.
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="${url}">
 <link rel="alternate" hreflang="ko-KR" href="${url}">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://f.nolcool.com/favicon-32x32.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="전국 나이트 입문 노트 40 — 처음 가는 사람용 지역별 정리">
