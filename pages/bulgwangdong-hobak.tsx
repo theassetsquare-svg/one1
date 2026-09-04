@@ -98,7 +98,7 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: '홈', item: `${SITE}/` },
+        { '@type': 'ListItem', position: 1, name: '다시 시작하는 이야기', item: `${SITE}/` },
         { '@type': 'ListItem', position: 2, name: NAME, item: `${SITE}${PATH}` },
       ],
     },

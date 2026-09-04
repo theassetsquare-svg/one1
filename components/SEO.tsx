@@ -64,7 +64,6 @@ export default function SEO({
       <link rel="manifest" href="/site.webmanifest" />
       <link rel="alternate" type="application/rss+xml" title={siteName} href={`${SITE}/rss.xml`} />
       <link rel="icon" type="image/png" sizes="32x32" href="https://f.nolcool.com/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="https://f.nolcool.com/favicon-16x16.png" />
       <link rel="apple-touch-icon" href="https://f.nolcool.com/icons/apple-touch-icon.png" />
       <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
       <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />

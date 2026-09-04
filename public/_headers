@@ -3,22 +3,32 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
-
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cache-Control: public, max-age=60, s-maxage=300
 /
   Link: </og/home.png>; rel=preload; as=image; fetchpriority=high
   Cache-Control: public, max-age=60, s-maxage=300
-
 /og/*
   Cache-Control: public, max-age=3600, must-revalidate
-
 /icons/*
   Cache-Control: public, max-age=2592000
-
 /favicon-32x32.png
   Cache-Control: public, max-age=2592000
-
 /favicon-16x16.png
   Cache-Control: public, max-age=2592000
-
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+/rss.xml
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate

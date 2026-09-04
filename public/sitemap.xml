@@ -633,12 +633,6 @@
 <url><loc>https://f.nolcool.com/night/daejeon-seven-night-1/</loc><lastmod>2026-09-04</lastmod></url>
 <url><loc>https://f.nolcool.com/night/busan-asiad-night-1/</loc><lastmod>2026-09-04</lastmod></url>
   <url>
-    <loc>https://f.nolcool.com/night/suwon-chance-dome-night/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://f.nolcool.com/start/bucheon-gorae/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -778,12 +772,6 @@
   </url>
   <url>
     <loc>https://f.nolcool.com/start/sillim-grandprix/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://f.nolcool.com/start/suwon-chance-dome/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

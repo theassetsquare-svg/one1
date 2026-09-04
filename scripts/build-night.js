@@ -63,6 +63,9 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const attr = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 const byNo = {};
+/* 2026-09-05 S3 — /night/suwon-chance-dome-night/ 는 /night/suwon-chancedome-night/ 와 같은 가게의 중복 주소. 3형식 개별 확인 미색인 → 폐기(404, 301 없음). 만들지 않고 목록·관련 링크에서도 뺀다. */
+const SKIP_SLUGS = new Set(['suwon-chance-dome-night']);
+for (let i = PAGES.length - 1; i >= 0; i--) if (SKIP_SLUGS.has(PAGES[i].slug)) PAGES.splice(i, 1);
 PAGES.forEach((p) => { byNo[p.no] = p; });
 
 /* 전화바에 가게이름을 함께 노출하는 업소 (2026-08-20 청담나이트 승격) */
@@ -114,7 +117,7 @@ function jsonld(p) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 1, name: '다시 시작하는 이야기', item: `${SITE}/` },
       { '@type': 'ListItem', position: 2, name: '나이트', item: `${SITE}/night/` },
       { '@type': 'ListItem', position: 3, name: p.name, item: url },
     ],
@@ -249,8 +252,8 @@ function renderPage(p) {
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="${url}">
 <link rel="alternate" hreflang="ko-KR" href="${url}">
+<link rel="shortcut icon" href="https://f.nolcool.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://f.nolcool.com/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://f.nolcool.com/favicon-16x16.png">
 <link rel="apple-touch-icon" href="https://f.nolcool.com/icons/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
@@ -353,8 +356,8 @@ function renderHub() {
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="나이트 안내 목록 13곳 지역별 정리">
 <link rel="stylesheet" href="/night/night.css">
-<link rel="icon" type="image/x-icon" href="https://f.nolcool.com/favicon.ico">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://f.nolcool.com/"},{"@type":"ListItem","position":2,"name":"나이트 안내 목록","item":"https://f.nolcool.com/night/"}]}</script>
+<link rel="shortcut icon" href="https://f.nolcool.com/favicon.ico">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"다시 시작하는 이야기","item":"https://f.nolcool.com/"},{"@type":"ListItem","position":2,"name":"나이트 안내 목록","item":"https://f.nolcool.com/night/"}]}</script>
 </head>
 <body>
 <header>

@@ -65,6 +65,8 @@ const strip = (s) => String(s).replace(/<[^>]+>/g, '');
 const MOVED = {
   'gwangju-cheomdan': '/night/gwangju-cheomdan-night-1/',
   'indeogwon-gukbingwan': '/night/indeogwon-gukbingwan-night-1/',
+  /* 2026-09-05 S3 — 슬러그 불일치 중복(/start/suwon-chance-dome/): 3형식 개별 확인 미색인 → 폐기(404). 같은 가게의 살아 있는 쪽으로 링크 */
+  'suwon-chance-dome': '/night/suwon-chancedome-night/',
 };
 const hrefFor = (slug) => MOVED[slug] || ('/start/' + slug + '/');
 
@@ -122,7 +124,7 @@ function jsonld(p) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 1, name: '다시 시작하는 이야기', item: `${SITE}/` },
       { '@type': 'ListItem', position: 2, name: '나이트 입문 노트', item: `${SITE}/start/` },
       { '@type': 'ListItem', position: 3, name: p.name, item: url },
     ],
@@ -181,8 +183,8 @@ function renderPage(p) {
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="${url}">
 <link rel="alternate" hreflang="ko-KR" href="${url}">
+<link rel="shortcut icon" href="https://f.nolcool.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://f.nolcool.com/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://f.nolcool.com/favicon-16x16.png">
 <link rel="apple-touch-icon" href="https://f.nolcool.com/icons/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
@@ -311,7 +313,7 @@ ${groups[r].map((p) => `<li><a href="${hrefFor(p.slug)}">${p.name}</a><span>${p.
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 1, name: '다시 시작하는 이야기', item: `${SITE}/` },
       { '@type': 'ListItem', position: 2, name: '나이트 입문 노트', item: url },
     ],
   };
