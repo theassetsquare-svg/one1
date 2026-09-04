@@ -2944,14 +2944,18 @@
     "file": "/og/start-seongnam-shampoo-og.png",
     "pageUrl": "https://f.nolcool.com/start/seongnam-shampoo/",
     "venue": "성남샴푸나이트",
-    "category": "B",
-    "advertiser": null,
-    "heroText": "광고문의",
-    "heroRole": "광고문의",
+    "category": "A",
+    "advertiser": {
+      "nick": "이쁜이",
+      "tel": "010-3432-4758"
+    },
+    "heroText": "010-3432-4758",
+    "heroRole": "전화번호",
     "drawnTexts": [
       "성남샴푸나이트",
-      "광고문의",
-      "카카오톡 besta12"
+      "이쁜이",
+      "010-3432-4758",
+      "광고문의 카톡 besta12"
     ],
     "texts": [
       {
@@ -2967,32 +2971,44 @@
         "uniformScale": true
       },
       {
-        "role": "광고문의",
-        "text": "광고문의",
-        "hero": true,
-        "targetWidthPct": 84.5,
-        "pathWidthPx": 912.6,
-        "pathHeightPx": 244.8,
-        "measuredWidthPx": 914,
-        "measuredHeightPx": 245,
-        "measuredWidthPct": 84.6,
-        "uniformScale": true
+        "role": "닉네임",
+        "text": "이쁜이",
+        "hero": false,
+        "targetWidthPct": 46,
+        "pathWidthPx": 496.8,
+        "pathHeightPx": 176,
+        "measuredWidthPx": 498,
+        "measuredHeightPx": 177,
+        "measuredWidthPct": 46.1,
+        "uniformScale": false
       },
       {
-        "role": "카카오톡",
-        "text": "카카오톡 besta12",
-        "hero": false,
-        "targetWidthPct": 79.5,
-        "pathWidthPx": 858.6,
-        "pathHeightPx": 132,
-        "measuredWidthPx": 859,
-        "measuredHeightPx": 133,
-        "measuredWidthPct": 79.5,
+        "role": "전화번호",
+        "text": "010-3432-4758",
+        "hero": true,
+        "targetWidthPct": 95.5,
+        "pathWidthPx": 1031.4,
+        "pathHeightPx": 200,
+        "measuredWidthPx": 1032,
+        "measuredHeightPx": 201,
+        "measuredWidthPct": 95.6,
         "uniformScale": false
+      },
+      {
+        "role": "광고문의(보조)",
+        "text": "광고문의 카톡 besta12",
+        "hero": false,
+        "targetWidthPct": 59.5,
+        "pathWidthPx": 642.6,
+        "pathHeightPx": 61.7,
+        "measuredWidthPx": 644,
+        "measuredHeightPx": 63,
+        "measuredWidthPct": 59.6,
+        "uniformScale": true
       }
     ],
-    "bg": "#2A1206",
-    "bytes": 51640,
+    "bg": "#1E2A12",
+    "bytes": 64677,
     "note": null
   },
   {
