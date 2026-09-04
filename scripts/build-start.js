@@ -275,6 +275,7 @@ ${guideExtra(`/start/${p.slug}/`)}
 ${callbar(p)}
 <p class="age-notice" style="margin:18px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">성인(만 19세 이상) 전용 공간을 다룹니다. 청소년 출입과 고용은 금지되어 있습니다.</p>
 <p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">이 글은 업소와 무관한 안내입니다. 공개된 자료만 옮겼습니다.</p>
+<p class="cafe-link" style="margin:14px 0 0;font-size:14px;line-height:1.7"><a href="https://nolcool.com/cafe/?utm_source=f&amp;utm_medium=site_link&amp;utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
 </body>
 </html>
 `;
@@ -376,6 +377,7 @@ ${listHtml}
 </div>
 <p class="age-notice" style="margin:18px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">성인 대상 업소 안내입니다. 만 19세 미만의 출입·고용은 금지되어 있습니다.</p>
 <p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">해당 업소와 관계가 없는 제3자 안내 페이지입니다.</p>
+<p class="cafe-link" style="margin:14px 0 0;font-size:14px;line-height:1.7"><a href="https://nolcool.com/cafe/?utm_source=f&amp;utm_medium=site_link&amp;utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
 </body>
 </html>
 `;
