@@ -6,6 +6,8 @@ type Props = {
   pageType?: string;
   includeFaq?: boolean;
   includeHowTo?: boolean;
+  /** S4(2026-09-05) T-006: 쪽의 og:image 경로(/og/…) — 주면 JSON-LD image 도 그것 */
+  image?: string;
 };
 
 const FAQ_ITEMS = [
@@ -27,7 +29,7 @@ const FAQ_ITEMS = [
   { q: '문의 채널은?', a: '카카오톡으로 안내드립니다. 문의는 페이지 하단 광고문의 카톡 besta12를 이용해 주세요.' },
 ];
 
-export default function Schema({ path, crumb, pageType = 'WebPage', includeFaq, includeHowTo }: Props) {
+export default function Schema({ path, crumb, pageType = 'WebPage', includeFaq, includeHowTo, image }: Props) {
   const main = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -71,7 +73,7 @@ export default function Schema({ path, crumb, pageType = 'WebPage', includeFaq, 
           },
         ],
         acceptsReservations: true,
-        image: `${SITE}/og/og-thumb.png`,
+        image: image ? `${SITE}${image}` : `${SITE}/og/og-thumb.png`,
         description: '38세 이상 입장. 22시 이전 입장 여성 손님에게 교통비 3만원과 맥주 1병이 제공됩니다.',
         areaServed: ['대전', '충남', '청주', '세종'],
       },
@@ -81,7 +83,7 @@ export default function Schema({ path, crumb, pageType = 'WebPage', includeFaq, 
         name: '대전원나이트',
         url: `${SITE}/`,
         priceRange: '₩₩',
-        image: `${SITE}/og/og-thumb.png`,
+        image: image ? `${SITE}${image}` : `${SITE}/og/og-thumb.png`,
       },
       {
         '@type': pageType,

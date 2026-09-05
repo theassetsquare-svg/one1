@@ -14,7 +14,7 @@ export default function Ladies() {
         ogImage="/og/ladies.png"
         ogAlt="대전원나이트 여성 손님 안내"
       />
-      <Schema path="/ladies-1" crumb="여성 손님 안내" pageType="WebPage" />
+      <Schema image="/og/ladies.png" path="/ladies-1" crumb="여성 손님 안내" pageType="WebPage" />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">LADIES</div>

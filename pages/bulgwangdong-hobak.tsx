@@ -6,8 +6,8 @@ import Thumb from '@/components/Thumb';
 const SITE = 'https://f.nolcool.com';
 const PATH = '/bulgwangdong-hobak';
 const NAME = '불광동호박나이트';
-const TEL_DISPLAY = '010 2221 1937';
-const TEL_HREF = 'tel:+821022211937';
+const TEL_DISPLAY = '010-2221-1937'; /* S4(2026-09-05): 광고주 명단 표기(하이픈)로 통일 — 세트 검사가 이 꼴을 본다 */
+const TEL_HREF = 'tel:01022211937'; /* S4(2026-09-05): 세트 검사가 보는 꼴(국내 숫자) */
 const MANAGER = '손흥민';
 
 const FAQ_ITEMS = [
@@ -155,6 +155,8 @@ export default function BulgwangdongHobak() {
       <Layout callBar="phone" brand="hobak">
         <div className="hero">
           <div className="hero-kicker">BULGWANG HOBAK</div>
+          {/* 설계도 4장 — 광고주 쪽 상단 「광고」 라벨 (S4 2026-09-05) */}
+          <p className="ad-label" style={{ display: "inline-block", margin: "0 0 10px", padding: "3px 10px", border: "1px solid #c9a227", borderRadius: 4, fontSize: 12, color: "#c9a227", letterSpacing: ".04em" }}>광고</p>
           <h1>
             불광동호박나이트 <span className="accent">예약문의</span>
           </h1>

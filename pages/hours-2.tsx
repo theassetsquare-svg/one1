@@ -14,7 +14,7 @@ export default function Hours() {
         ogImage="/og/hours.png"
         ogAlt="대전원나이트 영업 시간 안내"
       />
-      <Schema path="/hours-2" crumb="영업 시간" pageType="WebPage" />
+      <Schema image="/og/hours.png" path="/hours-2" crumb="영업 시간" pageType="WebPage" />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">HOURS</div>

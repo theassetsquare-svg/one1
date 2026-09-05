@@ -14,7 +14,7 @@ export default function Info() {
         ogImage="/og/info.png"
         ogAlt="대전원나이트 입장 안내"
       />
-      <Schema path="/info-2" crumb="입장 안내" pageType="WebPage" includeHowTo />
+      <Schema image="/og/info.png" path="/info-2" crumb="입장 안내" pageType="WebPage" includeHowTo />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">ENTRY</div>

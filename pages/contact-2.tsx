@@ -14,7 +14,7 @@ export default function Contact() {
         ogImage="/og/contact.png"
         ogAlt="대전원나이트 예약·문의 안내"
       />
-      <Schema path="/contact-2" crumb="예약·문의" pageType="ContactPage" />
+      <Schema image="/og/contact.png" path="/contact-2" crumb="예약·문의" pageType="ContactPage" />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">CONTACT</div>

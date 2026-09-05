@@ -14,7 +14,7 @@ export default function Faq() {
         ogImage="/og/faq.png"
         ogAlt="대전원나이트 자주 묻는 질문"
       />
-      <Schema path="/faq-1" crumb="FAQ" pageType="FAQPage" includeFaq />
+      <Schema image="/og/faq.png" path="/faq-1" crumb="FAQ" pageType="FAQPage" includeFaq />
       <Layout>
         <div className="hero">
           <div className="hero-kicker">FAQ</div>
