@@ -77,14 +77,7 @@ export default function Schema({ path, crumb, pageType = 'WebPage', includeFaq, 
         description: '38세 이상 입장. 22시 이전 입장 여성 손님에게 교통비 3만원과 맥주 1병이 제공됩니다.',
         areaServed: ['대전', '충남', '청주', '세종'],
       },
-      {
-        '@type': 'LocalBusiness',
-        '@id': `${SITE}/#business`,
-        name: '대전원나이트',
-        url: `${SITE}/`,
-        priceRange: '₩₩',
-        image: image ? `${SITE}${image}` : `${SITE}/og/og-thumb.png`,
-      },
+      /* F3: LocalBusiness 노드 제거 — 업소 노드는 NightClub 하나(점검표 W-068 · 설계도 5장) */
       {
         '@type': pageType,
         name: crumb,
