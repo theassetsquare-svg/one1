@@ -293,7 +293,7 @@ ${jsonld(p)}
 ${nav}
 <main id="main">
 <article>
-<h1>${p.name}</h1>
+${p.group === 'A' ? '<p class="ad-label" style="margin:0 0 10px;display:inline-block;padding:3px 10px;border:1px solid #c9a227;border-radius:4px;font-size:12px;color:#c9a227;letter-spacing:.04em">광고</p>\n' : ''}<h1>${p.name}</h1>
 <p class="meta-line">${p.region} · 나이트클럽 · <time datetime="${TODAY}">${TODAY}</time> 기준</p>
 ${ageBadge}<div class="answer-box">
   <p><strong>${p.name}</strong>은 ${p.region}에 있는 나이트클럽입니다. ${p.answer2}.</p>
@@ -324,7 +324,7 @@ ${rel.map((r) => `<li><a href="/night/${r.slug}/">${r.name}</a> — ${r.region}<
 ${guideExtra(`/night/${p.slug}/`)}
 ${callbar(p)}
 <p class="age-notice" style="margin:18px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">만 19세 이상 성인만 이용하는 업소입니다. 청소년의 출입과 고용은 허용되지 않습니다.</p>
-<p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">업소와 제휴 관계가 없는 정보 안내입니다. 공개된 자료를 기준으로 적었고, 내용은 바뀔 수 있습니다.</p>
+<p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">${p.group === 'A' ? '이 페이지의 담당자 연락처는 광고로 실린 것입니다. 광고 · 업소 제공 정보 · 확인일 2026-09-14. 내용은 바뀔 수 있습니다.' : '업소와 제휴 관계가 없는 정보 안내입니다. 공개된 자료를 기준으로 적었고, 내용은 바뀔 수 있습니다.'}</p>
 <p class="cafe-link" style="margin:14px 0 0;font-size:14px;line-height:1.7"><a href="https://nolcool.com/cafe/?utm_source=f&amp;utm_medium=site_link&amp;utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
 </body>
 </html>

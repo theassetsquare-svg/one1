@@ -220,7 +220,7 @@ ${jsonld(p)}
 <p class="crumb"><a href="/">홈</a> &gt; <a href="/start/">나이트 입문 노트</a> &gt; ${p.name}</p>
 <main id="main">
 <article>
-<h1>${p.title}</h1>
+${p.group === 'A' ? '<p class="ad-label" style="margin:0 0 10px;display:inline-block;padding:3px 10px;border:1px solid #c9a227;border-radius:4px;font-size:12px;color:#c9a227;letter-spacing:.04em">광고</p>\n' : ''}<h1>${p.title}</h1>
 <p class="meta-line">${p.region} · <time datetime="${TODAY}">${TODAY}</time> 기준 정리</p>
 <p class="note-tag hand">처음 가는 사람 입문 노트</p>
 
@@ -276,7 +276,7 @@ ${rel.map((r) => `<li><a href="${hrefFor(r.slug)}">${r.name}</a> — ${r.region}
 ${guideExtra(`/start/${p.slug}/`)}
 ${callbar(p)}
 <p class="age-notice" style="margin:18px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">성인(만 19세 이상) 전용 공간을 다룹니다. 청소년 출입과 고용은 금지되어 있습니다.</p>
-<p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">이 글은 업소와 무관한 안내입니다. 공개된 자료만 옮겼습니다.</p>
+<p class="rel-notice" style="margin:8px 0 0;font-size:13px;line-height:1.7;color:#9aa0a6">${p.group === 'A' ? '담당자 연락처 부분은 광고로 게재된 것입니다. 광고 · 업소 제공 정보 · 확인일 2026-09-14.' : '이 글은 업소와 무관한 안내입니다. 공개된 자료만 옮겼습니다.'}</p>
 <p class="cafe-link" style="margin:14px 0 0;font-size:14px;line-height:1.7"><a href="https://nolcool.com/cafe/?utm_source=f&amp;utm_medium=site_link&amp;utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
 </body>
 </html>
