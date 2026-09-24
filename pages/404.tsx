@@ -12,7 +12,7 @@ export default function NotFound() {
         path="/404"
         ogAlt="대전원나이트 안내 페이지"
       />
-      <Layout>
+      <Layout brand="note">
         <div className="hero">
           <div className="hero-kicker">404</div>
           <h1>
