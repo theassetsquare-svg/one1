@@ -1,3 +1,4 @@
+import { useThumb } from '@/lib/thumb';
 import Head from 'next/head';
 
 const SITE = 'https://f.nolcool.com';
@@ -43,6 +44,8 @@ export default function SEO({
     return 경로 + "/" + 뒤;
   };
   const url = `${SITE}${슬래시붙이기(path)}`;
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
+  if (표) { ogImage = 표.file; ogAlt = 표.alt; noImage = false; }   /* 2026-09-24 대표님 지시 — 홈도 og(본문 그림은 0) */
   const fullOg = `${SITE}${ogImage}`;
   return (
     <Head>

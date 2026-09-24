@@ -1,3 +1,4 @@
+import { useThumb, 이미지바꾸기 } from '@/lib/thumb';
 import Link from 'next/link';
 import SEO from '@/components/SEO';
 import Layout from '@/components/Layout';
@@ -130,6 +131,7 @@ const howToSchema = {
 };
 
 export default function BulgwangdongHobak() {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   return (
     <>
       <SEO
@@ -143,7 +145,7 @@ export default function BulgwangdongHobak() {
         icbm="37.6106,126.9296"
         siteName="불광동호박나이트"
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(표 ? 이미지바꾸기(schema, SITE + 표.file) : schema) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

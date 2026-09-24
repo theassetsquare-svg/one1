@@ -1,3 +1,4 @@
+import { useThumb } from '@/lib/thumb';
 const SITE = 'https://f.nolcool.com';
 
 type Props = {
@@ -30,6 +31,7 @@ const FAQ_ITEMS = [
 ];
 
 export default function Schema({ path, crumb, pageType = 'WebPage', includeFaq, includeHowTo, image }: Props) {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const main = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -73,7 +75,7 @@ export default function Schema({ path, crumb, pageType = 'WebPage', includeFaq, 
           },
         ],
         acceptsReservations: true,
-        image: image ? `${SITE}${image}` : `${SITE}/og/og-thumb.png`,
+        image: 표 ? `${SITE}${표.file}` : image ? `${SITE}${image}` : `${SITE}/og/og-thumb.png`,
         description: '38세 이상 입장. 22시 이전 입장 여성 손님에게 교통비 3만원과 맥주 1병이 제공됩니다.',
         areaServed: ['대전', '충남', '청주', '세종'],
       },
