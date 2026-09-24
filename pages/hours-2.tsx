@@ -1,104 +1,14 @@
-import SEO from '@/components/SEO';
-import Schema from '@/components/Schema';
-import Layout from '@/components/Layout';
-import Thumb from '@/components/Thumb';
-import PolicyBanner from '@/components/PolicyBanner';
+import type { GetStaticProps } from 'next';
+import NwPage, { type NwModel } from '@/components/nw/NwPage';
 
-export default function Hours() {
-  return (
-    <>
-      <SEO
-        title="대전원나이트 영업 시간 - 평일 새벽 2시반 / 주말 3시반까지"
-        description="대전원나이트 영업 시간 안내. 평일 20:00 - 02:30, 주말 20:00 - 03:30. 22시 이전 입장 여성 손님 혜택 시간대까지 한눈에. 안내드립니다."
-        path="/hours-2"
-        ogImage="/og/hours.png"
-        ogAlt="대전원나이트 영업 시간 안내"
-      />
-      <Schema image="/og/hours.png" path="/hours-2" crumb="영업 시간" pageType="WebPage" />
-      <Layout>
-        <div className="hero">
-          <div className="hero-kicker">HOURS</div>
-          <h1>
-            영업 <span className="accent">시간</span>
-          </h1>
-          <p>요일별 영업 시간을 확인하세요.</p>
-          <Thumb src="/og/hours.png" alt="대전원나이트 영업 시간 안내" />
-        </div>
-        <div className="container">
-          <PolicyBanner page="hours-2" />
-
-          <section className="section">
-            <div className="section-kicker">WEEKLY</div>
-            <h2 className="section-heading">
-              요일별 <span className="accent">영업 시간</span>
-            </h2>
-            <table className="info-table">
-              <tbody>
-                <tr>
-                  <th>월요일</th>
-                  <td>20:00 - 02:30</td>
-                </tr>
-                <tr>
-                  <th>화요일</th>
-                  <td>20:00 - 02:30</td>
-                </tr>
-                <tr>
-                  <th>수요일</th>
-                  <td>20:00 - 02:30</td>
-                </tr>
-                <tr>
-                  <th>목요일</th>
-                  <td>20:00 - 02:30</td>
-                </tr>
-                <tr>
-                  <th>금요일</th>
-                  <td>20:00 - 02:30</td>
-                </tr>
-                <tr>
-                  <th>토요일</th>
-                  <td>20:00 - 03:30</td>
-                </tr>
-                <tr>
-                  <th>일요일</th>
-                  <td>20:00 - 03:30</td>
-                </tr>
-              </tbody>
-            </table>
-            <p style={{ color: '#7a82a8', fontSize: '0.92rem', marginTop: 24 }}>
-              ※ 공휴일·연휴 영업 시간은 변경될 수 있습니다. 방문 전 페이지 하단 광고문의 카톡 besta12로 확인해 주세요.
-            </p>
-          </section>
-
-          <section className="section">
-            <div className="section-kicker">TIME SLOTS</div>
-            <h2 className="section-heading">
-              시간대 <span className="accent">안내</span>
-            </h2>
-            <div className="bento">
-              <div className="bento-card">
-                <div className="bento-kicker">20:00 - 22:00</div>
-                <h3>오프닝</h3>
-                <p>여성 손님 22시 이전 입장 시 교통비 + 맥주 안내가 적용되는 시간대입니다.</p>
-              </div>
-              <div className="bento-card">
-                <div className="bento-kicker">22:00 - 00:00</div>
-                <h3>피크 전</h3>
-                <p>좌석 회전이 시작되는 시간대로 예약을 권장합니다.</p>
-              </div>
-              <div className="bento-card">
-                <div className="bento-kicker">00:00 - 02:30</div>
-                <h3>피크 타임</h3>
-                <p>가장 붐비는 시간대. 룸·단체는 예약 필수.</p>
-              </div>
-              <div className="bento-card">
-                <div className="bento-kicker">주말 ~ 03:30</div>
-                <h3>주말 연장</h3>
-                <p>토·일요일은 03:30까지 운영합니다.</p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </Layout>
-    </>
-  );
+/** [전부10 2026-09-25] 이 쪽의 글 · 사실 표 · 직답 · FAQ · 한 줄 정리 · JSON-LD 는 lib/nw/pages.json 의 '/hours-2/' 모형에서 온다(사실은 data/shops verified 값만). */
+export default function Page({ model }: { model: NwModel }) {
+  return <NwPage model={model} />;
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { nwModel } = await import('@/lib/nw/load');
+  const model = nwModel('/hours-2/');
+  if (!model) throw new Error('lib/nw/pages.json 에 /hours-2/ 모형이 없다');
+  return { props: { model } };
+};
