@@ -32,7 +32,7 @@ const NICK_OWNER = Object.fromEntries(Object.entries(ADVERTISERS).map(([v, a]) =
 const PAGES = [
   { f: 'index.html', url: '/', own: [], hub: true },            // 홈 = 독립 성공스토리(가게이름 0)
   { f: 'info-2.html', url: '/info-2', own: ['대전원나이트'] },
-  { f: 'hours-2.html', url: '/hours-2', own: ['대전원나이트'] },
+  { f: 'hours-2.html', url: '/hours-5', own: ['대전원나이트'] },
   { f: 'ladies-1.html', url: '/ladies-1', own: ['대전원나이트'] },
   { f: 'faq-1.html', url: '/faq-1', own: ['대전원나이트'] },
   { f: 'contact-2.html', url: '/contact-2', own: ['대전원나이트'] },

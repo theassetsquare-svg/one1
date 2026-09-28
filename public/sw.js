@@ -2,7 +2,7 @@ const CACHE = 'onee-w8t-v3';
 const ASSETS = [
   '/',
   '/info-2/',
-  '/hours-2/',
+  '/hours-5/',
   '/ladies-1',
   '/faq-1',
   '/contact-2/',

@@ -20,7 +20,7 @@ const PAGES = ['index', 'info', 'hours', 'ladies', 'faq', 'contact', 'bulgwangdo
 const ROUTES = new Set([
   '/',
   '/info-2/',
-  '/hours-2/',
+  '/hours-5/',
   '/ladies-1',
   '/faq-1',
   '/contact-2/',
