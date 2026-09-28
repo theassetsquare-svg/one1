@@ -19,7 +19,7 @@ const ROOT = process.argv[2] || 'out';
 const PAGES = ['index', 'info', 'hours', 'ladies', 'faq', 'contact', 'bulgwangdong-hobak'];
 const ROUTES = new Set([
   '/',
-  '/info-2/',
+  '/info-5/',
   '/hours-5/',
   '/ladies-1',
   '/faq-1',
