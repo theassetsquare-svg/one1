@@ -64,7 +64,7 @@ const strip = (s) => String(s).replace(/<[^>]+>/g, '');
    (실측: 어절 3-gram 전부 · 문장 전부 겹침) 링크도 옮긴 주소로 건다. */
 const MOVED = {
   'gwangju-cheomdan': '/night/gwangju-cheomdan-night-1/',
-  'indeogwon-gukbingwan': '/night/indeogwon-gukbingwan-night-1/',
+  'indeogwon-gukbingwan': '/night/indeogwon-gukbingwan-night-4/',
   /* 2026-09-05 S3 — 슬러그 불일치 중복(/start/suwon-chance-dome/): 3형식 개별 확인 미색인 → 폐기(404). 같은 가게의 살아 있는 쪽으로 링크 */
   'suwon-chance-dome': '/night/suwon-chancedome-night/',
 };
