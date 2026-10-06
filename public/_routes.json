@@ -1,0 +1,21 @@
+{
+ "version": 1,
+ "include": [
+  "/*"
+ ],
+ "exclude": [
+  "/_next/*",
+  "/og/*",
+  "/icons/*",
+  "/favicon-16x16.png",
+  "/favicon-32x32.png",
+  "/favicon.ico",
+  "/llms.txt",
+  "/robots.txt",
+  "/rss.xml",
+  "/site.webmanifest",
+  "/sitemap.xml",
+  "/fd1ac79661e23b96053c2fe71f674443.txt",
+  "/sw.js"
+ ]
+}

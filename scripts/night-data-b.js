@@ -7,7 +7,7 @@ const PAGES_B = [
   name: '신림그랑프리나이트', nameB: '신림 그랑프리나이트', nameC: '신림동 나이트클럽',
   region: '서울 관악구 신림동', locality: '관악구', addrRegion: '서울특별시',
   angle: 10, angleName: '짧은 요약형', suffix: '핵심 셋',
-  group: 'B', manager: null, tel: null, telHref: null,
+  group: 'A', manager: '쌍코피', tel: '010-7352-1606', telHref: '01073521606',
   age: null, bg: '#0F3E52',
   title: '신림그랑프리나이트 핵심 셋 신림역 앞 저녁 6시 오픈',
   desc: '신림그랑프리나이트 방문 전 확인할 항목만 표로 압축했습니다. 좌석 성격, 저녁 6시 오픈 이후 시간대별 밀집도, 인원별 자리 선택까지 한 장으로 확인하세요.',
