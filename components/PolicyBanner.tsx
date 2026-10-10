@@ -70,7 +70,7 @@ export default function PolicyBanner({ page = '' }: { page?: string }) {
           <div className="policy-fine">{at(page, 0, FINE)}</div>
         </div>
       </div>
-      <Link href="/contact-2" className="policy-cta">
+      <Link href="/contact-6" className="policy-cta">
         {at(page, 1, CTA)}
       </Link>
     </section>

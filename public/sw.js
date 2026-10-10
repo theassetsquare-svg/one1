@@ -5,7 +5,7 @@ const ASSETS = [
   '/hours-5/',
   '/ladies-1',
   '/faq-1',
-  '/contact-2/',
+  '/contact-6/',
   '/bulgwangdong-hobak',
   '/site.webmanifest',
   '/og/og-thumb.png',

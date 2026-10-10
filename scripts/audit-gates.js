@@ -35,7 +35,7 @@ const PAGES = [
   { f: 'hours-2.html', url: '/hours-5', own: ['대전원나이트'] },
   { f: 'ladies-1.html', url: '/ladies-1', own: ['대전원나이트'] },
   { f: 'faq-1.html', url: '/faq-1', own: ['대전원나이트'] },
-  { f: 'contact-2.html', url: '/contact-2', own: ['대전원나이트'] },
+  { f: 'contact-2.html', url: '/contact-6', own: ['대전원나이트'] },
   { f: '404.html', url: '/404', own: ['대전원나이트'] },
   { f: 'bulgwangdong-hobak.html', url: '/bulgwangdong-hobak', own: ['불광동호박나이트'] },
   { f: 'night/index.html', url: '/night/', own: [], hub: true },
