@@ -683,7 +683,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url><loc>https://f.nolcool.com/start/seosan-hobak/</loc>
+  <url><loc>https://f.nolcool.com/start/seosan-hobak-2/</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -693,7 +693,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url><loc>https://f.nolcool.com/start/suwon-korea/</loc>
+  <url><loc>https://f.nolcool.com/start/suwon-korea-2/</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -703,7 +703,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url><loc>https://f.nolcool.com/start/ulsan-champion/</loc>
+  <url><loc>https://f.nolcool.com/start/ulsan-champion-1/</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -727,7 +727,7 @@
   <url><loc>https://f.nolcool.com/night/sangbong-hangukgwan-night-1/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://f.nolcool.com/night/seongnam-shampoo-night-2/</loc><lastmod>2026-09-13</lastmod></url>
   <url>
-    <loc>https://f.nolcool.com/night/bupyeong-kiss-night-1/</loc>
+    <loc>https://f.nolcool.com/night/bupyeong-kiss-night-4/</loc>
     <lastmod>2026-09-24</lastmod>
   </url>
 </urlset>
