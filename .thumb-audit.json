@@ -147,13 +147,6 @@
     "verdict": "PASS"
   },
   {
-    "rel": "night/ulsan-champion-night/index.html",
-    "img": "/og/ulsan-champion-night-og.png",
-    "size": "1200x1200",
-    "kb": 63,
-    "verdict": "PASS"
-  },
-  {
     "rel": "start/ansan-hit/index.html",
     "img": "/og/start-ansan-hit-og.png",
     "size": "1200x1200",
@@ -417,13 +410,6 @@
     "img": "/og/start-uijeongbu-hangukgwan-og.png",
     "size": "1200x1200",
     "kb": 51,
-    "verdict": "PASS"
-  },
-  {
-    "rel": "start/ulsan-champion/index.html",
-    "img": "/og/start-ulsan-champion-og.png",
-    "size": "1200x1200",
-    "kb": 63,
     "verdict": "PASS"
   },
   {

@@ -272,14 +272,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "auto-ulsan-champion.png",
-    "size": "1200x1200",
-    "beforeKB": 82,
-    "afterKB": 82,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "auto-ulsan-newworld.png",
     "size": "1200x1200",
     "beforeKB": 66,
@@ -428,14 +420,6 @@
     "size": "1200x1200",
     "beforeKB": 62,
     "afterKB": 62,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "exp-ulsan-champion-f.png",
-    "size": "1200x1200",
-    "beforeKB": 16,
-    "afterKB": 16,
     "colors": "-",
     "verdict": "PASS"
   },
@@ -1112,14 +1096,6 @@
     "verdict": "PASS"
   },
   {
-    "file": "start-ulsan-champion-og.png",
-    "size": "1200x1200",
-    "beforeKB": 63,
-    "afterKB": 63,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
     "file": "start-ulsan-newworld-1-og.png",
     "size": "1200x1200",
     "beforeKB": 50,
@@ -1172,22 +1148,6 @@
     "size": "1200x1200",
     "beforeKB": 54,
     "afterKB": 54,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "ulsan-champion-night-1-og.png",
-    "size": "1200x1200",
-    "beforeKB": 63,
-    "afterKB": 63,
-    "colors": "-",
-    "verdict": "PASS"
-  },
-  {
-    "file": "ulsan-champion-night-og.png",
-    "size": "1200x1200",
-    "beforeKB": 63,
-    "afterKB": 63,
     "colors": "-",
     "verdict": "PASS"
   }
