@@ -19,11 +19,11 @@ const ROOT = process.argv[2] || 'out';
 const PAGES = ['index', 'info', 'hours', 'ladies', 'faq', 'contact', 'bulgwangdong-hobak'];
 const ROUTES = new Set([
   '/',
-  '/info-6/',
+  '/info-7/',
   '/hours-5/',
-  '/ladies-4',
+  '/ladies-5',
   '/faq-1',
-  '/contact-7/',
+  '/contact-8/',
   '/bulgwangdong-hobak',
 ]);
 // 페이지별 필수 연락처 문구 (불광동호박나이트는 전화, 그 외 대전원나이트는 카톡)
